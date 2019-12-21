@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Rust 程序设计语言 - </title>
+        <title>Rust By Example - </title>
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div id="sidebar-scrollbox" class="sidebar-scrollbox">
-                <ol class="chapter"><li class="expanded "><a href="rust-lang.html"><strong aria-hidden="true">1.</strong> Rust 程序设计语言</a></li><li class="expanded "><a href="rust-by-example.html"><strong aria-hidden="true">2.</strong> Rust By Example</a></li><li class="expanded "><a href="rustlings.html"><strong aria-hidden="true">3.</strong> Rustlings</a></li><li class="expanded "><a href="rust-std.html"><strong aria-hidden="true">4.</strong> Rust 标准库</a></li><li class="expanded "><a href="edition-guide.html"><strong aria-hidden="true">5.</strong> The Edition Guide</a></li><li class="expanded "><a href="rustc.html"><strong aria-hidden="true">6.</strong> The Rustc Book</a></li><li class="expanded "><a href="cargo.html"><strong aria-hidden="true">7.</strong> The Cargo Book</a></li><li class="expanded "><a href="rustdoc.html"><strong aria-hidden="true">8.</strong> The Rustdoc Book</a></li><li class="expanded "><a href="compiler-error.html"><strong aria-hidden="true">9.</strong> Rust Compiler Error Index</a></li><li class="expanded "><a href="reference.html"><strong aria-hidden="true">10.</strong> The Rust Reference</a></li><li class="expanded "><a href="rustonomicon.html"><strong aria-hidden="true">11.</strong> The Rustonomicon</a></li><li class="expanded "><a href="unstable.html"><strong aria-hidden="true">12.</strong> The Rust Unstable Book</a></li><li class="expanded "><a href="rustc-contribution.html"><strong aria-hidden="true">13.</strong> The rustc Contribution Guide</a></li><li class="expanded "><a href="embedded.html"><strong aria-hidden="true">14.</strong> The Embedded Rust Book</a></li><li class="expanded "><a href="webassembly.html"><strong aria-hidden="true">15.</strong> Rust and WebAssembly</a></li><li class="expanded "><a href="cmd-line-app.html"><strong aria-hidden="true">16.</strong> Command Line Applications in Rust</a></li><li class="expanded "><a href="rfc.html"><strong aria-hidden="true">17.</strong> The Rust RFC Book</a></li><li class="expanded "><a href="bindgen.html"><strong aria-hidden="true">18.</strong> The bindgen User Guide</a></li><li class="expanded "><a href="async.html"><strong aria-hidden="true">19.</strong> Asynchronous Programming in Rust</a></li><li class="expanded "><a href="market-handbook.html"><strong aria-hidden="true">20.</strong> Rust Marketing Handbook</a></li><li class="expanded "><a href="mdbook.html"><strong aria-hidden="true">21.</strong> mdbook</a></li></ol>
+                <ol class="chapter"><li class="expanded "><a href="rust-lang.html"><strong aria-hidden="true">1.</strong> Rust 程序设计语言</a></li><li class="expanded "><a href="rust-by-example.html" class="active"><strong aria-hidden="true">2.</strong> Rust By Example</a></li><li class="expanded "><a href="rustlings.html"><strong aria-hidden="true">3.</strong> Rustlings</a></li><li class="expanded "><a href="rust-std.html"><strong aria-hidden="true">4.</strong> Rust 标准库</a></li><li class="expanded "><a href="edition-guide.html"><strong aria-hidden="true">5.</strong> The Edition Guide</a></li><li class="expanded "><a href="rustc.html"><strong aria-hidden="true">6.</strong> The Rustc Book</a></li><li class="expanded "><a href="cargo.html"><strong aria-hidden="true">7.</strong> The Cargo Book</a></li><li class="expanded "><a href="rustdoc.html"><strong aria-hidden="true">8.</strong> The Rustdoc Book</a></li><li class="expanded "><a href="compiler-error.html"><strong aria-hidden="true">9.</strong> Rust Compiler Error Index</a></li><li class="expanded "><a href="reference.html"><strong aria-hidden="true">10.</strong> The Rust Reference</a></li><li class="expanded "><a href="rustonomicon.html"><strong aria-hidden="true">11.</strong> The Rustonomicon</a></li><li class="expanded "><a href="unstable.html"><strong aria-hidden="true">12.</strong> The Rust Unstable Book</a></li><li class="expanded "><a href="rustc-contribution.html"><strong aria-hidden="true">13.</strong> The rustc Contribution Guide</a></li><li class="expanded "><a href="embedded.html"><strong aria-hidden="true">14.</strong> The Embedded Rust Book</a></li><li class="expanded "><a href="webassembly.html"><strong aria-hidden="true">15.</strong> Rust and WebAssembly</a></li><li class="expanded "><a href="cmd-line-app.html"><strong aria-hidden="true">16.</strong> Command Line Applications in Rust</a></li><li class="expanded "><a href="rfc.html"><strong aria-hidden="true">17.</strong> The Rust RFC Book</a></li><li class="expanded "><a href="bindgen.html"><strong aria-hidden="true">18.</strong> The bindgen User Guide</a></li><li class="expanded "><a href="async.html"><strong aria-hidden="true">19.</strong> Asynchronous Programming in Rust</a></li><li class="expanded "><a href="market-handbook.html"><strong aria-hidden="true">20.</strong> Rust Marketing Handbook</a></li><li class="expanded "><a href="mdbook.html"><strong aria-hidden="true">21.</strong> mdbook</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -148,328 +148,575 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#rust-程序设计语言" id="rust-程序设计语言">Rust 程序设计语言</a></h1>
+                        <h1><a class="header" href="#rust-by-example" id="rust-by-example">Rust By Example</a></h1>
 <ul>
 <li><input disabled="" type="checkbox"/>
-Rust 程序设计语言</li>
-<li><input disabled="" type="checkbox"/>
-前言</li>
-<li><input disabled="" type="checkbox"/>
-介绍</li>
+Introduction</li>
 <li><input disabled="" type="checkbox"/>
 <ol>
-<li>入门指南</li>
+<li>Hello World</li>
 </ol>
 <ul>
 <li><input disabled="" type="checkbox"/>
-1.1 安装</li>
+1.1. Comments</li>
 <li><input disabled="" type="checkbox"/>
-1.2 Hello, World!</li>
+1.2. Formatted print
+<ul>
 <li><input disabled="" type="checkbox"/>
-1.3 Hello, Cargo!</li>
+1.2.1. Debug</li>
+<li><input disabled="" type="checkbox"/>
+1.2.2. Display
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.2.2.1. Testcase: List</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+1.2.3. Formatting</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="2">
-<li>猜猜看游戏教程</li>
-</ol>
-</li>
-<li><input disabled="" type="checkbox"/>
-<ol start="3">
-<li>常见编程概念</li>
+<li>Primitives</li>
 </ol>
 <ul>
 <li><input disabled="" type="checkbox"/>
-3.1 变量与可变性</li>
+2.1. Literals and operators</li>
 <li><input disabled="" type="checkbox"/>
-3.2 数据类型</li>
+2.2. Tuples</li>
 <li><input disabled="" type="checkbox"/>
-3.3 函数如何工作</li>
+2.3. Arrays and Slices</li>
+</ul>
+</li>
 <li><input disabled="" type="checkbox"/>
-3.4 注释</li>
+<ol start="3">
+<li>Custom Types</li>
+</ol>
+<ul>
 <li><input disabled="" type="checkbox"/>
-3.5 控制流</li>
+3.1. Structures</li>
+<li><input disabled="" type="checkbox"/>
+3.2. Enums
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.2.1. use</li>
+<li><input disabled="" type="checkbox"/>
+3.2.2. C-like</li>
+<li><input disabled="" type="checkbox"/>
+3.2.3. Testcase: linked-list</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+3.3. constants</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="4">
-<li>认识所有权</li>
+<li>Variable Bindings</li>
 </ol>
 <ul>
 <li><input disabled="" type="checkbox"/>
-4.1 什么是所有权（3遍）</li>
+4.1. Mutability</li>
 <li><input disabled="" type="checkbox"/>
-4.2 引用与借用（2遍）</li>
+4.2. Scope and Shadowing</li>
 <li><input disabled="" type="checkbox"/>
-4.3 Slices</li>
+4.3. Declare first</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="5">
-<li>使用结构体组织相关联数据</li>
+<li>Types</li>
 </ol>
 <ul>
 <li><input disabled="" type="checkbox"/>
-5.1 定义并实例化结构体</li>
+5.1. Casting</li>
 <li><input disabled="" type="checkbox"/>
-5.2 一个使用结构体的示例程序</li>
+5.2. Literals</li>
 <li><input disabled="" type="checkbox"/>
-5.3 方法语法</li>
+5.3. Inference</li>
+<li><input disabled="" type="checkbox"/>
+5.4. Aliasing</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="6">
-<li>枚举与模式匹配</li>
+<li>Conversion</li>
 </ol>
 <ul>
 <li><input disabled="" type="checkbox"/>
-6.1 定义枚举（2遍）</li>
+6.1. From and Into</li>
 <li><input disabled="" type="checkbox"/>
-6.2 match 控制流运算符</li>
+6.2. TryFrom and TryInto</li>
 <li><input disabled="" type="checkbox"/>
-6.3 if let 简洁控制流</li>
+6.3. To and from Strings</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="7">
-<li>使用包, Crate和模块管理不断增长的项目</li>
+<li>Expressions</li>
 </ol>
-<ul>
-<li><input disabled="" type="checkbox"/>
-7.1 包和Crate</li>
-<li><input disabled="" type="checkbox"/>
-7.2 定义模块来控制作用域与私有性</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"/>
-<ol start="7">
-<li>使用包、Crate 和模块管理不断增长的项目</li>
-</ol>
-<ul>
-<li><input disabled="" type="checkbox"/>
-7.1. 包和 crate</li>
-<li><input disabled="" type="checkbox"/>
-7.2. 定义模块来控制作用域与私有性</li>
-<li><input disabled="" type="checkbox"/>
-7.3. 路径用于引用模块树中的项</li>
-<li><input disabled="" type="checkbox"/>
-7.4. 使用 use 关键字将名称引入作用域</li>
-<li><input disabled="" type="checkbox"/>
-7.5. 将模块分割进不同文件</li>
-</ul>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="8">
-<li>常见集合</li>
+<li>Flow of Control</li>
 </ol>
 <ul>
 <li><input disabled="" type="checkbox"/>
-8.1. vector</li>
+8.1. if/else</li>
 <li><input disabled="" type="checkbox"/>
-8.2. 字符串</li>
+8.2. loop
+<ul>
 <li><input disabled="" type="checkbox"/>
-8.3. 哈希 map</li>
+8.2.1. Nesting and labels</li>
+<li><input disabled="" type="checkbox"/>
+8.2.2. Returning from loops</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+8.3. while</li>
+<li><input disabled="" type="checkbox"/>
+8.4. for and range</li>
+<li><input disabled="" type="checkbox"/>
+8.5. match
+<ul>
+<li><input disabled="" type="checkbox"/>
+8.5.1. Destructuring
+<ul>
+<li><input disabled="" type="checkbox"/>
+8.5.1.1. tuples</li>
+<li><input disabled="" type="checkbox"/>
+8.5.1.2. enums</li>
+<li><input disabled="" type="checkbox"/>
+8.5.1.3. pointers/ref</li>
+<li><input disabled="" type="checkbox"/>
+8.5.1.4. structs</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+8.5.2. Guards</li>
+<li><input disabled="" type="checkbox"/>
+8.5.3. Binding</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+8.6. if let</li>
+<li><input disabled="" type="checkbox"/>
+8.7. while let</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="9">
-<li>错误处理</li>
+<li>Functions</li>
 </ol>
 <ul>
 <li><input disabled="" type="checkbox"/>
-9.1. panic! 与不可恢复的错误</li>
+9.1. Methods</li>
 <li><input disabled="" type="checkbox"/>
-9.2. Result 与可恢复的错误</li>
+9.2. Closures
+<ul>
 <li><input disabled="" type="checkbox"/>
-9.3. panic! 还是不 panic!</li>
+9.2.1. Capturing</li>
+<li><input disabled="" type="checkbox"/>
+9.2.2. As input parameters</li>
+<li><input disabled="" type="checkbox"/>
+9.2.3. Type anonymity</li>
+<li><input disabled="" type="checkbox"/>
+9.2.4. Input functions</li>
+<li><input disabled="" type="checkbox"/>
+9.2.5. As output parameters</li>
+<li><input disabled="" type="checkbox"/>
+9.2.6. Examples in std
+<ul>
+<li><input disabled="" type="checkbox"/>
+9.2.6.1. Iterator::any</li>
+<li><input disabled="" type="checkbox"/>
+9.2.6.2. Searching through iterators</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+9.3. Higher Order Functions</li>
+<li><input disabled="" type="checkbox"/>
+9.4. Diverging functions</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="10">
-<li>泛型、trait 与生命周期</li>
+<li>Modules</li>
 </ol>
 <ul>
 <li><input disabled="" type="checkbox"/>
-10.1. 泛型数据类型</li>
+10.1. Visibility</li>
 <li><input disabled="" type="checkbox"/>
-10.2. trait：定义共享的行为</li>
+10.2. Struct visibility</li>
 <li><input disabled="" type="checkbox"/>
-10.3. 生命周期与引用有效性</li>
+10.3. The use declaration</li>
+<li><input disabled="" type="checkbox"/>
+10.4. super and self</li>
+<li><input disabled="" type="checkbox"/>
+10.5. File hierarchy</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="11">
-<li>测试</li>
+<li>Crates</li>
 </ol>
 <ul>
 <li><input disabled="" type="checkbox"/>
-11.1. 编写测试</li>
+11.1. Library</li>
 <li><input disabled="" type="checkbox"/>
-11.2. 运行测试</li>
-<li><input disabled="" type="checkbox"/>
-11.3. 测试的组织结构</li>
+11.2. extern crate</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="12">
-<li>一个 I/O 项目：构建命令行程序</li>
+<li>Cargo</li>
 </ol>
 <ul>
 <li><input disabled="" type="checkbox"/>
-12.1. 接受命令行参数</li>
+12.1. Dependencies</li>
 <li><input disabled="" type="checkbox"/>
-12.2. 读取文件</li>
+12.2. Conventions</li>
 <li><input disabled="" type="checkbox"/>
-12.3. 重构以改进模块化与错误处理</li>
+12.3. Tests</li>
 <li><input disabled="" type="checkbox"/>
-12.4. 采用测试驱动开发完善库的功能</li>
-<li><input disabled="" type="checkbox"/>
-12.5. 处理环境变量</li>
-<li><input disabled="" type="checkbox"/>
-12.6. 将错误信息输出到标准错误而不是标准输出</li>
+12.4. Build Scripts</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="13">
-<li>Rust 中的函数式语言功能：迭代器与闭包</li>
+<li>Attributes</li>
 </ol>
 <ul>
 <li><input disabled="" type="checkbox"/>
-13.1. 闭包：可以捕获其环境的匿名函数</li>
+13.1. dead_code</li>
 <li><input disabled="" type="checkbox"/>
-13.2. 使用迭代器处理元素序列</li>
+13.2. Crates</li>
 <li><input disabled="" type="checkbox"/>
-13.3. 改进之前的 I/O 项目</li>
+13.3. cfg
+<ul>
 <li><input disabled="" type="checkbox"/>
-13.4. 性能比较：循环对迭代器</li>
+13.3.1. Custom</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="14">
-<li>更多关于 Cargo 和 Crates.io 的内容</li>
+<li>Generics</li>
 </ol>
 <ul>
 <li><input disabled="" type="checkbox"/>
-14.1. 采用发布配置自定义构建</li>
+14.1. Functions</li>
 <li><input disabled="" type="checkbox"/>
-14.2. 将 crate 发布到 Crates.io</li>
+14.2. Implementation</li>
 <li><input disabled="" type="checkbox"/>
-14.3. Cargo 工作空间</li>
+14.3. Traits</li>
 <li><input disabled="" type="checkbox"/>
-14.4. 使用 cargo install 从 Crates.io 安装二进制文件</li>
+14.4. Bounds
+<ul>
 <li><input disabled="" type="checkbox"/>
-14.5. Cargo 自定义扩展命令</li>
+14.4.1. Testcase: empty bounds</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+14.5. Multiple bounds</li>
+<li><input disabled="" type="checkbox"/>
+14.6. Where clauses</li>
+<li><input disabled="" type="checkbox"/>
+14.7. New Type Idiom</li>
+<li><input disabled="" type="checkbox"/>
+14.8. Associated items
+<ul>
+<li><input disabled="" type="checkbox"/>
+14.8.1. The Problem</li>
+<li><input disabled="" type="checkbox"/>
+14.8.2. Associated types</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+14.9. Phantom type parameters
+<ul>
+<li><input disabled="" type="checkbox"/>
+14.9.1. Testcase: unit clarification</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="15">
-<li>智能指针</li>
+<li>Scoping rules</li>
 </ol>
 <ul>
 <li><input disabled="" type="checkbox"/>
-15.1. Box 指向堆上数据，并且可确定大小</li>
+15.1. RAII</li>
 <li><input disabled="" type="checkbox"/>
-15.2. 通过 Deref trait 将智能指针当作常规引用处理</li>
+15.2. Ownership and moves
+<ul>
 <li><input disabled="" type="checkbox"/>
-15.3. Drop Trait 运行清理代码</li>
+15.2.1. Mutability</li>
+</ul>
+</li>
 <li><input disabled="" type="checkbox"/>
-15.4. Rc 引用计数智能指针</li>
+15.3. Borrowing
+<ul>
 <li><input disabled="" type="checkbox"/>
-15.5. RefCell 与内部可变性模式</li>
+15.3.1. Mutability</li>
 <li><input disabled="" type="checkbox"/>
-15.6. 引用循环与内存泄漏是安全的</li>
+15.3.2. Freezing</li>
+<li><input disabled="" type="checkbox"/>
+15.3.3. Aliasing</li>
+<li><input disabled="" type="checkbox"/>
+15.3.4. The ref pattern</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+15.4. Lifetimes
+<ul>
+<li><input disabled="" type="checkbox"/>
+15.4.1. Explicit annotation</li>
+<li><input disabled="" type="checkbox"/>
+15.4.2. Functions</li>
+<li><input disabled="" type="checkbox"/>
+15.4.3. Methods</li>
+<li><input disabled="" type="checkbox"/>
+15.4.4. Structs</li>
+<li><input disabled="" type="checkbox"/>
+15.4.5. Traits</li>
+<li><input disabled="" type="checkbox"/>
+15.4.6. Bounds</li>
+<li><input disabled="" type="checkbox"/>
+15.4.7. Coercion</li>
+<li><input disabled="" type="checkbox"/>
+15.4.8. Static</li>
+<li><input disabled="" type="checkbox"/>
+15.4.9. Elision</li>
+</ul>
+</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="16">
-<li>无畏并发</li>
+<li>Traits</li>
 </ol>
 <ul>
 <li><input disabled="" type="checkbox"/>
-16.1. 线程</li>
+16.1. Derive</li>
 <li><input disabled="" type="checkbox"/>
-16.2. 消息传递</li>
+16.2. Returning Traits with dyn</li>
 <li><input disabled="" type="checkbox"/>
-16.3. 共享状态</li>
+16.3. Operator Overloading</li>
 <li><input disabled="" type="checkbox"/>
-16.4. 可扩展的并发：Sync 与 Send</li>
+16.4. Drop</li>
+<li><input disabled="" type="checkbox"/>
+16.5. Iterators</li>
+<li><input disabled="" type="checkbox"/>
+16.6. impl Trait</li>
+<li><input disabled="" type="checkbox"/>
+16.7. Clone</li>
+<li><input disabled="" type="checkbox"/>
+16.8. Supertraits</li>
+<li><input disabled="" type="checkbox"/>
+16.9. Disambiguating overlapping traits</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="17">
-<li>Rust 的面向对象编程特性</li>
+<li>macro_rules!</li>
 </ol>
 <ul>
 <li><input disabled="" type="checkbox"/>
-17.1. 面向对象语言的特点</li>
+17.1. Syntax
+<ul>
 <li><input disabled="" type="checkbox"/>
-17.2. 为使用不同类型的值而设计的 trait 对象</li>
+17.1.1. Designators</li>
 <li><input disabled="" type="checkbox"/>
-17.3. 面向对象设计模式的实现</li>
+17.1.2. Overload</li>
+<li><input disabled="" type="checkbox"/>
+17.1.3. Repeat</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+17.2. DRY (Don't Repeat Yourself)</li>
+<li><input disabled="" type="checkbox"/>
+17.3. DSL (Domain Specific Languages)</li>
+<li><input disabled="" type="checkbox"/>
+17.4. Variadics</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="18">
-<li>模式用来匹配值的结构</li>
+<li>Error handling</li>
 </ol>
 <ul>
 <li><input disabled="" type="checkbox"/>
-18.1. 所有可能会用到模式的位置</li>
+18.1. panic</li>
 <li><input disabled="" type="checkbox"/>
-18.2. Refutability：何时模式可能会匹配失败</li>
+18.2. Option &amp; unwrap
+<ul>
 <li><input disabled="" type="checkbox"/>
-18.3. 模式的全部语法</li>
+18.2.1. Unpacking options with ?</li>
+<li><input disabled="" type="checkbox"/>
+18.2.2. Combinators: map</li>
+<li><input disabled="" type="checkbox"/>
+18.2.3. Combinators: and_then</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+18.3. Result
+<ul>
+<li><input disabled="" type="checkbox"/>
+18.3.1. map for Result</li>
+<li><input disabled="" type="checkbox"/>
+18.3.2. aliases for Result</li>
+<li><input disabled="" type="checkbox"/>
+18.3.3. Early returns</li>
+<li><input disabled="" type="checkbox"/>
+18.3.4. Introducing ?</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+18.4. Multiple error types
+<ul>
+<li><input disabled="" type="checkbox"/>
+18.4.1. Pulling Results out of Options</li>
+<li><input disabled="" type="checkbox"/>
+18.4.2. Defining an error type</li>
+<li><input disabled="" type="checkbox"/>
+18.4.3. Boxing errors</li>
+<li><input disabled="" type="checkbox"/>
+18.4.4. Other uses of ?</li>
+<li><input disabled="" type="checkbox"/>
+18.4.5. Wrapping errors</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+18.5. Iterating over Results</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="19">
-<li>高级特征</li>
+<li>Std library types</li>
 </ol>
 <ul>
 <li><input disabled="" type="checkbox"/>
-19.1. 不安全的 Rust</li>
+19.1. Box, stack and heap</li>
 <li><input disabled="" type="checkbox"/>
-19.2. 高级 trait</li>
+19.2. Vectors</li>
 <li><input disabled="" type="checkbox"/>
-19.3. 高级类型</li>
+19.3. Strings</li>
 <li><input disabled="" type="checkbox"/>
-19.4. 高级函数与闭包</li>
+19.4. Option</li>
 <li><input disabled="" type="checkbox"/>
-19.5. 宏</li>
+19.5. Result
+<ul>
+<li><input disabled="" type="checkbox"/>
+19.5.1. ?</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+19.6. panic!</li>
+<li><input disabled="" type="checkbox"/>
+19.7. HashMap
+<ul>
+<li><input disabled="" type="checkbox"/>
+19.7.1. Alternate/custom key types</li>
+<li><input disabled="" type="checkbox"/>
+19.7.2. HashSet</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+19.8. Rc</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="20">
-<li>最后的项目: 构建多线程 web server</li>
+<li>Std misc</li>
 </ol>
 <ul>
 <li><input disabled="" type="checkbox"/>
-20.1. 单线程 web server</li>
+20.1. Threads
+<ul>
 <li><input disabled="" type="checkbox"/>
-20.2. 将单线程 server 变为多线程 server</li>
+20.1.1. Testcase: map-reduce</li>
+</ul>
+</li>
 <li><input disabled="" type="checkbox"/>
-20.3. 优雅停机与清理</li>
+20.2. Channels</li>
+<li><input disabled="" type="checkbox"/>
+20.3. Path</li>
+<li><input disabled="" type="checkbox"/>
+20.4. File I/O
+<ul>
+<li><input disabled="" type="checkbox"/>
+20.4.1. open</li>
+<li><input disabled="" type="checkbox"/>
+20.4.2. create</li>
+<li><input disabled="" type="checkbox"/>
+20.4.3. read lines</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+20.5. Child processes
+<ul>
+<li><input disabled="" type="checkbox"/>
+20.5.1. Pipes</li>
+<li><input disabled="" type="checkbox"/>
+20.5.2. Wait</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+20.6. Filesystem Operations</li>
+<li><input disabled="" type="checkbox"/>
+20.7. Program arguments
+<ul>
+<li><input disabled="" type="checkbox"/>
+20.7.1. Argument parsing</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+20.8. Foreign Function Interface</li>
 </ul>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="21">
-<li>附录</li>
+<li>Testing</li>
 </ol>
 <ul>
 <li><input disabled="" type="checkbox"/>
-21.1. A - 关键字</li>
+21.1. Unit testing</li>
 <li><input disabled="" type="checkbox"/>
-21.2. B - 运算符与符号</li>
+21.2. Documentation testing</li>
 <li><input disabled="" type="checkbox"/>
-21.3. C - 可派生的 trait</li>
+21.3. Integration testing</li>
 <li><input disabled="" type="checkbox"/>
-21.4. D - 实用开发工具</li>
+21.4. Dev-dependencies</li>
+</ul>
+</li>
 <li><input disabled="" type="checkbox"/>
-21.5. E - 版本</li>
+<ol start="22">
+<li>Unsafe Operations</li>
+</ol>
+</li>
 <li><input disabled="" type="checkbox"/>
-21.6. F - 本书译本</li>
+<ol start="23">
+<li>Compatibility</li>
+</ol>
+<ul>
 <li><input disabled="" type="checkbox"/>
-21.7. G - Rust 是如何开发的与 “Nightly Rust”</li>
+23.1. Raw identifiers</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="24">
+<li>Meta</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+24.1. Documentation</li>
 </ul>
 </li>
 </ul>
@@ -479,9 +726,13 @@ Rust 程序设计语言</li>
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
+                            <a rel="prev" href="rust-lang.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
 
                         
-                            <a rel="next" href="rust-by-example.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="rustlings.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -493,9 +744,13 @@ Rust 程序设计语言</li>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
+                    <a href="rust-lang.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
 
                 
-                    <a href="rust-by-example.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a href="rustlings.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 

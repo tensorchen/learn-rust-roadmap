@@ -3,13 +3,13 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Learn Rust Roadmap</title>
+        <title></title>
         
         <meta name="robots" content="noindex" />
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="Rust学习路线图">
+        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div id="sidebar-scrollbox" class="sidebar-scrollbox">
-                <ol class="chapter"><li class="expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Chapter 1</a></li></ol>
+                <ol class="chapter"><li class="expanded "><a href="rust-lang.html"><strong aria-hidden="true">1.</strong> Rust 程序设计语言</a></li><li class="expanded "><a href="rust-by-example.html"><strong aria-hidden="true">2.</strong> Rust By Example</a></li><li class="expanded "><a href="rustlings.html"><strong aria-hidden="true">3.</strong> Rustlings</a></li><li class="expanded "><a href="rust-std.html"><strong aria-hidden="true">4.</strong> Rust 标准库</a></li><li class="expanded "><a href="edition-guide.html"><strong aria-hidden="true">5.</strong> The Edition Guide</a></li><li class="expanded "><a href="rustc.html"><strong aria-hidden="true">6.</strong> The Rustc Book</a></li><li class="expanded "><a href="cargo.html"><strong aria-hidden="true">7.</strong> The Cargo Book</a></li><li class="expanded "><a href="rustdoc.html"><strong aria-hidden="true">8.</strong> The Rustdoc Book</a></li><li class="expanded "><a href="compiler-error.html"><strong aria-hidden="true">9.</strong> Rust Compiler Error Index</a></li><li class="expanded "><a href="reference.html"><strong aria-hidden="true">10.</strong> The Rust Reference</a></li><li class="expanded "><a href="rustonomicon.html"><strong aria-hidden="true">11.</strong> The Rustonomicon</a></li><li class="expanded "><a href="unstable.html"><strong aria-hidden="true">12.</strong> The Rust Unstable Book</a></li><li class="expanded "><a href="rustc-contribution.html"><strong aria-hidden="true">13.</strong> The rustc Contribution Guide</a></li><li class="expanded "><a href="embedded.html"><strong aria-hidden="true">14.</strong> The Embedded Rust Book</a></li><li class="expanded "><a href="webassembly.html"><strong aria-hidden="true">15.</strong> Rust and WebAssembly</a></li><li class="expanded "><a href="cmd-line-app.html"><strong aria-hidden="true">16.</strong> Command Line Applications in Rust</a></li><li class="expanded "><a href="rfc.html"><strong aria-hidden="true">17.</strong> The Rust RFC Book</a></li><li class="expanded "><a href="bindgen.html"><strong aria-hidden="true">18.</strong> The bindgen User Guide</a></li><li class="expanded "><a href="async.html"><strong aria-hidden="true">19.</strong> Asynchronous Programming in Rust</a></li><li class="expanded "><a href="market-handbook.html"><strong aria-hidden="true">20.</strong> Rust Marketing Handbook</a></li><li class="expanded "><a href="mdbook.html"><strong aria-hidden="true">21.</strong> mdbook</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -115,7 +115,7 @@
                             
                         </div>
 
-                        <h1 class="menu-title">Learn Rust Roadmap</h1>
+                        <h1 class="menu-title"></h1>
 
                         <div class="right-buttons">
                             <a href="print.html" title="Print this book" aria-label="Print this book">
@@ -150,7 +150,4244 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#chapter-1" id="chapter-1">Chapter 1</a></h1>
+                        <h1><a class="header" href="#rust-程序设计语言" id="rust-程序设计语言">Rust 程序设计语言</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Rust 程序设计语言</li>
+<li><input disabled="" type="checkbox"/>
+前言</li>
+<li><input disabled="" type="checkbox"/>
+介绍</li>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>入门指南</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.1 安装</li>
+<li><input disabled="" type="checkbox"/>
+1.2 Hello, World!</li>
+<li><input disabled="" type="checkbox"/>
+1.3 Hello, Cargo!</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="2">
+<li>猜猜看游戏教程</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="3">
+<li>常见编程概念</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.1 变量与可变性</li>
+<li><input disabled="" type="checkbox"/>
+3.2 数据类型</li>
+<li><input disabled="" type="checkbox"/>
+3.3 函数如何工作</li>
+<li><input disabled="" type="checkbox"/>
+3.4 注释</li>
+<li><input disabled="" type="checkbox"/>
+3.5 控制流</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="4">
+<li>认识所有权</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+4.1 什么是所有权（3遍）</li>
+<li><input disabled="" type="checkbox"/>
+4.2 引用与借用（2遍）</li>
+<li><input disabled="" type="checkbox"/>
+4.3 Slices</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="5">
+<li>使用结构体组织相关联数据</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+5.1 定义并实例化结构体</li>
+<li><input disabled="" type="checkbox"/>
+5.2 一个使用结构体的示例程序</li>
+<li><input disabled="" type="checkbox"/>
+5.3 方法语法</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="6">
+<li>枚举与模式匹配</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+6.1 定义枚举（2遍）</li>
+<li><input disabled="" type="checkbox"/>
+6.2 match 控制流运算符</li>
+<li><input disabled="" type="checkbox"/>
+6.3 if let 简洁控制流</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="7">
+<li>使用包, Crate和模块管理不断增长的项目</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+7.1 包和Crate</li>
+<li><input disabled="" type="checkbox"/>
+7.2 定义模块来控制作用域与私有性</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="7">
+<li>使用包、Crate 和模块管理不断增长的项目</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+7.1. 包和 crate</li>
+<li><input disabled="" type="checkbox"/>
+7.2. 定义模块来控制作用域与私有性</li>
+<li><input disabled="" type="checkbox"/>
+7.3. 路径用于引用模块树中的项</li>
+<li><input disabled="" type="checkbox"/>
+7.4. 使用 use 关键字将名称引入作用域</li>
+<li><input disabled="" type="checkbox"/>
+7.5. 将模块分割进不同文件</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="8">
+<li>常见集合</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+8.1. vector</li>
+<li><input disabled="" type="checkbox"/>
+8.2. 字符串</li>
+<li><input disabled="" type="checkbox"/>
+8.3. 哈希 map</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="9">
+<li>错误处理</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+9.1. panic! 与不可恢复的错误</li>
+<li><input disabled="" type="checkbox"/>
+9.2. Result 与可恢复的错误</li>
+<li><input disabled="" type="checkbox"/>
+9.3. panic! 还是不 panic!</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="10">
+<li>泛型、trait 与生命周期</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+10.1. 泛型数据类型</li>
+<li><input disabled="" type="checkbox"/>
+10.2. trait：定义共享的行为</li>
+<li><input disabled="" type="checkbox"/>
+10.3. 生命周期与引用有效性</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="11">
+<li>测试</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+11.1. 编写测试</li>
+<li><input disabled="" type="checkbox"/>
+11.2. 运行测试</li>
+<li><input disabled="" type="checkbox"/>
+11.3. 测试的组织结构</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="12">
+<li>一个 I/O 项目：构建命令行程序</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+12.1. 接受命令行参数</li>
+<li><input disabled="" type="checkbox"/>
+12.2. 读取文件</li>
+<li><input disabled="" type="checkbox"/>
+12.3. 重构以改进模块化与错误处理</li>
+<li><input disabled="" type="checkbox"/>
+12.4. 采用测试驱动开发完善库的功能</li>
+<li><input disabled="" type="checkbox"/>
+12.5. 处理环境变量</li>
+<li><input disabled="" type="checkbox"/>
+12.6. 将错误信息输出到标准错误而不是标准输出</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="13">
+<li>Rust 中的函数式语言功能：迭代器与闭包</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+13.1. 闭包：可以捕获其环境的匿名函数</li>
+<li><input disabled="" type="checkbox"/>
+13.2. 使用迭代器处理元素序列</li>
+<li><input disabled="" type="checkbox"/>
+13.3. 改进之前的 I/O 项目</li>
+<li><input disabled="" type="checkbox"/>
+13.4. 性能比较：循环对迭代器</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="14">
+<li>更多关于 Cargo 和 Crates.io 的内容</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+14.1. 采用发布配置自定义构建</li>
+<li><input disabled="" type="checkbox"/>
+14.2. 将 crate 发布到 Crates.io</li>
+<li><input disabled="" type="checkbox"/>
+14.3. Cargo 工作空间</li>
+<li><input disabled="" type="checkbox"/>
+14.4. 使用 cargo install 从 Crates.io 安装二进制文件</li>
+<li><input disabled="" type="checkbox"/>
+14.5. Cargo 自定义扩展命令</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="15">
+<li>智能指针</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+15.1. Box 指向堆上数据，并且可确定大小</li>
+<li><input disabled="" type="checkbox"/>
+15.2. 通过 Deref trait 将智能指针当作常规引用处理</li>
+<li><input disabled="" type="checkbox"/>
+15.3. Drop Trait 运行清理代码</li>
+<li><input disabled="" type="checkbox"/>
+15.4. Rc 引用计数智能指针</li>
+<li><input disabled="" type="checkbox"/>
+15.5. RefCell 与内部可变性模式</li>
+<li><input disabled="" type="checkbox"/>
+15.6. 引用循环与内存泄漏是安全的</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="16">
+<li>无畏并发</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+16.1. 线程</li>
+<li><input disabled="" type="checkbox"/>
+16.2. 消息传递</li>
+<li><input disabled="" type="checkbox"/>
+16.3. 共享状态</li>
+<li><input disabled="" type="checkbox"/>
+16.4. 可扩展的并发：Sync 与 Send</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="17">
+<li>Rust 的面向对象编程特性</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+17.1. 面向对象语言的特点</li>
+<li><input disabled="" type="checkbox"/>
+17.2. 为使用不同类型的值而设计的 trait 对象</li>
+<li><input disabled="" type="checkbox"/>
+17.3. 面向对象设计模式的实现</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="18">
+<li>模式用来匹配值的结构</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+18.1. 所有可能会用到模式的位置</li>
+<li><input disabled="" type="checkbox"/>
+18.2. Refutability：何时模式可能会匹配失败</li>
+<li><input disabled="" type="checkbox"/>
+18.3. 模式的全部语法</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="19">
+<li>高级特征</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+19.1. 不安全的 Rust</li>
+<li><input disabled="" type="checkbox"/>
+19.2. 高级 trait</li>
+<li><input disabled="" type="checkbox"/>
+19.3. 高级类型</li>
+<li><input disabled="" type="checkbox"/>
+19.4. 高级函数与闭包</li>
+<li><input disabled="" type="checkbox"/>
+19.5. 宏</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="20">
+<li>最后的项目: 构建多线程 web server</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+20.1. 单线程 web server</li>
+<li><input disabled="" type="checkbox"/>
+20.2. 将单线程 server 变为多线程 server</li>
+<li><input disabled="" type="checkbox"/>
+20.3. 优雅停机与清理</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="21">
+<li>附录</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+21.1. A - 关键字</li>
+<li><input disabled="" type="checkbox"/>
+21.2. B - 运算符与符号</li>
+<li><input disabled="" type="checkbox"/>
+21.3. C - 可派生的 trait</li>
+<li><input disabled="" type="checkbox"/>
+21.4. D - 实用开发工具</li>
+<li><input disabled="" type="checkbox"/>
+21.5. E - 版本</li>
+<li><input disabled="" type="checkbox"/>
+21.6. F - 本书译本</li>
+<li><input disabled="" type="checkbox"/>
+21.7. G - Rust 是如何开发的与 “Nightly Rust”</li>
+</ul>
+</li>
+</ul>
+<h1><a class="header" href="#rust-by-example" id="rust-by-example">Rust By Example</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Introduction</li>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>Hello World</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.1. Comments</li>
+<li><input disabled="" type="checkbox"/>
+1.2. Formatted print
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.2.1. Debug</li>
+<li><input disabled="" type="checkbox"/>
+1.2.2. Display
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.2.2.1. Testcase: List</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+1.2.3. Formatting</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="2">
+<li>Primitives</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.1. Literals and operators</li>
+<li><input disabled="" type="checkbox"/>
+2.2. Tuples</li>
+<li><input disabled="" type="checkbox"/>
+2.3. Arrays and Slices</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="3">
+<li>Custom Types</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.1. Structures</li>
+<li><input disabled="" type="checkbox"/>
+3.2. Enums
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.2.1. use</li>
+<li><input disabled="" type="checkbox"/>
+3.2.2. C-like</li>
+<li><input disabled="" type="checkbox"/>
+3.2.3. Testcase: linked-list</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+3.3. constants</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="4">
+<li>Variable Bindings</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+4.1. Mutability</li>
+<li><input disabled="" type="checkbox"/>
+4.2. Scope and Shadowing</li>
+<li><input disabled="" type="checkbox"/>
+4.3. Declare first</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="5">
+<li>Types</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+5.1. Casting</li>
+<li><input disabled="" type="checkbox"/>
+5.2. Literals</li>
+<li><input disabled="" type="checkbox"/>
+5.3. Inference</li>
+<li><input disabled="" type="checkbox"/>
+5.4. Aliasing</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="6">
+<li>Conversion</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+6.1. From and Into</li>
+<li><input disabled="" type="checkbox"/>
+6.2. TryFrom and TryInto</li>
+<li><input disabled="" type="checkbox"/>
+6.3. To and from Strings</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="7">
+<li>Expressions</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="8">
+<li>Flow of Control</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+8.1. if/else</li>
+<li><input disabled="" type="checkbox"/>
+8.2. loop
+<ul>
+<li><input disabled="" type="checkbox"/>
+8.2.1. Nesting and labels</li>
+<li><input disabled="" type="checkbox"/>
+8.2.2. Returning from loops</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+8.3. while</li>
+<li><input disabled="" type="checkbox"/>
+8.4. for and range</li>
+<li><input disabled="" type="checkbox"/>
+8.5. match
+<ul>
+<li><input disabled="" type="checkbox"/>
+8.5.1. Destructuring
+<ul>
+<li><input disabled="" type="checkbox"/>
+8.5.1.1. tuples</li>
+<li><input disabled="" type="checkbox"/>
+8.5.1.2. enums</li>
+<li><input disabled="" type="checkbox"/>
+8.5.1.3. pointers/ref</li>
+<li><input disabled="" type="checkbox"/>
+8.5.1.4. structs</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+8.5.2. Guards</li>
+<li><input disabled="" type="checkbox"/>
+8.5.3. Binding</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+8.6. if let</li>
+<li><input disabled="" type="checkbox"/>
+8.7. while let</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="9">
+<li>Functions</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+9.1. Methods</li>
+<li><input disabled="" type="checkbox"/>
+9.2. Closures
+<ul>
+<li><input disabled="" type="checkbox"/>
+9.2.1. Capturing</li>
+<li><input disabled="" type="checkbox"/>
+9.2.2. As input parameters</li>
+<li><input disabled="" type="checkbox"/>
+9.2.3. Type anonymity</li>
+<li><input disabled="" type="checkbox"/>
+9.2.4. Input functions</li>
+<li><input disabled="" type="checkbox"/>
+9.2.5. As output parameters</li>
+<li><input disabled="" type="checkbox"/>
+9.2.6. Examples in std
+<ul>
+<li><input disabled="" type="checkbox"/>
+9.2.6.1. Iterator::any</li>
+<li><input disabled="" type="checkbox"/>
+9.2.6.2. Searching through iterators</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+9.3. Higher Order Functions</li>
+<li><input disabled="" type="checkbox"/>
+9.4. Diverging functions</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="10">
+<li>Modules</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+10.1. Visibility</li>
+<li><input disabled="" type="checkbox"/>
+10.2. Struct visibility</li>
+<li><input disabled="" type="checkbox"/>
+10.3. The use declaration</li>
+<li><input disabled="" type="checkbox"/>
+10.4. super and self</li>
+<li><input disabled="" type="checkbox"/>
+10.5. File hierarchy</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="11">
+<li>Crates</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+11.1. Library</li>
+<li><input disabled="" type="checkbox"/>
+11.2. extern crate</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="12">
+<li>Cargo</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+12.1. Dependencies</li>
+<li><input disabled="" type="checkbox"/>
+12.2. Conventions</li>
+<li><input disabled="" type="checkbox"/>
+12.3. Tests</li>
+<li><input disabled="" type="checkbox"/>
+12.4. Build Scripts</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="13">
+<li>Attributes</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+13.1. dead_code</li>
+<li><input disabled="" type="checkbox"/>
+13.2. Crates</li>
+<li><input disabled="" type="checkbox"/>
+13.3. cfg
+<ul>
+<li><input disabled="" type="checkbox"/>
+13.3.1. Custom</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="14">
+<li>Generics</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+14.1. Functions</li>
+<li><input disabled="" type="checkbox"/>
+14.2. Implementation</li>
+<li><input disabled="" type="checkbox"/>
+14.3. Traits</li>
+<li><input disabled="" type="checkbox"/>
+14.4. Bounds
+<ul>
+<li><input disabled="" type="checkbox"/>
+14.4.1. Testcase: empty bounds</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+14.5. Multiple bounds</li>
+<li><input disabled="" type="checkbox"/>
+14.6. Where clauses</li>
+<li><input disabled="" type="checkbox"/>
+14.7. New Type Idiom</li>
+<li><input disabled="" type="checkbox"/>
+14.8. Associated items
+<ul>
+<li><input disabled="" type="checkbox"/>
+14.8.1. The Problem</li>
+<li><input disabled="" type="checkbox"/>
+14.8.2. Associated types</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+14.9. Phantom type parameters
+<ul>
+<li><input disabled="" type="checkbox"/>
+14.9.1. Testcase: unit clarification</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="15">
+<li>Scoping rules</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+15.1. RAII</li>
+<li><input disabled="" type="checkbox"/>
+15.2. Ownership and moves
+<ul>
+<li><input disabled="" type="checkbox"/>
+15.2.1. Mutability</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+15.3. Borrowing
+<ul>
+<li><input disabled="" type="checkbox"/>
+15.3.1. Mutability</li>
+<li><input disabled="" type="checkbox"/>
+15.3.2. Freezing</li>
+<li><input disabled="" type="checkbox"/>
+15.3.3. Aliasing</li>
+<li><input disabled="" type="checkbox"/>
+15.3.4. The ref pattern</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+15.4. Lifetimes
+<ul>
+<li><input disabled="" type="checkbox"/>
+15.4.1. Explicit annotation</li>
+<li><input disabled="" type="checkbox"/>
+15.4.2. Functions</li>
+<li><input disabled="" type="checkbox"/>
+15.4.3. Methods</li>
+<li><input disabled="" type="checkbox"/>
+15.4.4. Structs</li>
+<li><input disabled="" type="checkbox"/>
+15.4.5. Traits</li>
+<li><input disabled="" type="checkbox"/>
+15.4.6. Bounds</li>
+<li><input disabled="" type="checkbox"/>
+15.4.7. Coercion</li>
+<li><input disabled="" type="checkbox"/>
+15.4.8. Static</li>
+<li><input disabled="" type="checkbox"/>
+15.4.9. Elision</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="16">
+<li>Traits</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+16.1. Derive</li>
+<li><input disabled="" type="checkbox"/>
+16.2. Returning Traits with dyn</li>
+<li><input disabled="" type="checkbox"/>
+16.3. Operator Overloading</li>
+<li><input disabled="" type="checkbox"/>
+16.4. Drop</li>
+<li><input disabled="" type="checkbox"/>
+16.5. Iterators</li>
+<li><input disabled="" type="checkbox"/>
+16.6. impl Trait</li>
+<li><input disabled="" type="checkbox"/>
+16.7. Clone</li>
+<li><input disabled="" type="checkbox"/>
+16.8. Supertraits</li>
+<li><input disabled="" type="checkbox"/>
+16.9. Disambiguating overlapping traits</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="17">
+<li>macro_rules!</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+17.1. Syntax
+<ul>
+<li><input disabled="" type="checkbox"/>
+17.1.1. Designators</li>
+<li><input disabled="" type="checkbox"/>
+17.1.2. Overload</li>
+<li><input disabled="" type="checkbox"/>
+17.1.3. Repeat</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+17.2. DRY (Don't Repeat Yourself)</li>
+<li><input disabled="" type="checkbox"/>
+17.3. DSL (Domain Specific Languages)</li>
+<li><input disabled="" type="checkbox"/>
+17.4. Variadics</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="18">
+<li>Error handling</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+18.1. panic</li>
+<li><input disabled="" type="checkbox"/>
+18.2. Option &amp; unwrap
+<ul>
+<li><input disabled="" type="checkbox"/>
+18.2.1. Unpacking options with ?</li>
+<li><input disabled="" type="checkbox"/>
+18.2.2. Combinators: map</li>
+<li><input disabled="" type="checkbox"/>
+18.2.3. Combinators: and_then</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+18.3. Result
+<ul>
+<li><input disabled="" type="checkbox"/>
+18.3.1. map for Result</li>
+<li><input disabled="" type="checkbox"/>
+18.3.2. aliases for Result</li>
+<li><input disabled="" type="checkbox"/>
+18.3.3. Early returns</li>
+<li><input disabled="" type="checkbox"/>
+18.3.4. Introducing ?</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+18.4. Multiple error types
+<ul>
+<li><input disabled="" type="checkbox"/>
+18.4.1. Pulling Results out of Options</li>
+<li><input disabled="" type="checkbox"/>
+18.4.2. Defining an error type</li>
+<li><input disabled="" type="checkbox"/>
+18.4.3. Boxing errors</li>
+<li><input disabled="" type="checkbox"/>
+18.4.4. Other uses of ?</li>
+<li><input disabled="" type="checkbox"/>
+18.4.5. Wrapping errors</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+18.5. Iterating over Results</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="19">
+<li>Std library types</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+19.1. Box, stack and heap</li>
+<li><input disabled="" type="checkbox"/>
+19.2. Vectors</li>
+<li><input disabled="" type="checkbox"/>
+19.3. Strings</li>
+<li><input disabled="" type="checkbox"/>
+19.4. Option</li>
+<li><input disabled="" type="checkbox"/>
+19.5. Result
+<ul>
+<li><input disabled="" type="checkbox"/>
+19.5.1. ?</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+19.6. panic!</li>
+<li><input disabled="" type="checkbox"/>
+19.7. HashMap
+<ul>
+<li><input disabled="" type="checkbox"/>
+19.7.1. Alternate/custom key types</li>
+<li><input disabled="" type="checkbox"/>
+19.7.2. HashSet</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+19.8. Rc</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="20">
+<li>Std misc</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+20.1. Threads
+<ul>
+<li><input disabled="" type="checkbox"/>
+20.1.1. Testcase: map-reduce</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+20.2. Channels</li>
+<li><input disabled="" type="checkbox"/>
+20.3. Path</li>
+<li><input disabled="" type="checkbox"/>
+20.4. File I/O
+<ul>
+<li><input disabled="" type="checkbox"/>
+20.4.1. open</li>
+<li><input disabled="" type="checkbox"/>
+20.4.2. create</li>
+<li><input disabled="" type="checkbox"/>
+20.4.3. read lines</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+20.5. Child processes
+<ul>
+<li><input disabled="" type="checkbox"/>
+20.5.1. Pipes</li>
+<li><input disabled="" type="checkbox"/>
+20.5.2. Wait</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+20.6. Filesystem Operations</li>
+<li><input disabled="" type="checkbox"/>
+20.7. Program arguments
+<ul>
+<li><input disabled="" type="checkbox"/>
+20.7.1. Argument parsing</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+20.8. Foreign Function Interface</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="21">
+<li>Testing</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+21.1. Unit testing</li>
+<li><input disabled="" type="checkbox"/>
+21.2. Documentation testing</li>
+<li><input disabled="" type="checkbox"/>
+21.3. Integration testing</li>
+<li><input disabled="" type="checkbox"/>
+21.4. Dev-dependencies</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="22">
+<li>Unsafe Operations</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="23">
+<li>Compatibility</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+23.1. Raw identifiers</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="24">
+<li>Meta</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+24.1. Documentation</li>
+</ul>
+</li>
+</ul>
+<h1><a class="header" href="#rustlings" id="rustlings">Rustlings</a></h1>
+<h1><a class="header" href="#rust-标准库" id="rust-标准库">Rust 标准库</a></h1>
+<h1><a class="header" href="#the-edition-guide" id="the-edition-guide">The Edition Guide</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Introduction</li>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>What are editions?</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.1. Creating a new project</li>
+<li><input disabled="" type="checkbox"/>
+1.2. Transitioning an existing project to a new edition</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="2">
+<li>Rust 2015</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="3">
+<li>Rust 2018</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.1. 2018-Specific Changes</li>
+<li><input disabled="" type="checkbox"/>
+3.2. Module system
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.2.1. Raw identifiers</li>
+<li><input disabled="" type="checkbox"/>
+3.2.2. Path clarity</li>
+<li><input disabled="" type="checkbox"/>
+3.2.3. More visibility modifiers</li>
+<li><input disabled="" type="checkbox"/>
+3.2.4. Nested imports with use</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+3.3. Error handling and panics
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.3.1. The ? operator for easier error handling</li>
+<li><input disabled="" type="checkbox"/>
+3.3.2. ? in main and tests</li>
+<li><input disabled="" type="checkbox"/>
+3.3.3. Controlling panics with std::panic</li>
+<li><input disabled="" type="checkbox"/>
+3.3.4. Aborting on panic</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+3.4. Control flow
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.4.1. Loops can break with a value</li>
+<li><input disabled="" type="checkbox"/>
+3.4.2. async/await for easier concurrency</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+3.5. Trait system
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.5.1. impl Trait for returning complex types with ease</li>
+<li><input disabled="" type="checkbox"/>
+3.5.2. dyn Trait for trait objects</li>
+<li><input disabled="" type="checkbox"/>
+3.5.3. More container types support trait objects</li>
+<li><input disabled="" type="checkbox"/>
+3.5.4. Associated constants</li>
+<li><input disabled="" type="checkbox"/>
+3.5.5. No more anonymous parameters</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+3.6. Slice patterns</li>
+<li><input disabled="" type="checkbox"/>
+3.7. Ownership and lifetimes
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.7.1. Non-lexical lifetimes</li>
+<li><input disabled="" type="checkbox"/>
+3.7.2. Default match bindings</li>
+<li><input disabled="" type="checkbox"/>
+3.7.3. '_, the anonymous lifetime</li>
+<li><input disabled="" type="checkbox"/>
+3.7.4. Lifetime elision in impl</li>
+<li><input disabled="" type="checkbox"/>
+3.7.5. T: 'a inference in structs</li>
+<li><input disabled="" type="checkbox"/>
+3.7.6. Simpler lifetimes in static and const</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+3.8. Data types
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.8.1. Field init shorthand</li>
+<li><input disabled="" type="checkbox"/>
+3.8.2. ..= for inclusive ranges</li>
+<li><input disabled="" type="checkbox"/>
+3.8.3. 128 bit integers</li>
+<li><input disabled="" type="checkbox"/>
+3.8.4. &quot;Operator-equals&quot; are now implementable</li>
+<li><input disabled="" type="checkbox"/>
+3.8.5. union for an unsafe form of enum</li>
+<li><input disabled="" type="checkbox"/>
+3.8.6. Choosing alignment with the repr attribute</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+3.9. SIMD for faster computing</li>
+<li><input disabled="" type="checkbox"/>
+3.10. Macros
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.10.1. Custom Derive</li>
+<li><input disabled="" type="checkbox"/>
+3.10.2. Macro changes</li>
+<li><input disabled="" type="checkbox"/>
+3.10.3. At most one repetition</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+3.11. The compiler
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.11.1. Improved error messages</li>
+<li><input disabled="" type="checkbox"/>
+3.11.2. Incremental Compilation for faster compiles</li>
+<li><input disabled="" type="checkbox"/>
+3.11.3. An attribute for deprecation</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+3.12. Rustup for managing Rust versions</li>
+<li><input disabled="" type="checkbox"/>
+3.13. Cargo and crates.io
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.13.1. cargo check for faster checking</li>
+<li><input disabled="" type="checkbox"/>
+3.13.2. cargo install for easy installation of tools</li>
+<li><input disabled="" type="checkbox"/>
+3.13.3. cargo new defaults to a binary project</li>
+<li><input disabled="" type="checkbox"/>
+3.13.4. cargo rustc for passing arbitrary flags to rustc</li>
+<li><input disabled="" type="checkbox"/>
+3.13.5. Cargo workspaces for multi-package projects</li>
+<li><input disabled="" type="checkbox"/>
+3.13.6. Multi-file examples</li>
+<li><input disabled="" type="checkbox"/>
+3.13.7. Replacing dependencies with patch</li>
+<li><input disabled="" type="checkbox"/>
+3.13.8. Cargo can use a local registry replacement</li>
+<li><input disabled="" type="checkbox"/>
+3.13.9. Crates.io disallows wildcard dependencies</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+3.14. Documentation
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.14.1. New editions of the &quot;the book&quot;</li>
+<li><input disabled="" type="checkbox"/>
+3.14.2. The Rust Bookshelf</li>
+<li><input disabled="" type="checkbox"/>
+3.14.3. The Rustonomicon</li>
+<li><input disabled="" type="checkbox"/>
+3.14.4. Full documentation for std::os</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+3.15. rustdoc
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.15.1. Documentation tests can now compile-fail</li>
+<li><input disabled="" type="checkbox"/>
+3.15.2. Rustdoc uses CommonMark</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+3.16. Platform and target support
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.16.1. libcore for low-level Rust</li>
+<li><input disabled="" type="checkbox"/>
+3.16.2. WebAssembly support</li>
+<li><input disabled="" type="checkbox"/>
+3.16.3. Global allocators</li>
+<li><input disabled="" type="checkbox"/>
+3.16.4. MSVC toolchain support</li>
+<li><input disabled="" type="checkbox"/>
+3.16.5. MUSL support for fully static binaries</li>
+<li><input disabled="" type="checkbox"/>
+3.16.6. cdylib crates for C interoperability</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1><a class="header" href="#the-rustc-book" id="the-rustc-book">The Rustc Book</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>What is rustc?</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="2">
+<li>Command-line arguments</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="3">
+<li>Lints</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.1. Lint levels</li>
+<li><input disabled="" type="checkbox"/>
+3.2. Lint Groups</li>
+<li><input disabled="" type="checkbox"/>
+3.3. Lint listing
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.3.1. Allowed-by-default lints</li>
+<li><input disabled="" type="checkbox"/>
+3.3.2. Warn-by-default lints</li>
+<li><input disabled="" type="checkbox"/>
+3.3.3. Deny-by-default lints</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="4">
+<li>Codegen options</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="5">
+<li>JSON Output</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="6">
+<li>Targets</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+6.1. Built-in Targets</li>
+<li><input disabled="" type="checkbox"/>
+6.2. Custom Targets</li>
+<li><input disabled="" type="checkbox"/>
+6.3. Known Issues</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="7">
+<li>Profile-guided Optimization</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="8">
+<li>Linker-plugin based LTO</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="9">
+<li>Contributing to rustc</li>
+</ol>
+</li>
+</ul>
+<h1><a class="header" href="#the-cargo-book" id="the-cargo-book">The Cargo Book</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Introduction</li>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>Getting Started</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.1. Installation</li>
+<li><input disabled="" type="checkbox"/>
+1.2. First Steps with Cargo</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="2">
+<li>Cargo Guide</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.1. Why Cargo Exists</li>
+<li><input disabled="" type="checkbox"/>
+2.2. Creating a New Package</li>
+<li><input disabled="" type="checkbox"/>
+2.3. Working on an Existing Package</li>
+<li><input disabled="" type="checkbox"/>
+2.4. Dependencies</li>
+<li><input disabled="" type="checkbox"/>
+2.5. Package Layout</li>
+<li><input disabled="" type="checkbox"/>
+2.6. Cargo.toml vs Cargo.lock</li>
+<li><input disabled="" type="checkbox"/>
+2.7. Tests</li>
+<li><input disabled="" type="checkbox"/>
+2.8. Continuous Integration</li>
+<li><input disabled="" type="checkbox"/>
+2.9. Cargo Home</li>
+<li><input disabled="" type="checkbox"/>
+2.10. Build Cache</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="3">
+<li>Cargo Reference</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.1. Specifying Dependencies</li>
+<li><input disabled="" type="checkbox"/>
+3.2. The Manifest Format</li>
+<li><input disabled="" type="checkbox"/>
+3.3. Configuration</li>
+<li><input disabled="" type="checkbox"/>
+3.4. Environment Variables</li>
+<li><input disabled="" type="checkbox"/>
+3.5. Build Scripts</li>
+<li><input disabled="" type="checkbox"/>
+3.6. Publishing on crates.io</li>
+<li><input disabled="" type="checkbox"/>
+3.7. Package ID Specifications</li>
+<li><input disabled="" type="checkbox"/>
+3.8. Source Replacement</li>
+<li><input disabled="" type="checkbox"/>
+3.9. External Tools</li>
+<li><input disabled="" type="checkbox"/>
+3.10. Registries</li>
+<li><input disabled="" type="checkbox"/>
+3.11. Unstable Features</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="4">
+<li>Cargo Commands</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+4.1. Build Commands
+<ul>
+<li><input disabled="" type="checkbox"/>
+4.1.1. bench</li>
+<li><input disabled="" type="checkbox"/>
+4.1.2. build</li>
+<li><input disabled="" type="checkbox"/>
+4.1.3. check</li>
+<li><input disabled="" type="checkbox"/>
+4.1.4. clean</li>
+<li><input disabled="" type="checkbox"/>
+4.1.5. doc</li>
+<li><input disabled="" type="checkbox"/>
+4.1.6. fetch</li>
+<li><input disabled="" type="checkbox"/>
+4.1.7. fix</li>
+<li><input disabled="" type="checkbox"/>
+4.1.8. run</li>
+<li><input disabled="" type="checkbox"/>
+4.1.9. rustc</li>
+<li><input disabled="" type="checkbox"/>
+4.1.10. rustdoc</li>
+<li><input disabled="" type="checkbox"/>
+4.1.11. test</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+4.2. Manifest Commands
+<ul>
+<li><input disabled="" type="checkbox"/>
+4.2.1. generate-lockfile</li>
+<li><input disabled="" type="checkbox"/>
+4.2.2. locate-project</li>
+<li><input disabled="" type="checkbox"/>
+4.2.3. metadata</li>
+<li><input disabled="" type="checkbox"/>
+4.2.4. pkgid</li>
+<li><input disabled="" type="checkbox"/>
+4.2.5. update</li>
+<li><input disabled="" type="checkbox"/>
+4.2.6. vendor</li>
+<li><input disabled="" type="checkbox"/>
+4.2.7. verify-project</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+4.3. Package Commands
+<ul>
+<li><input disabled="" type="checkbox"/>
+4.3.1. init</li>
+<li><input disabled="" type="checkbox"/>
+4.3.2. install</li>
+<li><input disabled="" type="checkbox"/>
+4.3.3. new</li>
+<li><input disabled="" type="checkbox"/>
+4.3.4. search</li>
+<li><input disabled="" type="checkbox"/>
+4.3.5. uninstall</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+4.4. Publishing Commands
+<ul>
+<li><input disabled="" type="checkbox"/>
+4.4.1. login</li>
+<li><input disabled="" type="checkbox"/>
+4.4.2. owner</li>
+<li><input disabled="" type="checkbox"/>
+4.4.3. package</li>
+<li><input disabled="" type="checkbox"/>
+4.4.4. publish</li>
+<li><input disabled="" type="checkbox"/>
+4.4.5. yank</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+4.5. General Commands
+<ul>
+<li><input disabled="" type="checkbox"/>
+4.5.1. help</li>
+<li><input disabled="" type="checkbox"/>
+4.5.2. version</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="5">
+<li>FAQ</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="6">
+<li>Appendix: Glossary</li>
+</ol>
+</li>
+</ul>
+<h1><a class="header" href="#the-rustdoc-book" id="the-rustdoc-book">The Rustdoc Book</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>What is rustdoc?</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="2">
+<li>Command-line arguments</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="3">
+<li>The #[doc] attribute</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="4">
+<li>Documentation tests</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="5">
+<li>Passes</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="6">
+<li>Unstable features</li>
+</ol>
+</li>
+</ul>
+<h1><a class="header" href="#rust-compiler-error-index" id="rust-compiler-error-index">Rust Compiler Error Index</a></h1>
+<h1><a class="header" href="#the-rust-reference" id="the-rust-reference">The Rust Reference</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Introduction</li>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>Notation</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="2">
+<li>Lexical structure</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.1. Input format</li>
+<li><input disabled="" type="checkbox"/>
+2.2. Keywords</li>
+<li><input disabled="" type="checkbox"/>
+2.3. Identifiers</li>
+<li><input disabled="" type="checkbox"/>
+2.4. Comments</li>
+<li><input disabled="" type="checkbox"/>
+2.5. Whitespace</li>
+<li><input disabled="" type="checkbox"/>
+2.6. Tokens</li>
+<li><input disabled="" type="checkbox"/>
+2.7. Paths</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="3">
+<li>Macros</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.1. Macros By Example</li>
+<li><input disabled="" type="checkbox"/>
+3.2. Procedural Macros</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="4">
+<li>Crates and source files</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="5">
+<li>Conditional compilation</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="6">
+<li>Items</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+6.1. Modules</li>
+<li><input disabled="" type="checkbox"/>
+6.2. Extern crates</li>
+<li><input disabled="" type="checkbox"/>
+6.3. Use declarations</li>
+<li><input disabled="" type="checkbox"/>
+6.4. Functions</li>
+<li><input disabled="" type="checkbox"/>
+6.5. Type aliases</li>
+<li><input disabled="" type="checkbox"/>
+6.6. Structs</li>
+<li><input disabled="" type="checkbox"/>
+6.7. Enumerations</li>
+<li><input disabled="" type="checkbox"/>
+6.8. Unions</li>
+<li><input disabled="" type="checkbox"/>
+6.9. Constant items</li>
+<li><input disabled="" type="checkbox"/>
+6.10. Static items</li>
+<li><input disabled="" type="checkbox"/>
+6.11. Traits</li>
+<li><input disabled="" type="checkbox"/>
+6.12. Implementations</li>
+<li><input disabled="" type="checkbox"/>
+6.13. External blocks</li>
+<li><input disabled="" type="checkbox"/>
+6.14. Type and lifetime parameters</li>
+<li><input disabled="" type="checkbox"/>
+6.15. Associated Items</li>
+<li><input disabled="" type="checkbox"/>
+6.16. Visibility and Privacy</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="7">
+<li>Attributes</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+7.1. Testing</li>
+<li><input disabled="" type="checkbox"/>
+7.2. Derive</li>
+<li><input disabled="" type="checkbox"/>
+7.3. Diagnostics</li>
+<li><input disabled="" type="checkbox"/>
+7.4. Code generation</li>
+<li><input disabled="" type="checkbox"/>
+7.5. Limits</li>
+<li><input disabled="" type="checkbox"/>
+7.6. Type System</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="8">
+<li>Statements and expressions</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+8.1. Statements</li>
+<li><input disabled="" type="checkbox"/>
+8.2. Expressions
+<ul>
+<li><input disabled="" type="checkbox"/>
+8.2.1. Literal expressions</li>
+<li><input disabled="" type="checkbox"/>
+8.2.2. Path expressions</li>
+<li><input disabled="" type="checkbox"/>
+8.2.3. Block expressions</li>
+<li><input disabled="" type="checkbox"/>
+8.2.4. Operator expressions</li>
+<li><input disabled="" type="checkbox"/>
+8.2.5. Grouped expressions</li>
+<li><input disabled="" type="checkbox"/>
+8.2.6. Array and index expressions</li>
+<li><input disabled="" type="checkbox"/>
+8.2.7. Tuple and index expressions</li>
+<li><input disabled="" type="checkbox"/>
+8.2.8. Struct expressions</li>
+<li><input disabled="" type="checkbox"/>
+8.2.9. Enum variant expressions</li>
+<li><input disabled="" type="checkbox"/>
+8.2.10. Call expressions</li>
+<li><input disabled="" type="checkbox"/>
+8.2.11. Method call expressions</li>
+<li><input disabled="" type="checkbox"/>
+8.2.12. Field access expressions</li>
+<li><input disabled="" type="checkbox"/>
+8.2.13. Closure expressions</li>
+<li><input disabled="" type="checkbox"/>
+8.2.14. Loop expressions</li>
+<li><input disabled="" type="checkbox"/>
+8.2.15. Range expressions</li>
+<li><input disabled="" type="checkbox"/>
+8.2.16. If and if let expressions</li>
+<li><input disabled="" type="checkbox"/>
+8.2.17. Match expressions</li>
+<li><input disabled="" type="checkbox"/>
+8.2.18. Return expressions</li>
+<li><input disabled="" type="checkbox"/>
+8.2.19. Await expressions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="9">
+<li>Patterns</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="10">
+<li>Type system</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+10.1. Types
+<ul>
+<li><input disabled="" type="checkbox"/>
+10.1.1. Boolean type</li>
+<li><input disabled="" type="checkbox"/>
+10.1.2. Numeric types</li>
+<li><input disabled="" type="checkbox"/>
+10.1.3. Textual types</li>
+<li><input disabled="" type="checkbox"/>
+10.1.4. Never type</li>
+<li><input disabled="" type="checkbox"/>
+10.1.5. Tuple types</li>
+<li><input disabled="" type="checkbox"/>
+10.1.6. Array types</li>
+<li><input disabled="" type="checkbox"/>
+10.1.7. Slice types</li>
+<li><input disabled="" type="checkbox"/>
+10.1.8. Struct types</li>
+<li><input disabled="" type="checkbox"/>
+10.1.9. Enumerated types</li>
+<li><input disabled="" type="checkbox"/>
+10.1.10. Union types</li>
+<li><input disabled="" type="checkbox"/>
+10.1.11. Function item types</li>
+<li><input disabled="" type="checkbox"/>
+10.1.12. Closure types</li>
+<li><input disabled="" type="checkbox"/>
+10.1.13. Pointer types</li>
+<li><input disabled="" type="checkbox"/>
+10.1.14. Function pointer types</li>
+<li><input disabled="" type="checkbox"/>
+10.1.15. Trait object types</li>
+<li><input disabled="" type="checkbox"/>
+10.1.16. Impl trait type</li>
+<li><input disabled="" type="checkbox"/>
+10.1.17. Type parameters</li>
+<li><input disabled="" type="checkbox"/>
+10.1.18. Inferred type</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+10.2. Dynamically Sized Types</li>
+<li><input disabled="" type="checkbox"/>
+10.3. Type layout</li>
+<li><input disabled="" type="checkbox"/>
+10.4. Interior mutability</li>
+<li><input disabled="" type="checkbox"/>
+10.5. Subtyping and Variance</li>
+<li><input disabled="" type="checkbox"/>
+10.6. Trait and lifetime bounds</li>
+<li><input disabled="" type="checkbox"/>
+10.7. Type coercions</li>
+<li><input disabled="" type="checkbox"/>
+10.8. Destructors</li>
+<li><input disabled="" type="checkbox"/>
+10.9. Lifetime elision</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="11">
+<li>Special types and traits</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="12">
+<li>Memory model</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+12.1. Memory allocation and lifetime</li>
+<li><input disabled="" type="checkbox"/>
+12.2. Memory ownership</li>
+<li><input disabled="" type="checkbox"/>
+12.3. Variables</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="13">
+<li>Linkage</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="14">
+<li>Unsafety</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+14.1. Unsafe functions</li>
+<li><input disabled="" type="checkbox"/>
+14.2. Unsafe blocks</li>
+<li><input disabled="" type="checkbox"/>
+14.3. Behavior considered undefined</li>
+<li><input disabled="" type="checkbox"/>
+14.4. Behavior not considered unsafe</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="15">
+<li>Constant Evaluation</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="16">
+<li>Application Binary Interface</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="17">
+<li>The Rust runtime</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="18">
+<li>Appendices</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+18.1. Macro Follow-Set Ambiguity Formal Specification</li>
+<li><input disabled="" type="checkbox"/>
+18.2. Influences</li>
+<li><input disabled="" type="checkbox"/>
+18.3. Glossary</li>
+</ul>
+</li>
+</ul>
+<h1><a class="header" href="#the-rustonomicon" id="the-rustonomicon">The Rustonomicon</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Introduction</li>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>Meet Safe and Unsafe</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.1. How Safe and Unsafe Interact</li>
+<li><input disabled="" type="checkbox"/>
+1.2. What Unsafe Can Do</li>
+<li><input disabled="" type="checkbox"/>
+1.3. Working with Unsafe</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="2">
+<li>Data Layout</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.1. repr(Rust)</li>
+<li><input disabled="" type="checkbox"/>
+2.2. Exotically Sized Types</li>
+<li><input disabled="" type="checkbox"/>
+2.3. Other reprs</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="3">
+<li>Ownership</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.1. References</li>
+<li><input disabled="" type="checkbox"/>
+3.2. Aliasing</li>
+<li><input disabled="" type="checkbox"/>
+3.3. Lifetimes</li>
+<li><input disabled="" type="checkbox"/>
+3.4. Limits of Lifetimes</li>
+<li><input disabled="" type="checkbox"/>
+3.5. Lifetime Elision</li>
+<li><input disabled="" type="checkbox"/>
+3.6. Unbounded Lifetimes</li>
+<li><input disabled="" type="checkbox"/>
+3.7. Higher-Rank Trait Bounds</li>
+<li><input disabled="" type="checkbox"/>
+3.8. Subtyping and Variance</li>
+<li><input disabled="" type="checkbox"/>
+3.9. Drop Check</li>
+<li><input disabled="" type="checkbox"/>
+3.10. PhantomData</li>
+<li><input disabled="" type="checkbox"/>
+3.11. Splitting Borrows</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="4">
+<li>Type Conversions</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+4.1. Coercions</li>
+<li><input disabled="" type="checkbox"/>
+4.2. The Dot Operator</li>
+<li><input disabled="" type="checkbox"/>
+4.3. Casts</li>
+<li><input disabled="" type="checkbox"/>
+4.4. Transmutes</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="5">
+<li>Uninitialized Memory</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+5.1. Checked</li>
+<li><input disabled="" type="checkbox"/>
+5.2. Drop Flags</li>
+<li><input disabled="" type="checkbox"/>
+5.3. Unchecked</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="6">
+<li>Ownership Based Resource Management</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+6.1. Constructors</li>
+<li><input disabled="" type="checkbox"/>
+6.2. Destructors</li>
+<li><input disabled="" type="checkbox"/>
+6.3. Leaking</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="7">
+<li>Unwinding</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+7.1. Exception Safety</li>
+<li><input disabled="" type="checkbox"/>
+7.2. Poisoning</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="8">
+<li>Concurrency</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+8.1. Races</li>
+<li><input disabled="" type="checkbox"/>
+8.2. Send and Sync</li>
+<li><input disabled="" type="checkbox"/>
+8.3. Atomics</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="9">
+<li>Implementing Vec</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+9.1. Layout</li>
+<li><input disabled="" type="checkbox"/>
+9.2. Allocating</li>
+<li><input disabled="" type="checkbox"/>
+9.3. Push and Pop</li>
+<li><input disabled="" type="checkbox"/>
+9.4. Deallocating</li>
+<li><input disabled="" type="checkbox"/>
+9.5. Deref</li>
+<li><input disabled="" type="checkbox"/>
+9.6. Insert and Remove</li>
+<li><input disabled="" type="checkbox"/>
+9.7. IntoIter</li>
+<li><input disabled="" type="checkbox"/>
+9.8. RawVec</li>
+<li><input disabled="" type="checkbox"/>
+9.9. Drain</li>
+<li><input disabled="" type="checkbox"/>
+9.10. Handling Zero-Sized Types</li>
+<li><input disabled="" type="checkbox"/>
+9.11. Final Code</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="10">
+<li>Implementing Arc and Mutex</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="11">
+<li>FFI</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="12">
+<li>Beneath std</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+12.1. #[panic_handler]</li>
+</ul>
+</li>
+</ul>
+<h1><a class="header" href="#the-rust-unstable-book" id="the-rust-unstable-book">The Rust Unstable Book</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+The Unstable Book</li>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>Compiler flags</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.1. emit_stack_sizes</li>
+<li><input disabled="" type="checkbox"/>
+1.2. profile</li>
+<li><input disabled="" type="checkbox"/>
+1.3. report_time</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="2">
+<li>Language features</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.1. aarch64_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.2. abi_amdgpu_kernel</li>
+<li><input disabled="" type="checkbox"/>
+2.3. abi_efiapi</li>
+<li><input disabled="" type="checkbox"/>
+2.4. abi_msp430_interrupt</li>
+<li><input disabled="" type="checkbox"/>
+2.5. abi_ptx</li>
+<li><input disabled="" type="checkbox"/>
+2.6. abi_thiscall</li>
+<li><input disabled="" type="checkbox"/>
+2.7. abi_unadjusted</li>
+<li><input disabled="" type="checkbox"/>
+2.8. abi_vectorcall</li>
+<li><input disabled="" type="checkbox"/>
+2.9. abi_x86_interrupt</li>
+<li><input disabled="" type="checkbox"/>
+2.10. adx_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.11. alloc_error_handler</li>
+<li><input disabled="" type="checkbox"/>
+2.12. allocator_internals</li>
+<li><input disabled="" type="checkbox"/>
+2.13. allow_fail</li>
+<li><input disabled="" type="checkbox"/>
+2.14. allow_internal_unsafe</li>
+<li><input disabled="" type="checkbox"/>
+2.15. allow_internal_unstable</li>
+<li><input disabled="" type="checkbox"/>
+2.16. arbitrary_enum_discriminant</li>
+<li><input disabled="" type="checkbox"/>
+2.17. arbitrary_self_types</li>
+<li><input disabled="" type="checkbox"/>
+2.18. arm_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.19. associated_type_bounds</li>
+<li><input disabled="" type="checkbox"/>
+2.20. associated_type_defaults</li>
+<li><input disabled="" type="checkbox"/>
+2.21. async_closure</li>
+<li><input disabled="" type="checkbox"/>
+2.22. avx512_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.23. box_patterns</li>
+<li><input disabled="" type="checkbox"/>
+2.24. box_syntax</li>
+<li><input disabled="" type="checkbox"/>
+2.25. c_variadic</li>
+<li><input disabled="" type="checkbox"/>
+2.26. cfg_target_has_atomic</li>
+<li><input disabled="" type="checkbox"/>
+2.27. cfg_target_thread_local</li>
+<li><input disabled="" type="checkbox"/>
+2.28. cmpxchg16b_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.29. compiler_builtins</li>
+<li><input disabled="" type="checkbox"/>
+2.30. const_compare_raw_pointers</li>
+<li><input disabled="" type="checkbox"/>
+2.31. const_extern_fn</li>
+<li><input disabled="" type="checkbox"/>
+2.32. const_fn</li>
+<li><input disabled="" type="checkbox"/>
+2.33. const_fn_union</li>
+<li><input disabled="" type="checkbox"/>
+2.34. const_generics</li>
+<li><input disabled="" type="checkbox"/>
+2.35. const_in_array_repeat_expressions</li>
+<li><input disabled="" type="checkbox"/>
+2.36. const_panic</li>
+<li><input disabled="" type="checkbox"/>
+2.37. const_raw_ptr_deref</li>
+<li><input disabled="" type="checkbox"/>
+2.38. const_raw_ptr_to_usize_cast</li>
+<li><input disabled="" type="checkbox"/>
+2.39. const_transmute</li>
+<li><input disabled="" type="checkbox"/>
+2.40. crate_visibility_modifier</li>
+<li><input disabled="" type="checkbox"/>
+2.41. custom_attribute</li>
+<li><input disabled="" type="checkbox"/>
+2.42. custom_inner_attributes</li>
+<li><input disabled="" type="checkbox"/>
+2.43. custom_test_frameworks</li>
+<li><input disabled="" type="checkbox"/>
+2.44. decl_macro</li>
+<li><input disabled="" type="checkbox"/>
+2.45. default_type_parameter_fallback</li>
+<li><input disabled="" type="checkbox"/>
+2.46. doc_alias</li>
+<li><input disabled="" type="checkbox"/>
+2.47. doc_cfg</li>
+<li><input disabled="" type="checkbox"/>
+2.48. doc_keyword</li>
+<li><input disabled="" type="checkbox"/>
+2.49. doc_masked</li>
+<li><input disabled="" type="checkbox"/>
+2.50. doc_spotlight</li>
+<li><input disabled="" type="checkbox"/>
+2.51. dropck_eyepatch</li>
+<li><input disabled="" type="checkbox"/>
+2.52. exclusive_range_pattern</li>
+<li><input disabled="" type="checkbox"/>
+2.53. exhaustive_patterns</li>
+<li><input disabled="" type="checkbox"/>
+2.54. extern_types</li>
+<li><input disabled="" type="checkbox"/>
+2.55. external_doc</li>
+<li><input disabled="" type="checkbox"/>
+2.56. f16c_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.57. ffi_returns_twice</li>
+<li><input disabled="" type="checkbox"/>
+2.58. fundamental</li>
+<li><input disabled="" type="checkbox"/>
+2.59. generators</li>
+<li><input disabled="" type="checkbox"/>
+2.60. generic_associated_types</li>
+<li><input disabled="" type="checkbox"/>
+2.61. hexagon_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.62. impl_trait_in_bindings</li>
+<li><input disabled="" type="checkbox"/>
+2.63. in_band_lifetimes</li>
+<li><input disabled="" type="checkbox"/>
+2.64. infer_static_outlives_requirements</li>
+<li><input disabled="" type="checkbox"/>
+2.65. intrinsics</li>
+<li><input disabled="" type="checkbox"/>
+2.66. label_break_value</li>
+<li><input disabled="" type="checkbox"/>
+2.67. lang_items</li>
+<li><input disabled="" type="checkbox"/>
+2.68. let_chains</li>
+<li><input disabled="" type="checkbox"/>
+2.69. link_args</li>
+<li><input disabled="" type="checkbox"/>
+2.70. link_cfg</li>
+<li><input disabled="" type="checkbox"/>
+2.71. link_llvm_intrinsics</li>
+<li><input disabled="" type="checkbox"/>
+2.72. linkage</li>
+<li><input disabled="" type="checkbox"/>
+2.73. lint_reasons</li>
+<li><input disabled="" type="checkbox"/>
+2.74. main</li>
+<li><input disabled="" type="checkbox"/>
+2.75. marker_trait_attr</li>
+<li><input disabled="" type="checkbox"/>
+2.76. member_constraints</li>
+<li><input disabled="" type="checkbox"/>
+2.77. mips_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.78. mmx_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.79. movbe_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.80. naked_functions</li>
+<li><input disabled="" type="checkbox"/>
+2.81. needs_panic_runtime</li>
+<li><input disabled="" type="checkbox"/>
+2.82. never_type</li>
+<li><input disabled="" type="checkbox"/>
+2.83. nll</li>
+<li><input disabled="" type="checkbox"/>
+2.84. no_core</li>
+<li><input disabled="" type="checkbox"/>
+2.85. no_debug</li>
+<li><input disabled="" type="checkbox"/>
+2.86. non_ascii_idents</li>
+<li><input disabled="" type="checkbox"/>
+2.87. object_safe_for_dispatch</li>
+<li><input disabled="" type="checkbox"/>
+2.88. omit_gdb_pretty_printer_section</li>
+<li><input disabled="" type="checkbox"/>
+2.89. on_unimplemented</li>
+<li><input disabled="" type="checkbox"/>
+2.90. optimize_attribute</li>
+<li><input disabled="" type="checkbox"/>
+2.91. optin_builtin_traits</li>
+<li><input disabled="" type="checkbox"/>
+2.92. or_patterns</li>
+<li><input disabled="" type="checkbox"/>
+2.93. overlapping_marker_traits</li>
+<li><input disabled="" type="checkbox"/>
+2.94. panic_runtime</li>
+<li><input disabled="" type="checkbox"/>
+2.95. platform_intrinsics</li>
+<li><input disabled="" type="checkbox"/>
+2.96. plugin</li>
+<li><input disabled="" type="checkbox"/>
+2.97. plugin_registrar</li>
+<li><input disabled="" type="checkbox"/>
+2.98. powerpc_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.99. precise_pointer_size_matching</li>
+<li><input disabled="" type="checkbox"/>
+2.100. prelude_import</li>
+<li><input disabled="" type="checkbox"/>
+2.101. proc_macro_hygiene</li>
+<li><input disabled="" type="checkbox"/>
+2.102. profiler_runtime</li>
+<li><input disabled="" type="checkbox"/>
+2.103. raw_dylib</li>
+<li><input disabled="" type="checkbox"/>
+2.104. re_rebalance_coherence</li>
+<li><input disabled="" type="checkbox"/>
+2.105. repr_simd</li>
+<li><input disabled="" type="checkbox"/>
+2.106. repr128</li>
+<li><input disabled="" type="checkbox"/>
+2.107. rtm_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.108. rustc_attrs</li>
+<li><input disabled="" type="checkbox"/>
+2.109. rustc_const_unstable</li>
+<li><input disabled="" type="checkbox"/>
+2.110. rustc_private</li>
+<li><input disabled="" type="checkbox"/>
+2.111. sanitizer_runtime</li>
+<li><input disabled="" type="checkbox"/>
+2.112. simd_ffi</li>
+<li><input disabled="" type="checkbox"/>
+2.113. slice_patterns</li>
+<li><input disabled="" type="checkbox"/>
+2.114. specialization</li>
+<li><input disabled="" type="checkbox"/>
+2.115. sse4a_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.116. staged_api</li>
+<li><input disabled="" type="checkbox"/>
+2.117. start</li>
+<li><input disabled="" type="checkbox"/>
+2.118. static_nobundle</li>
+<li><input disabled="" type="checkbox"/>
+2.119. stmt_expr_attributes</li>
+<li><input disabled="" type="checkbox"/>
+2.120. structural_match</li>
+<li><input disabled="" type="checkbox"/>
+2.121. tbm_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.122. test_2018_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.123. thread_local</li>
+<li><input disabled="" type="checkbox"/>
+2.124. track_caller</li>
+<li><input disabled="" type="checkbox"/>
+2.125. trait_alias</li>
+<li><input disabled="" type="checkbox"/>
+2.126. transparent_enums</li>
+<li><input disabled="" type="checkbox"/>
+2.127. transparent_unions</li>
+<li><input disabled="" type="checkbox"/>
+2.128. trivial_bounds</li>
+<li><input disabled="" type="checkbox"/>
+2.129. try_blocks</li>
+<li><input disabled="" type="checkbox"/>
+2.130. type_alias_impl_trait</li>
+<li><input disabled="" type="checkbox"/>
+2.131. type_ascription</li>
+<li><input disabled="" type="checkbox"/>
+2.132. unboxed_closures</li>
+<li><input disabled="" type="checkbox"/>
+2.133. unsized_locals</li>
+<li><input disabled="" type="checkbox"/>
+2.134. unsized_tuple_coercion</li>
+<li><input disabled="" type="checkbox"/>
+2.135. untagged_unions</li>
+<li><input disabled="" type="checkbox"/>
+2.136. unwind_attributes</li>
+<li><input disabled="" type="checkbox"/>
+2.137. wasm_target_feature</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="3">
+<li>Library Features</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.1. alloc_error_hook</li>
+<li><input disabled="" type="checkbox"/>
+3.2. alloc_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.3. alloc_layout_extra</li>
+<li><input disabled="" type="checkbox"/>
+3.4. alloc_prelude</li>
+<li><input disabled="" type="checkbox"/>
+3.5. allocator_api</li>
+<li><input disabled="" type="checkbox"/>
+3.6. array_error_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.7. array_value_iter</li>
+<li><input disabled="" type="checkbox"/>
+3.8. asm</li>
+<li><input disabled="" type="checkbox"/>
+3.9. atomic_min_max</li>
+<li><input disabled="" type="checkbox"/>
+3.10. backtrace</li>
+<li><input disabled="" type="checkbox"/>
+3.11. binary_heap_drain_sorted</li>
+<li><input disabled="" type="checkbox"/>
+3.12. binary_heap_into_iter_sorted</li>
+<li><input disabled="" type="checkbox"/>
+3.13. bool_to_option</li>
+<li><input disabled="" type="checkbox"/>
+3.14. bound_cloned</li>
+<li><input disabled="" type="checkbox"/>
+3.15. box_into_pin</li>
+<li><input disabled="" type="checkbox"/>
+3.16. box_into_raw_non_null</li>
+<li><input disabled="" type="checkbox"/>
+3.17. boxed_slice_try_from</li>
+<li><input disabled="" type="checkbox"/>
+3.18. bufreader_seek_relative</li>
+<li><input disabled="" type="checkbox"/>
+3.19. c_void_variant</li>
+<li><input disabled="" type="checkbox"/>
+3.20. cell_update</li>
+<li><input disabled="" type="checkbox"/>
+3.21. char_error_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.22. clamp</li>
+<li><input disabled="" type="checkbox"/>
+3.23. cmp_min_max_by</li>
+<li><input disabled="" type="checkbox"/>
+3.24. coerce_unsized</li>
+<li><input disabled="" type="checkbox"/>
+3.25. compiler_builtins_lib</li>
+<li><input disabled="" type="checkbox"/>
+3.26. concat_idents</li>
+<li><input disabled="" type="checkbox"/>
+3.27. const_cstr_unchecked</li>
+<li><input disabled="" type="checkbox"/>
+3.28. const_generic_impls_guard</li>
+<li><input disabled="" type="checkbox"/>
+3.29. const_int_conversion</li>
+<li><input disabled="" type="checkbox"/>
+3.30. const_int_sign</li>
+<li><input disabled="" type="checkbox"/>
+3.31. const_ptr_offset_from</li>
+<li><input disabled="" type="checkbox"/>
+3.32. const_saturating_int_methods</li>
+<li><input disabled="" type="checkbox"/>
+3.33. const_type_id</li>
+<li><input disabled="" type="checkbox"/>
+3.34. const_type_name</li>
+<li><input disabled="" type="checkbox"/>
+3.35. container_error_extra</li>
+<li><input disabled="" type="checkbox"/>
+3.36. core_intrinsics</li>
+<li><input disabled="" type="checkbox"/>
+3.37. core_panic</li>
+<li><input disabled="" type="checkbox"/>
+3.38. core_panic_info</li>
+<li><input disabled="" type="checkbox"/>
+3.39. core_private_bignum</li>
+<li><input disabled="" type="checkbox"/>
+3.40. core_private_diy_float</li>
+<li><input disabled="" type="checkbox"/>
+3.41. cow_is_borrowed</li>
+<li><input disabled="" type="checkbox"/>
+3.42. deadline_api</li>
+<li><input disabled="" type="checkbox"/>
+3.43. debug_map_key_value</li>
+<li><input disabled="" type="checkbox"/>
+3.44. dec2flt</li>
+<li><input disabled="" type="checkbox"/>
+3.45. derive_clone_copy</li>
+<li><input disabled="" type="checkbox"/>
+3.46. derive_eq</li>
+<li><input disabled="" type="checkbox"/>
+3.47. dispatch_from_dyn</li>
+<li><input disabled="" type="checkbox"/>
+3.48. div_duration</li>
+<li><input disabled="" type="checkbox"/>
+3.49. drain_filter</li>
+<li><input disabled="" type="checkbox"/>
+3.50. duration_constants</li>
+<li><input disabled="" type="checkbox"/>
+3.51. entry_insert</li>
+<li><input disabled="" type="checkbox"/>
+3.52. error_iter</li>
+<li><input disabled="" type="checkbox"/>
+3.53. error_type_id</li>
+<li><input disabled="" type="checkbox"/>
+3.54. exact_size_is_empty</li>
+<li><input disabled="" type="checkbox"/>
+3.55. extra_log_consts</li>
+<li><input disabled="" type="checkbox"/>
+3.56. fd</li>
+<li><input disabled="" type="checkbox"/>
+3.57. fd_read</li>
+<li><input disabled="" type="checkbox"/>
+3.58. fixed_size_array</li>
+<li><input disabled="" type="checkbox"/>
+3.59. flt2dec</li>
+<li><input disabled="" type="checkbox"/>
+3.60. fmt_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.61. fn_traits</li>
+<li><input disabled="" type="checkbox"/>
+3.62. foo</li>
+<li><input disabled="" type="checkbox"/>
+3.63. forget_unsized</li>
+<li><input disabled="" type="checkbox"/>
+3.64. format_args_nl</li>
+<li><input disabled="" type="checkbox"/>
+3.65. gen_future</li>
+<li><input disabled="" type="checkbox"/>
+3.66. generator_trait</li>
+<li><input disabled="" type="checkbox"/>
+3.67. get_mut_unchecked</li>
+<li><input disabled="" type="checkbox"/>
+3.68. global_asm</li>
+<li><input disabled="" type="checkbox"/>
+3.69. hash_raw_entry</li>
+<li><input disabled="" type="checkbox"/>
+3.70. hash_set_entry</li>
+<li><input disabled="" type="checkbox"/>
+3.71. hashmap_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.72. inner_deref</li>
+<li><input disabled="" type="checkbox"/>
+3.73. int_error_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.74. int_error_matching</li>
+<li><input disabled="" type="checkbox"/>
+3.75. integer_atomics</li>
+<li><input disabled="" type="checkbox"/>
+3.76. internal_uninit_const</li>
+<li><input disabled="" type="checkbox"/>
+3.77. io_slice_advance</li>
+<li><input disabled="" type="checkbox"/>
+3.78. ip</li>
+<li><input disabled="" type="checkbox"/>
+3.79. is_sorted</li>
+<li><input disabled="" type="checkbox"/>
+3.80. iter_is_partitioned</li>
+<li><input disabled="" type="checkbox"/>
+3.81. iter_once_with</li>
+<li><input disabled="" type="checkbox"/>
+3.82. iter_order_by</li>
+<li><input disabled="" type="checkbox"/>
+3.83. iter_partition_in_place</li>
+<li><input disabled="" type="checkbox"/>
+3.84. liballoc_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.85. libstd_io_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.86. libstd_sys_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.87. libstd_thread_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.88. linked_list_extras</li>
+<li><input disabled="" type="checkbox"/>
+3.89. log_syntax</li>
+<li><input disabled="" type="checkbox"/>
+3.90. manually_drop_take</li>
+<li><input disabled="" type="checkbox"/>
+3.91. map_entry_replace</li>
+<li><input disabled="" type="checkbox"/>
+3.92. matches_macro</li>
+<li><input disabled="" type="checkbox"/>
+3.93. maybe_uninit_extra</li>
+<li><input disabled="" type="checkbox"/>
+3.94. maybe_uninit_ref</li>
+<li><input disabled="" type="checkbox"/>
+3.95. maybe_uninit_slice</li>
+<li><input disabled="" type="checkbox"/>
+3.96. new_uninit</li>
+<li><input disabled="" type="checkbox"/>
+3.97. no_more_cas</li>
+<li><input disabled="" type="checkbox"/>
+3.98. once_is_completed</li>
+<li><input disabled="" type="checkbox"/>
+3.99. once_poison</li>
+<li><input disabled="" type="checkbox"/>
+3.100. option_expect_none</li>
+<li><input disabled="" type="checkbox"/>
+3.101. option_result_contains</li>
+<li><input disabled="" type="checkbox"/>
+3.102. option_unwrap_none</li>
+<li><input disabled="" type="checkbox"/>
+3.103. panic_abort</li>
+<li><input disabled="" type="checkbox"/>
+3.104. panic_info_message</li>
+<li><input disabled="" type="checkbox"/>
+3.105. panic_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.106. panic_unwind</li>
+<li><input disabled="" type="checkbox"/>
+3.107. path_buf_capacity</li>
+<li><input disabled="" type="checkbox"/>
+3.108. pattern</li>
+<li><input disabled="" type="checkbox"/>
+3.109. poll_map</li>
+<li><input disabled="" type="checkbox"/>
+3.110. print_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.111. proc_macro_def_site</li>
+<li><input disabled="" type="checkbox"/>
+3.112. proc_macro_diagnostic</li>
+<li><input disabled="" type="checkbox"/>
+3.113. proc_macro_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.114. proc_macro_mixed_site</li>
+<li><input disabled="" type="checkbox"/>
+3.115. proc_macro_quote</li>
+<li><input disabled="" type="checkbox"/>
+3.116. proc_macro_raw_ident</li>
+<li><input disabled="" type="checkbox"/>
+3.117. proc_macro_span</li>
+<li><input disabled="" type="checkbox"/>
+3.118. process_exitcode_placeholder</li>
+<li><input disabled="" type="checkbox"/>
+3.119. process_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.120. profiler_runtime_lib</li>
+<li><input disabled="" type="checkbox"/>
+3.121. ptr_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.122. ptr_offset_from</li>
+<li><input disabled="" type="checkbox"/>
+3.123. ptr_wrapping_offset_from</li>
+<li><input disabled="" type="checkbox"/>
+3.124. range_is_empty</li>
+<li><input disabled="" type="checkbox"/>
+3.125. raw</li>
+<li><input disabled="" type="checkbox"/>
+3.126. raw_vec_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.127. rc_into_raw_non_null</li>
+<li><input disabled="" type="checkbox"/>
+3.128. read_initializer</li>
+<li><input disabled="" type="checkbox"/>
+3.129. receiver_trait</li>
+<li><input disabled="" type="checkbox"/>
+3.130. renamed_spin_loop</li>
+<li><input disabled="" type="checkbox"/>
+3.131. result_cloned</li>
+<li><input disabled="" type="checkbox"/>
+3.132. result_contains_err</li>
+<li><input disabled="" type="checkbox"/>
+3.133. result_copied</li>
+<li><input disabled="" type="checkbox"/>
+3.134. result_map_or_else</li>
+<li><input disabled="" type="checkbox"/>
+3.135. rt</li>
+<li><input disabled="" type="checkbox"/>
+3.136. sanitizer_runtime_lib</li>
+<li><input disabled="" type="checkbox"/>
+3.137. saturating_neg</li>
+<li><input disabled="" type="checkbox"/>
+3.138. seek_convenience</li>
+<li><input disabled="" type="checkbox"/>
+3.139. set_stdio</li>
+<li><input disabled="" type="checkbox"/>
+3.140. sgx_platform</li>
+<li><input disabled="" type="checkbox"/>
+3.141. shrink_to</li>
+<li><input disabled="" type="checkbox"/>
+3.142. slice_concat_ext</li>
+<li><input disabled="" type="checkbox"/>
+3.143. slice_concat_trait</li>
+<li><input disabled="" type="checkbox"/>
+3.144. slice_from_raw_parts</li>
+<li><input disabled="" type="checkbox"/>
+3.145. slice_index_methods</li>
+<li><input disabled="" type="checkbox"/>
+3.146. slice_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.147. slice_iter_mut_as_slice</li>
+<li><input disabled="" type="checkbox"/>
+3.148. slice_partition_at_index</li>
+<li><input disabled="" type="checkbox"/>
+3.149. slice_partition_dedup</li>
+<li><input disabled="" type="checkbox"/>
+3.150. slice_ptr_range</li>
+<li><input disabled="" type="checkbox"/>
+3.151. sort_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.152. std_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.153. stdsimd</li>
+<li><input disabled="" type="checkbox"/>
+3.154. step_trait</li>
+<li><input disabled="" type="checkbox"/>
+3.155. str_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.156. termination_trait_lib</li>
+<li><input disabled="" type="checkbox"/>
+3.157. test</li>
+<li><input disabled="" type="checkbox"/>
+3.158. thread_local_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.159. thread_spawn_unchecked</li>
+<li><input disabled="" type="checkbox"/>
+3.160. tidy_test_never_used_anywhere_else</li>
+<li><input disabled="" type="checkbox"/>
+3.161. toowned_clone_into</li>
+<li><input disabled="" type="checkbox"/>
+3.162. trace_macros</li>
+<li><input disabled="" type="checkbox"/>
+3.163. trusted_len</li>
+<li><input disabled="" type="checkbox"/>
+3.164. try_reserve</li>
+<li><input disabled="" type="checkbox"/>
+3.165. try_trait</li>
+<li><input disabled="" type="checkbox"/>
+3.166. unicode_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.167. unicode_version</li>
+<li><input disabled="" type="checkbox"/>
+3.168. unsize</li>
+<li><input disabled="" type="checkbox"/>
+3.169. update_panic_count</li>
+<li><input disabled="" type="checkbox"/>
+3.170. vec_drain_as_slice</li>
+<li><input disabled="" type="checkbox"/>
+3.171. vec_into_raw_parts</li>
+<li><input disabled="" type="checkbox"/>
+3.172. vec_leak</li>
+<li><input disabled="" type="checkbox"/>
+3.173. vec_remove_item</li>
+<li><input disabled="" type="checkbox"/>
+3.174. vec_resize_default</li>
+<li><input disabled="" type="checkbox"/>
+3.175. wait_timeout_until</li>
+<li><input disabled="" type="checkbox"/>
+3.176. wait_until</li>
+<li><input disabled="" type="checkbox"/>
+3.177. wasi_ext</li>
+<li><input disabled="" type="checkbox"/>
+3.178. weak_counts</li>
+<li><input disabled="" type="checkbox"/>
+3.179. weak_into_raw</li>
+<li><input disabled="" type="checkbox"/>
+3.180. windows_by_handle</li>
+<li><input disabled="" type="checkbox"/>
+3.181. windows_c</li>
+<li><input disabled="" type="checkbox"/>
+3.182. windows_file_type_ext</li>
+<li><input disabled="" type="checkbox"/>
+3.183. windows_handle</li>
+<li><input disabled="" type="checkbox"/>
+3.184. windows_net</li>
+<li><input disabled="" type="checkbox"/>
+3.185. windows_stdio</li>
+<li><input disabled="" type="checkbox"/>
+3.186. with_options</li>
+<li><input disabled="" type="checkbox"/>
+3.187. wrapping_int_impl</li>
+<li><input disabled="" type="checkbox"/>
+3.188. wrapping_next_power_of_two</li>
+</ul>
+</li>
+</ul>
+<h1><a class="header" href="#the-rustc-contribution-guide" id="the-rustc-contribution-guide">The rustc Contribution Guide</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+About this guide</li>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>Part 1: Building, debugging, and contributing to Rustc</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.1. About the compiler team</li>
+<li><input disabled="" type="checkbox"/>
+1.2. How to Build and Run the Compiler
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.2.1. Suggested Workflows</li>
+<li><input disabled="" type="checkbox"/>
+1.2.2. Bootstrapping</li>
+<li><input disabled="" type="checkbox"/>
+1.2.3. Distribution artifacts</li>
+<li><input disabled="" type="checkbox"/>
+1.2.4. Documenting Compiler</li>
+<li><input disabled="" type="checkbox"/>
+1.2.5. ctags</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+1.3. The compiler testing framework
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.3.1. Running tests</li>
+<li><input disabled="" type="checkbox"/>
+1.3.2. Adding new tests</li>
+<li><input disabled="" type="checkbox"/>
+1.3.3. Using compiletest + commands to control test execution</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+1.4. Walkthrough: a typical contribution</li>
+<li><input disabled="" type="checkbox"/>
+1.5. Bug Fix Procedure</li>
+<li><input disabled="" type="checkbox"/>
+1.6. Implementing new features</li>
+<li><input disabled="" type="checkbox"/>
+1.7. Stability attributes</li>
+<li><input disabled="" type="checkbox"/>
+1.8. Stabilizing Features</li>
+<li><input disabled="" type="checkbox"/>
+1.9. Debugging the Compiler</li>
+<li><input disabled="" type="checkbox"/>
+1.10. Profiling the compiler
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.10.1. with the linux perf tool</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+1.11. Coding conventions</li>
+<li><input disabled="" type="checkbox"/>
+1.12. crates.io Dependencies</li>
+<li><input disabled="" type="checkbox"/>
+1.13. Emitting Errors and other Diagnostics
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.13.1. LintStore</li>
+<li><input disabled="" type="checkbox"/>
+1.13.2. Diagnostic Codes</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+1.14. ICE-breaker teams
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.14.1. LLVM ICE-breakers</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="2">
+<li>Part 2: How rustc works</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+2.1. High-level overview of the compiler source</li>
+<li><input disabled="" type="checkbox"/>
+2.2. The Rustc Driver and Interface
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.2.1. Rustdoc</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+2.3. Queries: demand-driven compilation
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.3.1. The Query Evaluation Model in Detail</li>
+<li><input disabled="" type="checkbox"/>
+2.3.2. Incremental compilation</li>
+<li><input disabled="" type="checkbox"/>
+2.3.3. Incremental compilation In Detail</li>
+<li><input disabled="" type="checkbox"/>
+2.3.4. Debugging and Testing</li>
+<li><input disabled="" type="checkbox"/>
+2.3.5. Profiling Queries</li>
+<li><input disabled="" type="checkbox"/>
+2.3.6. Salsa</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+2.4. Lexing and Parsing</li>
+<li><input disabled="" type="checkbox"/>
+2.5. #[test] Implementation</li>
+<li><input disabled="" type="checkbox"/>
+2.6. Macro expansion</li>
+<li><input disabled="" type="checkbox"/>
+2.7. Name resolution</li>
+<li><input disabled="" type="checkbox"/>
+2.8. The HIR (High-level IR)
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.8.1. Lowering AST to HIR</li>
+<li><input disabled="" type="checkbox"/>
+2.8.2. Debugging</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+2.9. Closure expansion</li>
+<li><input disabled="" type="checkbox"/>
+2.10. The ty module: representing types</li>
+<li><input disabled="" type="checkbox"/>
+2.11. Generic arguments</li>
+<li><input disabled="" type="checkbox"/>
+2.12. Type inference</li>
+<li><input disabled="" type="checkbox"/>
+2.13. Trait solving (old-style)
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.13.1. Higher-ranked trait bounds</li>
+<li><input disabled="" type="checkbox"/>
+2.13.2. Caching subtleties</li>
+<li><input disabled="" type="checkbox"/>
+2.13.3. Specialization</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+2.14. Trait solving (new-style)
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.14.1. Lowering to logic
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.14.1.1. Goals and clauses</li>
+<li><input disabled="" type="checkbox"/>
+2.14.1.2. Equality and associated types</li>
+<li><input disabled="" type="checkbox"/>
+2.14.1.3. Implied bounds</li>
+<li><input disabled="" type="checkbox"/>
+2.14.1.4. Region constraints</li>
+<li><input disabled="" type="checkbox"/>
+2.14.1.5. The lowering module in rustc</li>
+<li><input disabled="" type="checkbox"/>
+2.14.1.6. Lowering rules</li>
+<li><input disabled="" type="checkbox"/>
+2.14.1.7. Well-formedness checking</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+2.14.2. Canonical queries
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.14.2.1. Canonicalization</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+2.14.3. The SLG solver</li>
+<li><input disabled="" type="checkbox"/>
+2.14.4. An Overview of Chalk</li>
+<li><input disabled="" type="checkbox"/>
+2.14.5. Bibliography</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+2.15. Type checking
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.15.1. Method Lookup</li>
+<li><input disabled="" type="checkbox"/>
+2.15.2. Variance</li>
+<li><input disabled="" type="checkbox"/>
+2.15.3. Opaque Types</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+2.16. The MIR (Mid-level IR)
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.16.1. MIR construction</li>
+<li><input disabled="" type="checkbox"/>
+2.16.2. MIR visitor and traversal</li>
+<li><input disabled="" type="checkbox"/>
+2.16.3. MIR passes: getting the MIR for a function</li>
+<li><input disabled="" type="checkbox"/>
+2.16.4. MIR optimizations</li>
+<li><input disabled="" type="checkbox"/>
+2.16.5. Debugging</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+2.17. The borrow checker
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.17.1. Tracking moves and initialization
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.17.1.1. Move paths</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+2.17.2. MIR type checker</li>
+<li><input disabled="" type="checkbox"/>
+2.17.3. Region inference
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.17.3.1. Constraint propagation</li>
+<li><input disabled="" type="checkbox"/>
+2.17.3.2. Lifetime parameters</li>
+<li><input disabled="" type="checkbox"/>
+2.17.3.3. Member constraints</li>
+<li><input disabled="" type="checkbox"/>
+2.17.3.4. Placeholders and universes</li>
+<li><input disabled="" type="checkbox"/>
+2.17.3.5. Closure constraints</li>
+<li><input disabled="" type="checkbox"/>
+2.17.3.6. Error reporting</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+2.17.4. Two-phase-borrows</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+2.18. Constant evaluation
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.18.1. miri const evaluator</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+2.19. Parameter Environments</li>
+<li><input disabled="" type="checkbox"/>
+2.20. Code Generation
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.20.1. Updating LLVM</li>
+<li><input disabled="" type="checkbox"/>
+2.20.2. Debugging LLVM</li>
+<li><input disabled="" type="checkbox"/>
+2.20.3. Backend Agnostic Codegen</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+2.21. Profile-guided Optimization</li>
+<li><input disabled="" type="checkbox"/>
+2.22. Sanitizers Support</li>
+<li><input disabled="" type="checkbox"/>
+2.23. Debugging Support in Rust Compiler</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+Appendix A: Stupid Stats</li>
+<li><input disabled="" type="checkbox"/>
+Appendix B: Background material</li>
+<li><input disabled="" type="checkbox"/>
+Appendix C: Glossary</li>
+<li><input disabled="" type="checkbox"/>
+Appendix D: Code Index</li>
+<li><input disabled="" type="checkbox"/>
+Appendix E: Compiler Lecture Series</li>
+<li><input disabled="" type="checkbox"/>
+Appendix F: Bibliography</li>
+<li><input disabled="" type="checkbox"/>
+Appendix Z: HumorRust</li>
+</ul>
+<h1><a class="header" href="#the-embedded-rust-book" id="the-embedded-rust-book">The Embedded Rust Book</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>Introduction</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.1. Hardware</li>
+<li><input disabled="" type="checkbox"/>
+1.2. no_std</li>
+<li><input disabled="" type="checkbox"/>
+1.3. Tooling</li>
+<li><input disabled="" type="checkbox"/>
+1.4. Installation
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.4.1. Linux</li>
+<li><input disabled="" type="checkbox"/>
+1.4.2. MacOS</li>
+<li><input disabled="" type="checkbox"/>
+1.4.3. Windows</li>
+<li><input disabled="" type="checkbox"/>
+1.4.4. Verify Installation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="2">
+<li>Getting started</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.1. QEMU</li>
+<li><input disabled="" type="checkbox"/>
+2.2. Hardware</li>
+<li><input disabled="" type="checkbox"/>
+2.3. Memory-mapped Registers</li>
+<li><input disabled="" type="checkbox"/>
+2.4. Semihosting</li>
+<li><input disabled="" type="checkbox"/>
+2.5. Panicking</li>
+<li><input disabled="" type="checkbox"/>
+2.6. Exceptions</li>
+<li><input disabled="" type="checkbox"/>
+2.7. Interrupts</li>
+<li><input disabled="" type="checkbox"/>
+2.8. IO</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="3">
+<li>Peripherals</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.1. A first attempt in Rust</li>
+<li><input disabled="" type="checkbox"/>
+3.2. The Borrow Checker</li>
+<li><input disabled="" type="checkbox"/>
+3.3. Singletons</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="4">
+<li>Static Guarantees</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+4.1. Typestate Programming</li>
+<li><input disabled="" type="checkbox"/>
+4.2. Peripherals as State Machines</li>
+<li><input disabled="" type="checkbox"/>
+4.3. Design Contracts</li>
+<li><input disabled="" type="checkbox"/>
+4.4. Zero Cost Abstractions</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="5">
+<li>Portability</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="6">
+<li>Concurrency</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="7">
+<li>Collections</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="8">
+<li>Tips for embedded C developers</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="9">
+<li>Interoperability</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+9.1. A little C with your Rust</li>
+<li><input disabled="" type="checkbox"/>
+9.2. A little Rust with your C</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="10">
+<li>Unsorted topics</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+10.1. Optimizations: The speed size tradeoff</li>
+</ul>
+</li>
+</ul>
+<h1><a class="header" href="#rust-and-webassembly" id="rust-and-webassembly">Rust and WebAssembly</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>Introduction</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="2">
+<li>Why Rust and WebAssembly?</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="3">
+<li>Background And Concepts</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.1. What is WebAssembly?</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="4">
+<li>Tutorial</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+4.1. Setup</li>
+<li><input disabled="" type="checkbox"/>
+4.2. Hello, World!</li>
+<li><input disabled="" type="checkbox"/>
+4.3. Rules</li>
+<li><input disabled="" type="checkbox"/>
+4.4. Implementing Life</li>
+<li><input disabled="" type="checkbox"/>
+4.5. Testing Life</li>
+<li><input disabled="" type="checkbox"/>
+4.6. Debugging</li>
+<li><input disabled="" type="checkbox"/>
+4.7. Adding Interactivity</li>
+<li><input disabled="" type="checkbox"/>
+4.8. Time Profiling</li>
+<li><input disabled="" type="checkbox"/>
+4.9. Shrinking .wasm Size</li>
+<li><input disabled="" type="checkbox"/>
+4.10. Publishing to npm</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="5">
+<li>Reference</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+5.1. Crates You Should Know</li>
+<li><input disabled="" type="checkbox"/>
+5.2. Tools You Should Know</li>
+<li><input disabled="" type="checkbox"/>
+5.3. Project Templates</li>
+<li><input disabled="" type="checkbox"/>
+5.4. Debugging</li>
+<li><input disabled="" type="checkbox"/>
+5.5. Time Profiling</li>
+<li><input disabled="" type="checkbox"/>
+5.6. Shrinking .wasm Size</li>
+<li><input disabled="" type="checkbox"/>
+5.7. JavaScript Interoperation</li>
+<li><input disabled="" type="checkbox"/>
+5.8. Which Crates Will Work Off-the-Shelf with WebAssembly?</li>
+<li><input disabled="" type="checkbox"/>
+5.9. How to Add WebAssembly Support to a General-Purpose Crate</li>
+<li><input disabled="" type="checkbox"/>
+5.10. Deploying Rust and WebAssembly to Production</li>
+</ul>
+</li>
+</ul>
+<h1><a class="header" href="#command-line-applications-in-rust" id="command-line-applications-in-rust">Command Line Applications in Rust</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Getting started</li>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>A command line app in 15 minutes</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.1. Project setup</li>
+<li><input disabled="" type="checkbox"/>
+1.2. Parsing command line arguments</li>
+<li><input disabled="" type="checkbox"/>
+1.3. First implementation</li>
+<li><input disabled="" type="checkbox"/>
+1.4. Nicer error reporting</li>
+<li><input disabled="" type="checkbox"/>
+1.5. Output for humans and machines</li>
+<li><input disabled="" type="checkbox"/>
+1.6. Testing</li>
+<li><input disabled="" type="checkbox"/>
+1.7. Packaging and distributing a Rust tool</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="2">
+<li>In-depth topics</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.1. Signal handling</li>
+<li><input disabled="" type="checkbox"/>
+2.2. Using config files</li>
+<li><input disabled="" type="checkbox"/>
+2.3. Exit codes</li>
+<li><input disabled="" type="checkbox"/>
+2.4. Communicating with humans</li>
+<li><input disabled="" type="checkbox"/>
+2.5. Communicating with machines</li>
+<li><input disabled="" type="checkbox"/>
+2.6. Rendering documentation for your CLI apps</li>
+</ul>
+</li>
+</ul>
+<h1><a class="header" href="#the-rust-rfc-book" id="the-rust-rfc-book">The Rust RFC Book</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Introduction</li>
+<li><input disabled="" type="checkbox"/>
+0001-private-fields</li>
+<li><input disabled="" type="checkbox"/>
+0002-rfc-process</li>
+<li><input disabled="" type="checkbox"/>
+0003-attribute-usage</li>
+<li><input disabled="" type="checkbox"/>
+0008-new-intrinsics</li>
+<li><input disabled="" type="checkbox"/>
+0016-more-attributes</li>
+<li><input disabled="" type="checkbox"/>
+0019-opt-in-builtin-traits</li>
+<li><input disabled="" type="checkbox"/>
+0026-remove-priv</li>
+<li><input disabled="" type="checkbox"/>
+0034-bounded-type-parameters</li>
+<li><input disabled="" type="checkbox"/>
+0040-libstd-facade</li>
+<li><input disabled="" type="checkbox"/>
+0042-regexps</li>
+<li><input disabled="" type="checkbox"/>
+0048-traits</li>
+<li><input disabled="" type="checkbox"/>
+0049-match-arm-attributes</li>
+<li><input disabled="" type="checkbox"/>
+0050-assert</li>
+<li><input disabled="" type="checkbox"/>
+0059-remove-tilde</li>
+<li><input disabled="" type="checkbox"/>
+0060-rename-strbuf</li>
+<li><input disabled="" type="checkbox"/>
+0063-module-file-system-hierarchy</li>
+<li><input disabled="" type="checkbox"/>
+0066-better-temporary-lifetimes</li>
+<li><input disabled="" type="checkbox"/>
+0068-const-unsafe-pointers</li>
+<li><input disabled="" type="checkbox"/>
+0069-ascii-literals</li>
+<li><input disabled="" type="checkbox"/>
+0071-const-block-expr</li>
+<li><input disabled="" type="checkbox"/>
+0079-undefined-struct-layout</li>
+<li><input disabled="" type="checkbox"/>
+0085-pattern-macros</li>
+<li><input disabled="" type="checkbox"/>
+0086-plugin-registrar</li>
+<li><input disabled="" type="checkbox"/>
+0087-trait-bounds-with-plus</li>
+<li><input disabled="" type="checkbox"/>
+0089-loadable-lints</li>
+<li><input disabled="" type="checkbox"/>
+0090-lexical-syntax-simplification</li>
+<li><input disabled="" type="checkbox"/>
+0092-struct-grammar</li>
+<li><input disabled="" type="checkbox"/>
+0093-remove-format-intl</li>
+<li><input disabled="" type="checkbox"/>
+0100-partial-cmp</li>
+<li><input disabled="" type="checkbox"/>
+0107-pattern-guards-with-bind-by-move</li>
+<li><input disabled="" type="checkbox"/>
+0109-remove-crate-id</li>
+<li><input disabled="" type="checkbox"/>
+0111-index-traits</li>
+<li><input disabled="" type="checkbox"/>
+0112-remove-cross-borrowing</li>
+<li><input disabled="" type="checkbox"/>
+0114-closures</li>
+<li><input disabled="" type="checkbox"/>
+0115-rm-integer-fallback</li>
+<li><input disabled="" type="checkbox"/>
+0116-no-module-shadowing</li>
+<li><input disabled="" type="checkbox"/>
+0123-share-to-threadsafe</li>
+<li><input disabled="" type="checkbox"/>
+0130-box-not-special</li>
+<li><input disabled="" type="checkbox"/>
+0131-target-specification</li>
+<li><input disabled="" type="checkbox"/>
+0132-ufcs</li>
+<li><input disabled="" type="checkbox"/>
+0135-where</li>
+<li><input disabled="" type="checkbox"/>
+0136-no-privates-in-public</li>
+<li><input disabled="" type="checkbox"/>
+0139-remove-cross-borrowing-entirely</li>
+<li><input disabled="" type="checkbox"/>
+0141-lifetime-elision</li>
+<li><input disabled="" type="checkbox"/>
+0151-capture-by-value</li>
+<li><input disabled="" type="checkbox"/>
+0155-anonymous-impl-only-in-same-module</li>
+<li><input disabled="" type="checkbox"/>
+0160-if-let</li>
+<li><input disabled="" type="checkbox"/>
+0164-feature-gate-slice-pats</li>
+<li><input disabled="" type="checkbox"/>
+0168-mod</li>
+<li><input disabled="" type="checkbox"/>
+0169-use-path-as-id</li>
+<li><input disabled="" type="checkbox"/>
+0179-and-mut-patterns</li>
+<li><input disabled="" type="checkbox"/>
+0184-tuple-accessors</li>
+<li><input disabled="" type="checkbox"/>
+0192-bounds-on-object-and-generic-types</li>
+<li><input disabled="" type="checkbox"/>
+0194-cfg-syntax</li>
+<li><input disabled="" type="checkbox"/>
+0195-associated-items</li>
+<li><input disabled="" type="checkbox"/>
+0198-slice-notation</li>
+<li><input disabled="" type="checkbox"/>
+0199-ownership-variants</li>
+<li><input disabled="" type="checkbox"/>
+0201-error-chaining</li>
+<li><input disabled="" type="checkbox"/>
+0202-subslice-syntax-change</li>
+<li><input disabled="" type="checkbox"/>
+0212-restore-int-fallback</li>
+<li><input disabled="" type="checkbox"/>
+0213-defaulted-type-params</li>
+<li><input disabled="" type="checkbox"/>
+0214-while-let</li>
+<li><input disabled="" type="checkbox"/>
+0216-collection-views</li>
+<li><input disabled="" type="checkbox"/>
+0218-empty-struct-with-braces</li>
+<li><input disabled="" type="checkbox"/>
+0221-panic</li>
+<li><input disabled="" type="checkbox"/>
+0230-remove-runtime</li>
+<li><input disabled="" type="checkbox"/>
+0231-upvar-capture-inference</li>
+<li><input disabled="" type="checkbox"/>
+0234-variants-namespace</li>
+<li><input disabled="" type="checkbox"/>
+0235-collections-conventions</li>
+<li><input disabled="" type="checkbox"/>
+0236-error-conventions</li>
+<li><input disabled="" type="checkbox"/>
+0240-unsafe-api-location</li>
+<li><input disabled="" type="checkbox"/>
+0241-deref-conversions</li>
+<li><input disabled="" type="checkbox"/>
+0243-trait-based-exception-handling</li>
+<li><input disabled="" type="checkbox"/>
+0246-const-vs-static</li>
+<li><input disabled="" type="checkbox"/>
+0255-object-safety</li>
+<li><input disabled="" type="checkbox"/>
+0256-remove-refcounting-gc-of-t</li>
+<li><input disabled="" type="checkbox"/>
+0320-nonzeroing-dynamic-drop</li>
+<li><input disabled="" type="checkbox"/>
+0326-restrict-xXX-to-ascii</li>
+<li><input disabled="" type="checkbox"/>
+0339-statically-sized-literals</li>
+<li><input disabled="" type="checkbox"/>
+0341-remove-virtual-structs</li>
+<li><input disabled="" type="checkbox"/>
+0342-keywords</li>
+<li><input disabled="" type="checkbox"/>
+0344-conventions-galore</li>
+<li><input disabled="" type="checkbox"/>
+0356-no-module-prefixes</li>
+<li><input disabled="" type="checkbox"/>
+0369-num-reform</li>
+<li><input disabled="" type="checkbox"/>
+0378-expr-macros</li>
+<li><input disabled="" type="checkbox"/>
+0379-remove-reflection</li>
+<li><input disabled="" type="checkbox"/>
+0380-stabilize-std-fmt</li>
+<li><input disabled="" type="checkbox"/>
+0385-module-system-cleanup</li>
+<li><input disabled="" type="checkbox"/>
+0387-higher-ranked-trait-bounds</li>
+<li><input disabled="" type="checkbox"/>
+0390-enum-namespacing</li>
+<li><input disabled="" type="checkbox"/>
+0401-coercions</li>
+<li><input disabled="" type="checkbox"/>
+0403-cargo-build-command</li>
+<li><input disabled="" type="checkbox"/>
+0404-change-prefer-dynamic</li>
+<li><input disabled="" type="checkbox"/>
+0418-struct-variants</li>
+<li><input disabled="" type="checkbox"/>
+0430-finalizing-naming-conventions</li>
+<li><input disabled="" type="checkbox"/>
+0438-precedence-of-plus</li>
+<li><input disabled="" type="checkbox"/>
+0439-cmp-ops-reform</li>
+<li><input disabled="" type="checkbox"/>
+0445-extension-trait-conventions</li>
+<li><input disabled="" type="checkbox"/>
+0446-es6-unicode-escapes</li>
+<li><input disabled="" type="checkbox"/>
+0447-no-unused-impl-parameters</li>
+<li><input disabled="" type="checkbox"/>
+0450-un-feature-gate-some-more-gates</li>
+<li><input disabled="" type="checkbox"/>
+0453-macro-reform</li>
+<li><input disabled="" type="checkbox"/>
+0458-send-improvements</li>
+<li><input disabled="" type="checkbox"/>
+0459-disallow-shadowing</li>
+<li><input disabled="" type="checkbox"/>
+0461-tls-overhaul</li>
+<li><input disabled="" type="checkbox"/>
+0463-future-proof-literal-suffixes</li>
+<li><input disabled="" type="checkbox"/>
+0469-feature-gate-box-patterns</li>
+<li><input disabled="" type="checkbox"/>
+0474-path-reform</li>
+<li><input disabled="" type="checkbox"/>
+0486-std-ascii-reform</li>
+<li><input disabled="" type="checkbox"/>
+0490-dst-syntax</li>
+<li><input disabled="" type="checkbox"/>
+0494-c_str-and-c_vec-stability</li>
+<li><input disabled="" type="checkbox"/>
+0495-array-pattern-changes</li>
+<li><input disabled="" type="checkbox"/>
+0501-consistent_no_prelude_attributes</li>
+<li><input disabled="" type="checkbox"/>
+0503-prelude-stabilization</li>
+<li><input disabled="" type="checkbox"/>
+0504-show-stabilization</li>
+<li><input disabled="" type="checkbox"/>
+0505-api-comment-conventions</li>
+<li><input disabled="" type="checkbox"/>
+0507-release-channels</li>
+<li><input disabled="" type="checkbox"/>
+0509-collections-reform-part-2</li>
+<li><input disabled="" type="checkbox"/>
+0517-io-os-reform</li>
+<li><input disabled="" type="checkbox"/>
+0520-new-array-repeat-syntax</li>
+<li><input disabled="" type="checkbox"/>
+0522-self-impl</li>
+<li><input disabled="" type="checkbox"/>
+0526-fmt-text-writer</li>
+<li><input disabled="" type="checkbox"/>
+0528-string-patterns</li>
+<li><input disabled="" type="checkbox"/>
+0529-conversion-traits</li>
+<li><input disabled="" type="checkbox"/>
+0531-define-rfc-scope</li>
+<li><input disabled="" type="checkbox"/>
+0532-self-in-use</li>
+<li><input disabled="" type="checkbox"/>
+0533-no-array-elem-moves</li>
+<li><input disabled="" type="checkbox"/>
+0534-deriving2derive</li>
+<li><input disabled="" type="checkbox"/>
+0544-rename-int-uint</li>
+<li><input disabled="" type="checkbox"/>
+0546-Self-not-sized-by-default</li>
+<li><input disabled="" type="checkbox"/>
+0550-macro-future-proofing</li>
+<li><input disabled="" type="checkbox"/>
+0556-raw-lifetime</li>
+<li><input disabled="" type="checkbox"/>
+0558-require-parentheses-for-chained-comparisons</li>
+<li><input disabled="" type="checkbox"/>
+0560-integer-overflow</li>
+<li><input disabled="" type="checkbox"/>
+0563-remove-ndebug</li>
+<li><input disabled="" type="checkbox"/>
+0565-show-string-guidelines</li>
+<li><input disabled="" type="checkbox"/>
+0572-rustc-attribute</li>
+<li><input disabled="" type="checkbox"/>
+0574-drain-range</li>
+<li><input disabled="" type="checkbox"/>
+0580-rename-collections</li>
+<li><input disabled="" type="checkbox"/>
+0587-fn-return-should-be-an-associated-type</li>
+<li><input disabled="" type="checkbox"/>
+0592-c-str-deref</li>
+<li><input disabled="" type="checkbox"/>
+0593-forbid-Self-definitions</li>
+<li><input disabled="" type="checkbox"/>
+0599-default-object-bound</li>
+<li><input disabled="" type="checkbox"/>
+0601-replace-be-with-become</li>
+<li><input disabled="" type="checkbox"/>
+0639-discriminant-intrinsic</li>
+<li><input disabled="" type="checkbox"/>
+0640-debug-improvements</li>
+<li><input disabled="" type="checkbox"/>
+0702-rangefull-expression</li>
+<li><input disabled="" type="checkbox"/>
+0735-allow-inherent-impls-anywhere</li>
+<li><input disabled="" type="checkbox"/>
+0736-privacy-respecting-fru</li>
+<li><input disabled="" type="checkbox"/>
+0738-variance</li>
+<li><input disabled="" type="checkbox"/>
+0769-sound-generic-drop</li>
+<li><input disabled="" type="checkbox"/>
+0771-std-iter-once</li>
+<li><input disabled="" type="checkbox"/>
+0803-type-ascription</li>
+<li><input disabled="" type="checkbox"/>
+0809-box-and-in-for-stdlib</li>
+<li><input disabled="" type="checkbox"/>
+0823-hash-simplification</li>
+<li><input disabled="" type="checkbox"/>
+0832-from-elem-with-love</li>
+<li><input disabled="" type="checkbox"/>
+0839-embrace-extend-extinguish</li>
+<li><input disabled="" type="checkbox"/>
+0840-no-panic-in-c-string</li>
+<li><input disabled="" type="checkbox"/>
+0873-type-macros</li>
+<li><input disabled="" type="checkbox"/>
+0879-small-base-lexing</li>
+<li><input disabled="" type="checkbox"/>
+0888-compiler-fence-intrinsics</li>
+<li><input disabled="" type="checkbox"/>
+0909-move-thread-local-to-std-thread</li>
+<li><input disabled="" type="checkbox"/>
+0911-const-fn</li>
+<li><input disabled="" type="checkbox"/>
+0921-entry_v3</li>
+<li><input disabled="" type="checkbox"/>
+0940-hyphens-considered-harmful</li>
+<li><input disabled="" type="checkbox"/>
+0953-op-assign</li>
+<li><input disabled="" type="checkbox"/>
+0968-closure-return-type-syntax</li>
+<li><input disabled="" type="checkbox"/>
+0979-align-splitn-with-other-languages</li>
+<li><input disabled="" type="checkbox"/>
+0980-read-exact</li>
+<li><input disabled="" type="checkbox"/>
+0982-dst-coercion</li>
+<li><input disabled="" type="checkbox"/>
+1011-process.exit</li>
+<li><input disabled="" type="checkbox"/>
+1014-stdout-existential-crisis</li>
+<li><input disabled="" type="checkbox"/>
+1023-rebalancing-coherence</li>
+<li><input disabled="" type="checkbox"/>
+1030-prelude-additions</li>
+<li><input disabled="" type="checkbox"/>
+1040-duration-reform</li>
+<li><input disabled="" type="checkbox"/>
+1044-io-fs-2.1</li>
+<li><input disabled="" type="checkbox"/>
+1047-socket-timeouts</li>
+<li><input disabled="" type="checkbox"/>
+1048-rename-soft-link-to-symlink</li>
+<li><input disabled="" type="checkbox"/>
+1054-str-words</li>
+<li><input disabled="" type="checkbox"/>
+1057-io-error-sync</li>
+<li><input disabled="" type="checkbox"/>
+1058-slice-tail-redesign</li>
+<li><input disabled="" type="checkbox"/>
+1066-safe-mem-forget</li>
+<li><input disabled="" type="checkbox"/>
+1068-rust-governance</li>
+<li><input disabled="" type="checkbox"/>
+1096-remove-static-assert</li>
+<li><input disabled="" type="checkbox"/>
+1102-rename-connect-to-join</li>
+<li><input disabled="" type="checkbox"/>
+1105-api-evolution</li>
+<li><input disabled="" type="checkbox"/>
+1119-result-expect</li>
+<li><input disabled="" type="checkbox"/>
+1122-language-semver</li>
+<li><input disabled="" type="checkbox"/>
+1123-str-split-at</li>
+<li><input disabled="" type="checkbox"/>
+1131-likely-intrinsic</li>
+<li><input disabled="" type="checkbox"/>
+1135-raw-pointer-comparisons</li>
+<li><input disabled="" type="checkbox"/>
+1152-slice-string-symmetry</li>
+<li><input disabled="" type="checkbox"/>
+1156-adjust-default-object-bounds</li>
+<li><input disabled="" type="checkbox"/>
+1174-into-raw-fd-socket-handle-traits</li>
+<li><input disabled="" type="checkbox"/>
+1183-swap-out-jemalloc</li>
+<li><input disabled="" type="checkbox"/>
+1184-stabilize-no_std</li>
+<li><input disabled="" type="checkbox"/>
+1191-hir</li>
+<li><input disabled="" type="checkbox"/>
+1192-inclusive-ranges</li>
+<li><input disabled="" type="checkbox"/>
+1193-cap-lints</li>
+<li><input disabled="" type="checkbox"/>
+1194-set-recovery</li>
+<li><input disabled="" type="checkbox"/>
+1199-simd-infrastructure</li>
+<li><input disabled="" type="checkbox"/>
+1200-cargo-install</li>
+<li><input disabled="" type="checkbox"/>
+1201-naked-fns</li>
+<li><input disabled="" type="checkbox"/>
+1210-impl-specialization</li>
+<li><input disabled="" type="checkbox"/>
+1211-mir</li>
+<li><input disabled="" type="checkbox"/>
+1212-line-endings</li>
+<li><input disabled="" type="checkbox"/>
+1214-projections-lifetimes-and-wf</li>
+<li><input disabled="" type="checkbox"/>
+1216-bang-type</li>
+<li><input disabled="" type="checkbox"/>
+1219-use-group-as</li>
+<li><input disabled="" type="checkbox"/>
+1228-placement-left-arrow</li>
+<li><input disabled="" type="checkbox"/>
+1229-compile-time-asserts</li>
+<li><input disabled="" type="checkbox"/>
+1236-stabilize-catch-panic</li>
+<li><input disabled="" type="checkbox"/>
+1238-nonparametric-dropck</li>
+<li><input disabled="" type="checkbox"/>
+1240-repr-packed-unsafe-ref</li>
+<li><input disabled="" type="checkbox"/>
+1241-no-wildcard-deps</li>
+<li><input disabled="" type="checkbox"/>
+1242-rust-lang-crates</li>
+<li><input disabled="" type="checkbox"/>
+1252-open-options</li>
+<li><input disabled="" type="checkbox"/>
+1257-drain-range-2</li>
+<li><input disabled="" type="checkbox"/>
+1260-main-reexport</li>
+<li><input disabled="" type="checkbox"/>
+1268-allow-overlapping-impls-on-marker-traits</li>
+<li><input disabled="" type="checkbox"/>
+1270-deprecation</li>
+<li><input disabled="" type="checkbox"/>
+1288-time-improvements</li>
+<li><input disabled="" type="checkbox"/>
+1291-promote-libc</li>
+<li><input disabled="" type="checkbox"/>
+1298-incremental-compilation</li>
+<li><input disabled="" type="checkbox"/>
+1300-intrinsic-semantics</li>
+<li><input disabled="" type="checkbox"/>
+1307-osstring-methods</li>
+<li><input disabled="" type="checkbox"/>
+1317-ide</li>
+<li><input disabled="" type="checkbox"/>
+1327-dropck-param-eyepatch</li>
+<li><input disabled="" type="checkbox"/>
+1328-global-panic-handler</li>
+<li><input disabled="" type="checkbox"/>
+1331-grammar-is-canonical</li>
+<li><input disabled="" type="checkbox"/>
+1358-repr-align</li>
+<li><input disabled="" type="checkbox"/>
+1359-process-ext-unix</li>
+<li><input disabled="" type="checkbox"/>
+1361-cargo-cfg-dependencies</li>
+<li><input disabled="" type="checkbox"/>
+1398-kinds-of-allocators</li>
+<li><input disabled="" type="checkbox"/>
+1399-repr-pack</li>
+<li><input disabled="" type="checkbox"/>
+1414-rvalue_static_promotion</li>
+<li><input disabled="" type="checkbox"/>
+1415-trim-std-os</li>
+<li><input disabled="" type="checkbox"/>
+1419-slice-copy</li>
+<li><input disabled="" type="checkbox"/>
+1422-pub-restricted</li>
+<li><input disabled="" type="checkbox"/>
+1432-replace-slice</li>
+<li><input disabled="" type="checkbox"/>
+1434-contains-method-for-ranges</li>
+<li><input disabled="" type="checkbox"/>
+1440-drop-types-in-const</li>
+<li><input disabled="" type="checkbox"/>
+1443-extended-compare-and-swap</li>
+<li><input disabled="" type="checkbox"/>
+1444-union</li>
+<li><input disabled="" type="checkbox"/>
+1445-restrict-constants-in-patterns</li>
+<li><input disabled="" type="checkbox"/>
+1461-net2-mutators</li>
+<li><input disabled="" type="checkbox"/>
+1467-volatile</li>
+<li><input disabled="" type="checkbox"/>
+1479-unix-socket</li>
+<li><input disabled="" type="checkbox"/>
+1492-dotdot-in-patterns</li>
+<li><input disabled="" type="checkbox"/>
+1498-ipv6addr-octets</li>
+<li><input disabled="" type="checkbox"/>
+1504-int128</li>
+<li><input disabled="" type="checkbox"/>
+1506-adt-kinds</li>
+<li><input disabled="" type="checkbox"/>
+1510-cdylib</li>
+<li><input disabled="" type="checkbox"/>
+1513-less-unwinding</li>
+<li><input disabled="" type="checkbox"/>
+1521-copy-clone-semantics</li>
+<li><input disabled="" type="checkbox"/>
+1522-conservative-impl-trait</li>
+<li><input disabled="" type="checkbox"/>
+1525-cargo-workspace</li>
+<li><input disabled="" type="checkbox"/>
+1535-stable-overflow-checks</li>
+<li><input disabled="" type="checkbox"/>
+1542-try-from</li>
+<li><input disabled="" type="checkbox"/>
+1543-integer_atomics</li>
+<li><input disabled="" type="checkbox"/>
+1548-global-asm</li>
+<li><input disabled="" type="checkbox"/>
+1552-contains-method-for-various-collections</li>
+<li><input disabled="" type="checkbox"/>
+1558-closure-to-fn-coercion</li>
+<li><input disabled="" type="checkbox"/>
+1559-attributes-with-literals</li>
+<li><input disabled="" type="checkbox"/>
+1560-name-resolution</li>
+<li><input disabled="" type="checkbox"/>
+1561-macro-naming</li>
+<li><input disabled="" type="checkbox"/>
+1566-proc-macros</li>
+<li><input disabled="" type="checkbox"/>
+1567-long-error-codes-explanation-normalization</li>
+<li><input disabled="" type="checkbox"/>
+1574-more-api-documentation-conventions</li>
+<li><input disabled="" type="checkbox"/>
+1576-macros-literal-matcher</li>
+<li><input disabled="" type="checkbox"/>
+1581-fused-iterator</li>
+<li><input disabled="" type="checkbox"/>
+1584-macros</li>
+<li><input disabled="" type="checkbox"/>
+1589-rustc-bug-fix-procedure</li>
+<li><input disabled="" type="checkbox"/>
+1590-macro-lifetimes</li>
+<li><input disabled="" type="checkbox"/>
+1598-generic_associated_types</li>
+<li><input disabled="" type="checkbox"/>
+1607-style-rfcs</li>
+<li><input disabled="" type="checkbox"/>
+1618-ergonomic-format-args</li>
+<li><input disabled="" type="checkbox"/>
+1620-regex-1.0</li>
+<li><input disabled="" type="checkbox"/>
+1623-static</li>
+<li><input disabled="" type="checkbox"/>
+1624-loop-break-value</li>
+<li><input disabled="" type="checkbox"/>
+1636-document_all_features</li>
+<li><input disabled="" type="checkbox"/>
+1640-duration-checked-sub</li>
+<li><input disabled="" type="checkbox"/>
+1643-memory-model-strike-team</li>
+<li><input disabled="" type="checkbox"/>
+1644-default-and-expanded-rustc-errors</li>
+<li><input disabled="" type="checkbox"/>
+1647-allow-self-in-where-clauses</li>
+<li><input disabled="" type="checkbox"/>
+1649-atomic-access</li>
+<li><input disabled="" type="checkbox"/>
+1651-movecell</li>
+<li><input disabled="" type="checkbox"/>
+1653-assert_ne</li>
+<li><input disabled="" type="checkbox"/>
+1660-try-borrow</li>
+<li><input disabled="" type="checkbox"/>
+1665-windows-subsystem</li>
+<li><input disabled="" type="checkbox"/>
+1679-panic-safe-slicing</li>
+<li><input disabled="" type="checkbox"/>
+1681-macros-1.1</li>
+<li><input disabled="" type="checkbox"/>
+1682-field-init-shorthand</li>
+<li><input disabled="" type="checkbox"/>
+1683-docs-team</li>
+<li><input disabled="" type="checkbox"/>
+1685-deprecate-anonymous-parameters</li>
+<li><input disabled="" type="checkbox"/>
+1695-add-error-macro</li>
+<li><input disabled="" type="checkbox"/>
+1696-discriminant</li>
+<li><input disabled="" type="checkbox"/>
+1717-dllimport</li>
+<li><input disabled="" type="checkbox"/>
+1721-crt-static</li>
+<li><input disabled="" type="checkbox"/>
+1725-unaligned-access</li>
+<li><input disabled="" type="checkbox"/>
+1728-north-star</li>
+<li><input disabled="" type="checkbox"/>
+1733-trait-alias</li>
+<li><input disabled="" type="checkbox"/>
+1758-repr-transparent</li>
+<li><input disabled="" type="checkbox"/>
+1774-roadmap-2017</li>
+<li><input disabled="" type="checkbox"/>
+1789-as-cell</li>
+<li><input disabled="" type="checkbox"/>
+1824-crates.io-default-ranking</li>
+<li><input disabled="" type="checkbox"/>
+1826-change-doc-default-urls</li>
+<li><input disabled="" type="checkbox"/>
+1828-rust-bookshelf</li>
+<li><input disabled="" type="checkbox"/>
+1845-shared-from-slice</li>
+<li><input disabled="" type="checkbox"/>
+1849-non-static-type-id</li>
+<li><input disabled="" type="checkbox"/>
+1857-stabilize-drop-order</li>
+<li><input disabled="" type="checkbox"/>
+1859-try-trait</li>
+<li><input disabled="" type="checkbox"/>
+1860-manually-drop</li>
+<li><input disabled="" type="checkbox"/>
+1861-extern-types</li>
+<li><input disabled="" type="checkbox"/>
+1866-more-readable-assert-eq</li>
+<li><input disabled="" type="checkbox"/>
+1868-portability-lint</li>
+<li><input disabled="" type="checkbox"/>
+1869-eprintln</li>
+<li><input disabled="" type="checkbox"/>
+1884-unstable-sort</li>
+<li><input disabled="" type="checkbox"/>
+1892-uninitialized-uninhabited</li>
+<li><input disabled="" type="checkbox"/>
+1909-unsized-rvalues</li>
+<li><input disabled="" type="checkbox"/>
+1925-optional-match-vert</li>
+<li><input disabled="" type="checkbox"/>
+1937-ques-in-main</li>
+<li><input disabled="" type="checkbox"/>
+1940-must-use-functions</li>
+<li><input disabled="" type="checkbox"/>
+1946-intra-rustdoc-links</li>
+<li><input disabled="" type="checkbox"/>
+1951-expand-impl-trait</li>
+<li><input disabled="" type="checkbox"/>
+1961-clamp</li>
+<li><input disabled="" type="checkbox"/>
+1966-unsafe-pointer-reform</li>
+<li><input disabled="" type="checkbox"/>
+1969-cargo-prepublish</li>
+<li><input disabled="" type="checkbox"/>
+1974-global-allocators</li>
+<li><input disabled="" type="checkbox"/>
+1977-public-private-dependencies</li>
+<li><input disabled="" type="checkbox"/>
+1983-nursery-deprecation</li>
+<li><input disabled="" type="checkbox"/>
+1985-tiered-browser-support</li>
+<li><input disabled="" type="checkbox"/>
+1990-external-doc-attribute</li>
+<li><input disabled="" type="checkbox"/>
+2000-const-generics</li>
+<li><input disabled="" type="checkbox"/>
+2005-match-ergonomics</li>
+<li><input disabled="" type="checkbox"/>
+2008-non-exhaustive</li>
+<li><input disabled="" type="checkbox"/>
+2011-generic-assert</li>
+<li><input disabled="" type="checkbox"/>
+2025-nested-method-calls</li>
+<li><input disabled="" type="checkbox"/>
+2027-object_safe_for_dispatch</li>
+<li><input disabled="" type="checkbox"/>
+2033-experimental-coroutines</li>
+<li><input disabled="" type="checkbox"/>
+2043-is-aligned-intrinsic</li>
+<li><input disabled="" type="checkbox"/>
+2044-license-rfcs</li>
+<li><input disabled="" type="checkbox"/>
+2045-target-feature</li>
+<li><input disabled="" type="checkbox"/>
+2046-label-break-value</li>
+<li><input disabled="" type="checkbox"/>
+2052-epochs</li>
+<li><input disabled="" type="checkbox"/>
+2056-allow-trivial-where-clause-constraints</li>
+<li><input disabled="" type="checkbox"/>
+2057-refcell-replace</li>
+<li><input disabled="" type="checkbox"/>
+2070-panic-implementation</li>
+<li><input disabled="" type="checkbox"/>
+2071-impl-trait-existential-types</li>
+<li><input disabled="" type="checkbox"/>
+2071-impl-trait-type-alias</li>
+<li><input disabled="" type="checkbox"/>
+2086-allow-if-let-irrefutables</li>
+<li><input disabled="" type="checkbox"/>
+2089-implied-bounds</li>
+<li><input disabled="" type="checkbox"/>
+2091-inline-semantic</li>
+<li><input disabled="" type="checkbox"/>
+2093-infer-outlives</li>
+<li><input disabled="" type="checkbox"/>
+2094-nll</li>
+<li><input disabled="" type="checkbox"/>
+2102-unnamed-fields</li>
+<li><input disabled="" type="checkbox"/>
+2103-tool-attributes</li>
+<li><input disabled="" type="checkbox"/>
+2113-dyn-trait-syntax</li>
+<li><input disabled="" type="checkbox"/>
+2115-argument-lifetimes</li>
+<li><input disabled="" type="checkbox"/>
+2116-alloc-me-maybe</li>
+<li><input disabled="" type="checkbox"/>
+2124-option-filter</li>
+<li><input disabled="" type="checkbox"/>
+2126-path-clarity</li>
+<li><input disabled="" type="checkbox"/>
+2128-use-nested-groups</li>
+<li><input disabled="" type="checkbox"/>
+2132-copy-closures</li>
+<li><input disabled="" type="checkbox"/>
+2133-all-the-clones</li>
+<li><input disabled="" type="checkbox"/>
+2136-build-systems</li>
+<li><input disabled="" type="checkbox"/>
+2137-variadic</li>
+<li><input disabled="" type="checkbox"/>
+2141-alternative-registries</li>
+<li><input disabled="" type="checkbox"/>
+2145-type-privacy</li>
+<li><input disabled="" type="checkbox"/>
+2151-raw-identifiers</li>
+<li><input disabled="" type="checkbox"/>
+2166-impl-only-use</li>
+<li><input disabled="" type="checkbox"/>
+2169-euclidean-modulo</li>
+<li><input disabled="" type="checkbox"/>
+2175-if-while-or-patterns</li>
+<li><input disabled="" type="checkbox"/>
+2195-really-tagged-unions</li>
+<li><input disabled="" type="checkbox"/>
+2196-metabuild</li>
+<li><input disabled="" type="checkbox"/>
+2203-const-repeat-expr</li>
+<li><input disabled="" type="checkbox"/>
+2226-fmt-debug-hex</li>
+<li><input disabled="" type="checkbox"/>
+2229-capture-disjoint-fields</li>
+<li><input disabled="" type="checkbox"/>
+2230-bury-description</li>
+<li><input disabled="" type="checkbox"/>
+2235-libc-struct-traits</li>
+<li><input disabled="" type="checkbox"/>
+2250-finalize-impl-dyn-syntax</li>
+<li><input disabled="" type="checkbox"/>
+2282-profile-dependencies</li>
+<li><input disabled="" type="checkbox"/>
+2289-associated-type-bounds</li>
+<li><input disabled="" type="checkbox"/>
+2294-if-let-guard</li>
+<li><input disabled="" type="checkbox"/>
+2295-os-str-pattern</li>
+<li><input disabled="" type="checkbox"/>
+2296-option-replace</li>
+<li><input disabled="" type="checkbox"/>
+2298-macro-at-most-once-rep</li>
+<li><input disabled="" type="checkbox"/>
+2300-self-in-typedefs</li>
+<li><input disabled="" type="checkbox"/>
+2302-tuple-struct-self-ctor</li>
+<li><input disabled="" type="checkbox"/>
+2306-convert-id</li>
+<li><input disabled="" type="checkbox"/>
+2307-concrete-nonzero-types</li>
+<li><input disabled="" type="checkbox"/>
+2314-roadmap-2018</li>
+<li><input disabled="" type="checkbox"/>
+2318-custom-test-frameworks</li>
+<li><input disabled="" type="checkbox"/>
+2325-stable-simd</li>
+<li><input disabled="" type="checkbox"/>
+2333-prior-art</li>
+<li><input disabled="" type="checkbox"/>
+2338-type-alias-enum-variants</li>
+<li><input disabled="" type="checkbox"/>
+2341-const-locals</li>
+<li><input disabled="" type="checkbox"/>
+2342-const-control-flow</li>
+<li><input disabled="" type="checkbox"/>
+2344-const-looping</li>
+<li><input disabled="" type="checkbox"/>
+2345-const-panic</li>
+<li><input disabled="" type="checkbox"/>
+2349-pin</li>
+<li><input disabled="" type="checkbox"/>
+2351-is-sorted</li>
+<li><input disabled="" type="checkbox"/>
+2359-subslice-pattern-syntax</li>
+<li><input disabled="" type="checkbox"/>
+2360-bench-black-box</li>
+<li><input disabled="" type="checkbox"/>
+2361-dbg-macro</li>
+<li><input disabled="" type="checkbox"/>
+2363-arbitrary-enum-discriminant</li>
+<li><input disabled="" type="checkbox"/>
+2383-lint-reasons</li>
+<li><input disabled="" type="checkbox"/>
+2386-used</li>
+<li><input disabled="" type="checkbox"/>
+2388-try-expr</li>
+<li><input disabled="" type="checkbox"/>
+2394-async_await</li>
+<li><input disabled="" type="checkbox"/>
+2397-do-not-recommend</li>
+<li><input disabled="" type="checkbox"/>
+2412-optimize-attr</li>
+<li><input disabled="" type="checkbox"/>
+2420-unreserve-proc</li>
+<li><input disabled="" type="checkbox"/>
+2421-unreservations-2018</li>
+<li><input disabled="" type="checkbox"/>
+2436-style-guide</li>
+<li><input disabled="" type="checkbox"/>
+2437-rustfmt-stability</li>
+<li><input disabled="" type="checkbox"/>
+2438-deny-integer-literal-overflow-lint</li>
+<li><input disabled="" type="checkbox"/>
+2451-re-rebalancing-coherence</li>
+<li><input disabled="" type="checkbox"/>
+2457-non-ascii-idents</li>
+<li><input disabled="" type="checkbox"/>
+2471-lint-test-inner-function</li>
+<li><input disabled="" type="checkbox"/>
+2476-clippy-uno</li>
+<li><input disabled="" type="checkbox"/>
+2480-liballoc</li>
+<li><input disabled="" type="checkbox"/>
+2495-min-rust-version</li>
+<li><input disabled="" type="checkbox"/>
+2497-if-let-chains</li>
+<li><input disabled="" type="checkbox"/>
+2500-needle</li>
+<li><input disabled="" type="checkbox"/>
+2504-fix-error</li>
+<li><input disabled="" type="checkbox"/>
+2514-union-initialization-and-drop</li>
+<li><input disabled="" type="checkbox"/>
+2515-type_alias_impl_trait</li>
+<li><input disabled="" type="checkbox"/>
+2521-c_void-reunification</li>
+<li><input disabled="" type="checkbox"/>
+2523-cfg-path-version</li>
+<li><input disabled="" type="checkbox"/>
+2526-const-wildcard</li>
+<li><input disabled="" type="checkbox"/>
+2532-associated-type-defaults</li>
+<li><input disabled="" type="checkbox"/>
+2535-or-patterns</li>
+<li><input disabled="" type="checkbox"/>
+2539-cfg_attr-multiple-attrs</li>
+<li><input disabled="" type="checkbox"/>
+2561-future-possibilities</li>
+<li><input disabled="" type="checkbox"/>
+2565-formal-function-parameter-attributes</li>
+<li><input disabled="" type="checkbox"/>
+2570-linked-list-cursors</li>
+<li><input disabled="" type="checkbox"/>
+2574-simd-ffi</li>
+<li><input disabled="" type="checkbox"/>
+2582-raw-reference-mir-operator</li>
+<li><input disabled="" type="checkbox"/>
+2591-exhaustive-integer-pattern-matching</li>
+<li><input disabled="" type="checkbox"/>
+2592-futures</li>
+<li><input disabled="" type="checkbox"/>
+2603-symbol-name-mangling-v2</li>
+<li><input disabled="" type="checkbox"/>
+2627-raw-dylib-kind</li>
+<li><input disabled="" type="checkbox"/>
+2645-transparent-unions</li>
+<li><input disabled="" type="checkbox"/>
+2657-roadmap-2019</li>
+<li><input disabled="" type="checkbox"/>
+2678-named-custom-cargo-profiles</li>
+<li><input disabled="" type="checkbox"/>
+2689-compiler-team-contributors</li>
+<li><input disabled="" type="checkbox"/>
+2696-debug-map-key-value</li>
+<li><input disabled="" type="checkbox"/>
+2707-dotdot-patterns</li>
+<li><input disabled="" type="checkbox"/>
+2797-project-ffi-unwind</li>
+</ul>
+<h1><a class="header" href="#the-bindgen-user-guide" id="the-bindgen-user-guide">The bindgen User Guide</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>Introduction</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="2">
+<li>Requirements</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="3">
+<li>Library Usage with build.rs</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.1. Tutorial
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.1.1. Add bindgen as a Build Dependency</li>
+<li><input disabled="" type="checkbox"/>
+3.1.2. Create a wrapper.h Header</li>
+<li><input disabled="" type="checkbox"/>
+3.1.3. Create a build.rs File</li>
+<li><input disabled="" type="checkbox"/>
+3.1.4. Include the Generated Bindings in src/lib.rs</li>
+<li><input disabled="" type="checkbox"/>
+3.1.5. Write a Sanity Test</li>
+<li><input disabled="" type="checkbox"/>
+3.1.6. Publish Your Crate!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="4">
+<li>Command Line Usage</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="5">
+<li>Customizing the Generated Bindings</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+5.1. Whitelisting</li>
+<li><input disabled="" type="checkbox"/>
+5.2. Blacklisting</li>
+<li><input disabled="" type="checkbox"/>
+5.3. Treating a Type as an Opaque Blob of Bytes</li>
+<li><input disabled="" type="checkbox"/>
+5.4. Replacing One Type with Another</li>
+<li><input disabled="" type="checkbox"/>
+5.5. Preventing the Derivation of Copy and Clone</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="6">
+<li>Generating Bindings to C++</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="7">
+<li>Using Unions</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="8">
+<li>Using Bitfields</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="9">
+<li>FAQ</li>
+</ol>
+</li>
+</ul>
+<h1><a class="header" href="#asynchronous-programming-in-rust" id="asynchronous-programming-in-rust">Asynchronous Programming in Rust</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>Getting Started</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.1. Why Async?</li>
+<li><input disabled="" type="checkbox"/>
+1.2. The State of Asynchronous Rust</li>
+<li><input disabled="" type="checkbox"/>
+1.3. async/.await Primer</li>
+<li><input disabled="" type="checkbox"/>
+1.4. Applied: HTTP Server</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="2">
+<li>Under the Hood: Executing Futures and Tasks</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.1. The Future Trait</li>
+<li><input disabled="" type="checkbox"/>
+2.2. Task Wakeups with Waker</li>
+<li><input disabled="" type="checkbox"/>
+2.3. Applied: Build an Executor</li>
+<li><input disabled="" type="checkbox"/>
+2.4. Executors and System IO</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="3">
+<li>async/await</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="4">
+<li>Pinning</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="5">
+<li>Streams</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+5.1. Iteration and Concurrency</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="6">
+<li>Executing Multiple Futures at a Time</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+6.1. join!</li>
+<li><input disabled="" type="checkbox"/>
+6.2. select!</li>
+<li><input disabled="" type="checkbox"/>
+6.3. TODO: Spawning</li>
+<li><input disabled="" type="checkbox"/>
+6.4. TODO: Cancellation and Timeouts</li>
+<li><input disabled="" type="checkbox"/>
+6.5. TODO: FuturesUnordered</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="7">
+<li>Workarounds to Know and Love</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+7.1. Return Type Errors</li>
+<li><input disabled="" type="checkbox"/>
+7.2. ? in async Blocks</li>
+<li><input disabled="" type="checkbox"/>
+7.3. Send Approximation</li>
+<li><input disabled="" type="checkbox"/>
+7.4. Recursion</li>
+<li><input disabled="" type="checkbox"/>
+7.5. async in Traits</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="8">
+<li>TODO: I/O</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+8.1. TODO: AsyncRead and AsyncWrite</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="9">
+<li>TODO: Asynchronous Design Patterns: Solutions and Suggestions</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+9.1. TODO: Modeling Servers and the Request/Response Pattern</li>
+<li><input disabled="" type="checkbox"/>
+9.2. TODO: Managing Shared State</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="10">
+<li>TODO: The Ecosystem: Tokio and More</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+10.1. TODO: Lots, lots more?...</li>
+</ul>
+</li>
+</ul>
+<h1><a class="header" href="#rust-marketing-handbook" id="rust-marketing-handbook">Rust Marketing Handbook</a></h1>
+<h1><a class="header" href="#mdbook" id="mdbook">mdbook</a></h1>
+<p>mdBook 是一个利用Markdown写书的工具，类似Gitbook，但是使用Rust实现。
+mdBook 在Rust领域使用非常广泛，绝大多数Rust相关书籍均使用mdBook。例如<code>The Book</code></p>
+<ul>
+<li>书籍：<a href="https://rust-lang.github.io/mdBook/">https://rust-lang.github.io/mdBook/</a></li>
+<li>文档：<a href="https://docs.rs/mdbook/*/mdbook/">https://docs.rs/mdbook/*/mdbook/</a></li>
+<li>源码：<a href="https://github.com/rust-lang/mdBook">https://github.com/rust-lang/mdBook</a></li>
+</ul>
+<h2><a class="header" href="#学习进度记录" id="学习进度记录">学习进度记录</a></h2>
+<ul>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>mdBook</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="2">
+<li>Command Line Tool</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.1. init</li>
+<li><input disabled="" type="checkbox"/>
+2.2. build</li>
+<li><input disabled="" type="checkbox"/>
+2.3. watch</li>
+<li><input disabled="" type="checkbox"/>
+2.4. serve</li>
+<li><input disabled="" type="checkbox"/>
+2.5. test</li>
+<li><input disabled="" type="checkbox"/>
+2.6. clean</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="3">
+<li>Format</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.1. SUMMARY.md</li>
+<li><input disabled="" type="checkbox"/>
+3.2. Configuration</li>
+<li><input disabled="" type="checkbox"/>
+3.3. Theme
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.3.1. index.hbs</li>
+<li><input disabled="" type="checkbox"/>
+3.3.2. Syntax highlighting</li>
+<li><input disabled="" type="checkbox"/>
+3.3.3. Editor</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+3.4. MathJax Support</li>
+<li><input disabled="" type="checkbox"/>
+3.5. mdBook specific features</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="4">
+<li>Continuous Integration</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="5">
+<li>For Developers</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+5.1. Preprocessors</li>
+<li><input disabled="" type="checkbox"/>
+5.2. Alternative Backends</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+Contributors</li>
+</ul>
 
                     </main>
 

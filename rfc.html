@@ -1,0 +1,1139 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>The Rust RFC Book - </title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="rust-lang.html"><strong aria-hidden="true">1.</strong> Rust 程序设计语言</a></li><li class="expanded "><a href="rust-by-example.html"><strong aria-hidden="true">2.</strong> Rust By Example</a></li><li class="expanded "><a href="rustlings.html"><strong aria-hidden="true">3.</strong> Rustlings</a></li><li class="expanded "><a href="rust-std.html"><strong aria-hidden="true">4.</strong> Rust 标准库</a></li><li class="expanded "><a href="edition-guide.html"><strong aria-hidden="true">5.</strong> The Edition Guide</a></li><li class="expanded "><a href="rustc.html"><strong aria-hidden="true">6.</strong> The Rustc Book</a></li><li class="expanded "><a href="cargo.html"><strong aria-hidden="true">7.</strong> The Cargo Book</a></li><li class="expanded "><a href="rustdoc.html"><strong aria-hidden="true">8.</strong> The Rustdoc Book</a></li><li class="expanded "><a href="compiler-error.html"><strong aria-hidden="true">9.</strong> Rust Compiler Error Index</a></li><li class="expanded "><a href="reference.html"><strong aria-hidden="true">10.</strong> The Rust Reference</a></li><li class="expanded "><a href="rustonomicon.html"><strong aria-hidden="true">11.</strong> The Rustonomicon</a></li><li class="expanded "><a href="unstable.html"><strong aria-hidden="true">12.</strong> The Rust Unstable Book</a></li><li class="expanded "><a href="rustc-contribution.html"><strong aria-hidden="true">13.</strong> The rustc Contribution Guide</a></li><li class="expanded "><a href="embedded.html"><strong aria-hidden="true">14.</strong> The Embedded Rust Book</a></li><li class="expanded "><a href="webassembly.html"><strong aria-hidden="true">15.</strong> Rust and WebAssembly</a></li><li class="expanded "><a href="cmd-line-app.html"><strong aria-hidden="true">16.</strong> Command Line Applications in Rust</a></li><li class="expanded "><a href="rfc.html" class="active"><strong aria-hidden="true">17.</strong> The Rust RFC Book</a></li><li class="expanded "><a href="bindgen.html"><strong aria-hidden="true">18.</strong> The bindgen User Guide</a></li><li class="expanded "><a href="async.html"><strong aria-hidden="true">19.</strong> Asynchronous Programming in Rust</a></li><li class="expanded "><a href="market-handbook.html"><strong aria-hidden="true">20.</strong> Rust Marketing Handbook</a></li><li class="expanded "><a href="mdbook.html"><strong aria-hidden="true">21.</strong> mdbook</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title"></h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#the-rust-rfc-book" id="the-rust-rfc-book">The Rust RFC Book</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Introduction</li>
+<li><input disabled="" type="checkbox"/>
+0001-private-fields</li>
+<li><input disabled="" type="checkbox"/>
+0002-rfc-process</li>
+<li><input disabled="" type="checkbox"/>
+0003-attribute-usage</li>
+<li><input disabled="" type="checkbox"/>
+0008-new-intrinsics</li>
+<li><input disabled="" type="checkbox"/>
+0016-more-attributes</li>
+<li><input disabled="" type="checkbox"/>
+0019-opt-in-builtin-traits</li>
+<li><input disabled="" type="checkbox"/>
+0026-remove-priv</li>
+<li><input disabled="" type="checkbox"/>
+0034-bounded-type-parameters</li>
+<li><input disabled="" type="checkbox"/>
+0040-libstd-facade</li>
+<li><input disabled="" type="checkbox"/>
+0042-regexps</li>
+<li><input disabled="" type="checkbox"/>
+0048-traits</li>
+<li><input disabled="" type="checkbox"/>
+0049-match-arm-attributes</li>
+<li><input disabled="" type="checkbox"/>
+0050-assert</li>
+<li><input disabled="" type="checkbox"/>
+0059-remove-tilde</li>
+<li><input disabled="" type="checkbox"/>
+0060-rename-strbuf</li>
+<li><input disabled="" type="checkbox"/>
+0063-module-file-system-hierarchy</li>
+<li><input disabled="" type="checkbox"/>
+0066-better-temporary-lifetimes</li>
+<li><input disabled="" type="checkbox"/>
+0068-const-unsafe-pointers</li>
+<li><input disabled="" type="checkbox"/>
+0069-ascii-literals</li>
+<li><input disabled="" type="checkbox"/>
+0071-const-block-expr</li>
+<li><input disabled="" type="checkbox"/>
+0079-undefined-struct-layout</li>
+<li><input disabled="" type="checkbox"/>
+0085-pattern-macros</li>
+<li><input disabled="" type="checkbox"/>
+0086-plugin-registrar</li>
+<li><input disabled="" type="checkbox"/>
+0087-trait-bounds-with-plus</li>
+<li><input disabled="" type="checkbox"/>
+0089-loadable-lints</li>
+<li><input disabled="" type="checkbox"/>
+0090-lexical-syntax-simplification</li>
+<li><input disabled="" type="checkbox"/>
+0092-struct-grammar</li>
+<li><input disabled="" type="checkbox"/>
+0093-remove-format-intl</li>
+<li><input disabled="" type="checkbox"/>
+0100-partial-cmp</li>
+<li><input disabled="" type="checkbox"/>
+0107-pattern-guards-with-bind-by-move</li>
+<li><input disabled="" type="checkbox"/>
+0109-remove-crate-id</li>
+<li><input disabled="" type="checkbox"/>
+0111-index-traits</li>
+<li><input disabled="" type="checkbox"/>
+0112-remove-cross-borrowing</li>
+<li><input disabled="" type="checkbox"/>
+0114-closures</li>
+<li><input disabled="" type="checkbox"/>
+0115-rm-integer-fallback</li>
+<li><input disabled="" type="checkbox"/>
+0116-no-module-shadowing</li>
+<li><input disabled="" type="checkbox"/>
+0123-share-to-threadsafe</li>
+<li><input disabled="" type="checkbox"/>
+0130-box-not-special</li>
+<li><input disabled="" type="checkbox"/>
+0131-target-specification</li>
+<li><input disabled="" type="checkbox"/>
+0132-ufcs</li>
+<li><input disabled="" type="checkbox"/>
+0135-where</li>
+<li><input disabled="" type="checkbox"/>
+0136-no-privates-in-public</li>
+<li><input disabled="" type="checkbox"/>
+0139-remove-cross-borrowing-entirely</li>
+<li><input disabled="" type="checkbox"/>
+0141-lifetime-elision</li>
+<li><input disabled="" type="checkbox"/>
+0151-capture-by-value</li>
+<li><input disabled="" type="checkbox"/>
+0155-anonymous-impl-only-in-same-module</li>
+<li><input disabled="" type="checkbox"/>
+0160-if-let</li>
+<li><input disabled="" type="checkbox"/>
+0164-feature-gate-slice-pats</li>
+<li><input disabled="" type="checkbox"/>
+0168-mod</li>
+<li><input disabled="" type="checkbox"/>
+0169-use-path-as-id</li>
+<li><input disabled="" type="checkbox"/>
+0179-and-mut-patterns</li>
+<li><input disabled="" type="checkbox"/>
+0184-tuple-accessors</li>
+<li><input disabled="" type="checkbox"/>
+0192-bounds-on-object-and-generic-types</li>
+<li><input disabled="" type="checkbox"/>
+0194-cfg-syntax</li>
+<li><input disabled="" type="checkbox"/>
+0195-associated-items</li>
+<li><input disabled="" type="checkbox"/>
+0198-slice-notation</li>
+<li><input disabled="" type="checkbox"/>
+0199-ownership-variants</li>
+<li><input disabled="" type="checkbox"/>
+0201-error-chaining</li>
+<li><input disabled="" type="checkbox"/>
+0202-subslice-syntax-change</li>
+<li><input disabled="" type="checkbox"/>
+0212-restore-int-fallback</li>
+<li><input disabled="" type="checkbox"/>
+0213-defaulted-type-params</li>
+<li><input disabled="" type="checkbox"/>
+0214-while-let</li>
+<li><input disabled="" type="checkbox"/>
+0216-collection-views</li>
+<li><input disabled="" type="checkbox"/>
+0218-empty-struct-with-braces</li>
+<li><input disabled="" type="checkbox"/>
+0221-panic</li>
+<li><input disabled="" type="checkbox"/>
+0230-remove-runtime</li>
+<li><input disabled="" type="checkbox"/>
+0231-upvar-capture-inference</li>
+<li><input disabled="" type="checkbox"/>
+0234-variants-namespace</li>
+<li><input disabled="" type="checkbox"/>
+0235-collections-conventions</li>
+<li><input disabled="" type="checkbox"/>
+0236-error-conventions</li>
+<li><input disabled="" type="checkbox"/>
+0240-unsafe-api-location</li>
+<li><input disabled="" type="checkbox"/>
+0241-deref-conversions</li>
+<li><input disabled="" type="checkbox"/>
+0243-trait-based-exception-handling</li>
+<li><input disabled="" type="checkbox"/>
+0246-const-vs-static</li>
+<li><input disabled="" type="checkbox"/>
+0255-object-safety</li>
+<li><input disabled="" type="checkbox"/>
+0256-remove-refcounting-gc-of-t</li>
+<li><input disabled="" type="checkbox"/>
+0320-nonzeroing-dynamic-drop</li>
+<li><input disabled="" type="checkbox"/>
+0326-restrict-xXX-to-ascii</li>
+<li><input disabled="" type="checkbox"/>
+0339-statically-sized-literals</li>
+<li><input disabled="" type="checkbox"/>
+0341-remove-virtual-structs</li>
+<li><input disabled="" type="checkbox"/>
+0342-keywords</li>
+<li><input disabled="" type="checkbox"/>
+0344-conventions-galore</li>
+<li><input disabled="" type="checkbox"/>
+0356-no-module-prefixes</li>
+<li><input disabled="" type="checkbox"/>
+0369-num-reform</li>
+<li><input disabled="" type="checkbox"/>
+0378-expr-macros</li>
+<li><input disabled="" type="checkbox"/>
+0379-remove-reflection</li>
+<li><input disabled="" type="checkbox"/>
+0380-stabilize-std-fmt</li>
+<li><input disabled="" type="checkbox"/>
+0385-module-system-cleanup</li>
+<li><input disabled="" type="checkbox"/>
+0387-higher-ranked-trait-bounds</li>
+<li><input disabled="" type="checkbox"/>
+0390-enum-namespacing</li>
+<li><input disabled="" type="checkbox"/>
+0401-coercions</li>
+<li><input disabled="" type="checkbox"/>
+0403-cargo-build-command</li>
+<li><input disabled="" type="checkbox"/>
+0404-change-prefer-dynamic</li>
+<li><input disabled="" type="checkbox"/>
+0418-struct-variants</li>
+<li><input disabled="" type="checkbox"/>
+0430-finalizing-naming-conventions</li>
+<li><input disabled="" type="checkbox"/>
+0438-precedence-of-plus</li>
+<li><input disabled="" type="checkbox"/>
+0439-cmp-ops-reform</li>
+<li><input disabled="" type="checkbox"/>
+0445-extension-trait-conventions</li>
+<li><input disabled="" type="checkbox"/>
+0446-es6-unicode-escapes</li>
+<li><input disabled="" type="checkbox"/>
+0447-no-unused-impl-parameters</li>
+<li><input disabled="" type="checkbox"/>
+0450-un-feature-gate-some-more-gates</li>
+<li><input disabled="" type="checkbox"/>
+0453-macro-reform</li>
+<li><input disabled="" type="checkbox"/>
+0458-send-improvements</li>
+<li><input disabled="" type="checkbox"/>
+0459-disallow-shadowing</li>
+<li><input disabled="" type="checkbox"/>
+0461-tls-overhaul</li>
+<li><input disabled="" type="checkbox"/>
+0463-future-proof-literal-suffixes</li>
+<li><input disabled="" type="checkbox"/>
+0469-feature-gate-box-patterns</li>
+<li><input disabled="" type="checkbox"/>
+0474-path-reform</li>
+<li><input disabled="" type="checkbox"/>
+0486-std-ascii-reform</li>
+<li><input disabled="" type="checkbox"/>
+0490-dst-syntax</li>
+<li><input disabled="" type="checkbox"/>
+0494-c_str-and-c_vec-stability</li>
+<li><input disabled="" type="checkbox"/>
+0495-array-pattern-changes</li>
+<li><input disabled="" type="checkbox"/>
+0501-consistent_no_prelude_attributes</li>
+<li><input disabled="" type="checkbox"/>
+0503-prelude-stabilization</li>
+<li><input disabled="" type="checkbox"/>
+0504-show-stabilization</li>
+<li><input disabled="" type="checkbox"/>
+0505-api-comment-conventions</li>
+<li><input disabled="" type="checkbox"/>
+0507-release-channels</li>
+<li><input disabled="" type="checkbox"/>
+0509-collections-reform-part-2</li>
+<li><input disabled="" type="checkbox"/>
+0517-io-os-reform</li>
+<li><input disabled="" type="checkbox"/>
+0520-new-array-repeat-syntax</li>
+<li><input disabled="" type="checkbox"/>
+0522-self-impl</li>
+<li><input disabled="" type="checkbox"/>
+0526-fmt-text-writer</li>
+<li><input disabled="" type="checkbox"/>
+0528-string-patterns</li>
+<li><input disabled="" type="checkbox"/>
+0529-conversion-traits</li>
+<li><input disabled="" type="checkbox"/>
+0531-define-rfc-scope</li>
+<li><input disabled="" type="checkbox"/>
+0532-self-in-use</li>
+<li><input disabled="" type="checkbox"/>
+0533-no-array-elem-moves</li>
+<li><input disabled="" type="checkbox"/>
+0534-deriving2derive</li>
+<li><input disabled="" type="checkbox"/>
+0544-rename-int-uint</li>
+<li><input disabled="" type="checkbox"/>
+0546-Self-not-sized-by-default</li>
+<li><input disabled="" type="checkbox"/>
+0550-macro-future-proofing</li>
+<li><input disabled="" type="checkbox"/>
+0556-raw-lifetime</li>
+<li><input disabled="" type="checkbox"/>
+0558-require-parentheses-for-chained-comparisons</li>
+<li><input disabled="" type="checkbox"/>
+0560-integer-overflow</li>
+<li><input disabled="" type="checkbox"/>
+0563-remove-ndebug</li>
+<li><input disabled="" type="checkbox"/>
+0565-show-string-guidelines</li>
+<li><input disabled="" type="checkbox"/>
+0572-rustc-attribute</li>
+<li><input disabled="" type="checkbox"/>
+0574-drain-range</li>
+<li><input disabled="" type="checkbox"/>
+0580-rename-collections</li>
+<li><input disabled="" type="checkbox"/>
+0587-fn-return-should-be-an-associated-type</li>
+<li><input disabled="" type="checkbox"/>
+0592-c-str-deref</li>
+<li><input disabled="" type="checkbox"/>
+0593-forbid-Self-definitions</li>
+<li><input disabled="" type="checkbox"/>
+0599-default-object-bound</li>
+<li><input disabled="" type="checkbox"/>
+0601-replace-be-with-become</li>
+<li><input disabled="" type="checkbox"/>
+0639-discriminant-intrinsic</li>
+<li><input disabled="" type="checkbox"/>
+0640-debug-improvements</li>
+<li><input disabled="" type="checkbox"/>
+0702-rangefull-expression</li>
+<li><input disabled="" type="checkbox"/>
+0735-allow-inherent-impls-anywhere</li>
+<li><input disabled="" type="checkbox"/>
+0736-privacy-respecting-fru</li>
+<li><input disabled="" type="checkbox"/>
+0738-variance</li>
+<li><input disabled="" type="checkbox"/>
+0769-sound-generic-drop</li>
+<li><input disabled="" type="checkbox"/>
+0771-std-iter-once</li>
+<li><input disabled="" type="checkbox"/>
+0803-type-ascription</li>
+<li><input disabled="" type="checkbox"/>
+0809-box-and-in-for-stdlib</li>
+<li><input disabled="" type="checkbox"/>
+0823-hash-simplification</li>
+<li><input disabled="" type="checkbox"/>
+0832-from-elem-with-love</li>
+<li><input disabled="" type="checkbox"/>
+0839-embrace-extend-extinguish</li>
+<li><input disabled="" type="checkbox"/>
+0840-no-panic-in-c-string</li>
+<li><input disabled="" type="checkbox"/>
+0873-type-macros</li>
+<li><input disabled="" type="checkbox"/>
+0879-small-base-lexing</li>
+<li><input disabled="" type="checkbox"/>
+0888-compiler-fence-intrinsics</li>
+<li><input disabled="" type="checkbox"/>
+0909-move-thread-local-to-std-thread</li>
+<li><input disabled="" type="checkbox"/>
+0911-const-fn</li>
+<li><input disabled="" type="checkbox"/>
+0921-entry_v3</li>
+<li><input disabled="" type="checkbox"/>
+0940-hyphens-considered-harmful</li>
+<li><input disabled="" type="checkbox"/>
+0953-op-assign</li>
+<li><input disabled="" type="checkbox"/>
+0968-closure-return-type-syntax</li>
+<li><input disabled="" type="checkbox"/>
+0979-align-splitn-with-other-languages</li>
+<li><input disabled="" type="checkbox"/>
+0980-read-exact</li>
+<li><input disabled="" type="checkbox"/>
+0982-dst-coercion</li>
+<li><input disabled="" type="checkbox"/>
+1011-process.exit</li>
+<li><input disabled="" type="checkbox"/>
+1014-stdout-existential-crisis</li>
+<li><input disabled="" type="checkbox"/>
+1023-rebalancing-coherence</li>
+<li><input disabled="" type="checkbox"/>
+1030-prelude-additions</li>
+<li><input disabled="" type="checkbox"/>
+1040-duration-reform</li>
+<li><input disabled="" type="checkbox"/>
+1044-io-fs-2.1</li>
+<li><input disabled="" type="checkbox"/>
+1047-socket-timeouts</li>
+<li><input disabled="" type="checkbox"/>
+1048-rename-soft-link-to-symlink</li>
+<li><input disabled="" type="checkbox"/>
+1054-str-words</li>
+<li><input disabled="" type="checkbox"/>
+1057-io-error-sync</li>
+<li><input disabled="" type="checkbox"/>
+1058-slice-tail-redesign</li>
+<li><input disabled="" type="checkbox"/>
+1066-safe-mem-forget</li>
+<li><input disabled="" type="checkbox"/>
+1068-rust-governance</li>
+<li><input disabled="" type="checkbox"/>
+1096-remove-static-assert</li>
+<li><input disabled="" type="checkbox"/>
+1102-rename-connect-to-join</li>
+<li><input disabled="" type="checkbox"/>
+1105-api-evolution</li>
+<li><input disabled="" type="checkbox"/>
+1119-result-expect</li>
+<li><input disabled="" type="checkbox"/>
+1122-language-semver</li>
+<li><input disabled="" type="checkbox"/>
+1123-str-split-at</li>
+<li><input disabled="" type="checkbox"/>
+1131-likely-intrinsic</li>
+<li><input disabled="" type="checkbox"/>
+1135-raw-pointer-comparisons</li>
+<li><input disabled="" type="checkbox"/>
+1152-slice-string-symmetry</li>
+<li><input disabled="" type="checkbox"/>
+1156-adjust-default-object-bounds</li>
+<li><input disabled="" type="checkbox"/>
+1174-into-raw-fd-socket-handle-traits</li>
+<li><input disabled="" type="checkbox"/>
+1183-swap-out-jemalloc</li>
+<li><input disabled="" type="checkbox"/>
+1184-stabilize-no_std</li>
+<li><input disabled="" type="checkbox"/>
+1191-hir</li>
+<li><input disabled="" type="checkbox"/>
+1192-inclusive-ranges</li>
+<li><input disabled="" type="checkbox"/>
+1193-cap-lints</li>
+<li><input disabled="" type="checkbox"/>
+1194-set-recovery</li>
+<li><input disabled="" type="checkbox"/>
+1199-simd-infrastructure</li>
+<li><input disabled="" type="checkbox"/>
+1200-cargo-install</li>
+<li><input disabled="" type="checkbox"/>
+1201-naked-fns</li>
+<li><input disabled="" type="checkbox"/>
+1210-impl-specialization</li>
+<li><input disabled="" type="checkbox"/>
+1211-mir</li>
+<li><input disabled="" type="checkbox"/>
+1212-line-endings</li>
+<li><input disabled="" type="checkbox"/>
+1214-projections-lifetimes-and-wf</li>
+<li><input disabled="" type="checkbox"/>
+1216-bang-type</li>
+<li><input disabled="" type="checkbox"/>
+1219-use-group-as</li>
+<li><input disabled="" type="checkbox"/>
+1228-placement-left-arrow</li>
+<li><input disabled="" type="checkbox"/>
+1229-compile-time-asserts</li>
+<li><input disabled="" type="checkbox"/>
+1236-stabilize-catch-panic</li>
+<li><input disabled="" type="checkbox"/>
+1238-nonparametric-dropck</li>
+<li><input disabled="" type="checkbox"/>
+1240-repr-packed-unsafe-ref</li>
+<li><input disabled="" type="checkbox"/>
+1241-no-wildcard-deps</li>
+<li><input disabled="" type="checkbox"/>
+1242-rust-lang-crates</li>
+<li><input disabled="" type="checkbox"/>
+1252-open-options</li>
+<li><input disabled="" type="checkbox"/>
+1257-drain-range-2</li>
+<li><input disabled="" type="checkbox"/>
+1260-main-reexport</li>
+<li><input disabled="" type="checkbox"/>
+1268-allow-overlapping-impls-on-marker-traits</li>
+<li><input disabled="" type="checkbox"/>
+1270-deprecation</li>
+<li><input disabled="" type="checkbox"/>
+1288-time-improvements</li>
+<li><input disabled="" type="checkbox"/>
+1291-promote-libc</li>
+<li><input disabled="" type="checkbox"/>
+1298-incremental-compilation</li>
+<li><input disabled="" type="checkbox"/>
+1300-intrinsic-semantics</li>
+<li><input disabled="" type="checkbox"/>
+1307-osstring-methods</li>
+<li><input disabled="" type="checkbox"/>
+1317-ide</li>
+<li><input disabled="" type="checkbox"/>
+1327-dropck-param-eyepatch</li>
+<li><input disabled="" type="checkbox"/>
+1328-global-panic-handler</li>
+<li><input disabled="" type="checkbox"/>
+1331-grammar-is-canonical</li>
+<li><input disabled="" type="checkbox"/>
+1358-repr-align</li>
+<li><input disabled="" type="checkbox"/>
+1359-process-ext-unix</li>
+<li><input disabled="" type="checkbox"/>
+1361-cargo-cfg-dependencies</li>
+<li><input disabled="" type="checkbox"/>
+1398-kinds-of-allocators</li>
+<li><input disabled="" type="checkbox"/>
+1399-repr-pack</li>
+<li><input disabled="" type="checkbox"/>
+1414-rvalue_static_promotion</li>
+<li><input disabled="" type="checkbox"/>
+1415-trim-std-os</li>
+<li><input disabled="" type="checkbox"/>
+1419-slice-copy</li>
+<li><input disabled="" type="checkbox"/>
+1422-pub-restricted</li>
+<li><input disabled="" type="checkbox"/>
+1432-replace-slice</li>
+<li><input disabled="" type="checkbox"/>
+1434-contains-method-for-ranges</li>
+<li><input disabled="" type="checkbox"/>
+1440-drop-types-in-const</li>
+<li><input disabled="" type="checkbox"/>
+1443-extended-compare-and-swap</li>
+<li><input disabled="" type="checkbox"/>
+1444-union</li>
+<li><input disabled="" type="checkbox"/>
+1445-restrict-constants-in-patterns</li>
+<li><input disabled="" type="checkbox"/>
+1461-net2-mutators</li>
+<li><input disabled="" type="checkbox"/>
+1467-volatile</li>
+<li><input disabled="" type="checkbox"/>
+1479-unix-socket</li>
+<li><input disabled="" type="checkbox"/>
+1492-dotdot-in-patterns</li>
+<li><input disabled="" type="checkbox"/>
+1498-ipv6addr-octets</li>
+<li><input disabled="" type="checkbox"/>
+1504-int128</li>
+<li><input disabled="" type="checkbox"/>
+1506-adt-kinds</li>
+<li><input disabled="" type="checkbox"/>
+1510-cdylib</li>
+<li><input disabled="" type="checkbox"/>
+1513-less-unwinding</li>
+<li><input disabled="" type="checkbox"/>
+1521-copy-clone-semantics</li>
+<li><input disabled="" type="checkbox"/>
+1522-conservative-impl-trait</li>
+<li><input disabled="" type="checkbox"/>
+1525-cargo-workspace</li>
+<li><input disabled="" type="checkbox"/>
+1535-stable-overflow-checks</li>
+<li><input disabled="" type="checkbox"/>
+1542-try-from</li>
+<li><input disabled="" type="checkbox"/>
+1543-integer_atomics</li>
+<li><input disabled="" type="checkbox"/>
+1548-global-asm</li>
+<li><input disabled="" type="checkbox"/>
+1552-contains-method-for-various-collections</li>
+<li><input disabled="" type="checkbox"/>
+1558-closure-to-fn-coercion</li>
+<li><input disabled="" type="checkbox"/>
+1559-attributes-with-literals</li>
+<li><input disabled="" type="checkbox"/>
+1560-name-resolution</li>
+<li><input disabled="" type="checkbox"/>
+1561-macro-naming</li>
+<li><input disabled="" type="checkbox"/>
+1566-proc-macros</li>
+<li><input disabled="" type="checkbox"/>
+1567-long-error-codes-explanation-normalization</li>
+<li><input disabled="" type="checkbox"/>
+1574-more-api-documentation-conventions</li>
+<li><input disabled="" type="checkbox"/>
+1576-macros-literal-matcher</li>
+<li><input disabled="" type="checkbox"/>
+1581-fused-iterator</li>
+<li><input disabled="" type="checkbox"/>
+1584-macros</li>
+<li><input disabled="" type="checkbox"/>
+1589-rustc-bug-fix-procedure</li>
+<li><input disabled="" type="checkbox"/>
+1590-macro-lifetimes</li>
+<li><input disabled="" type="checkbox"/>
+1598-generic_associated_types</li>
+<li><input disabled="" type="checkbox"/>
+1607-style-rfcs</li>
+<li><input disabled="" type="checkbox"/>
+1618-ergonomic-format-args</li>
+<li><input disabled="" type="checkbox"/>
+1620-regex-1.0</li>
+<li><input disabled="" type="checkbox"/>
+1623-static</li>
+<li><input disabled="" type="checkbox"/>
+1624-loop-break-value</li>
+<li><input disabled="" type="checkbox"/>
+1636-document_all_features</li>
+<li><input disabled="" type="checkbox"/>
+1640-duration-checked-sub</li>
+<li><input disabled="" type="checkbox"/>
+1643-memory-model-strike-team</li>
+<li><input disabled="" type="checkbox"/>
+1644-default-and-expanded-rustc-errors</li>
+<li><input disabled="" type="checkbox"/>
+1647-allow-self-in-where-clauses</li>
+<li><input disabled="" type="checkbox"/>
+1649-atomic-access</li>
+<li><input disabled="" type="checkbox"/>
+1651-movecell</li>
+<li><input disabled="" type="checkbox"/>
+1653-assert_ne</li>
+<li><input disabled="" type="checkbox"/>
+1660-try-borrow</li>
+<li><input disabled="" type="checkbox"/>
+1665-windows-subsystem</li>
+<li><input disabled="" type="checkbox"/>
+1679-panic-safe-slicing</li>
+<li><input disabled="" type="checkbox"/>
+1681-macros-1.1</li>
+<li><input disabled="" type="checkbox"/>
+1682-field-init-shorthand</li>
+<li><input disabled="" type="checkbox"/>
+1683-docs-team</li>
+<li><input disabled="" type="checkbox"/>
+1685-deprecate-anonymous-parameters</li>
+<li><input disabled="" type="checkbox"/>
+1695-add-error-macro</li>
+<li><input disabled="" type="checkbox"/>
+1696-discriminant</li>
+<li><input disabled="" type="checkbox"/>
+1717-dllimport</li>
+<li><input disabled="" type="checkbox"/>
+1721-crt-static</li>
+<li><input disabled="" type="checkbox"/>
+1725-unaligned-access</li>
+<li><input disabled="" type="checkbox"/>
+1728-north-star</li>
+<li><input disabled="" type="checkbox"/>
+1733-trait-alias</li>
+<li><input disabled="" type="checkbox"/>
+1758-repr-transparent</li>
+<li><input disabled="" type="checkbox"/>
+1774-roadmap-2017</li>
+<li><input disabled="" type="checkbox"/>
+1789-as-cell</li>
+<li><input disabled="" type="checkbox"/>
+1824-crates.io-default-ranking</li>
+<li><input disabled="" type="checkbox"/>
+1826-change-doc-default-urls</li>
+<li><input disabled="" type="checkbox"/>
+1828-rust-bookshelf</li>
+<li><input disabled="" type="checkbox"/>
+1845-shared-from-slice</li>
+<li><input disabled="" type="checkbox"/>
+1849-non-static-type-id</li>
+<li><input disabled="" type="checkbox"/>
+1857-stabilize-drop-order</li>
+<li><input disabled="" type="checkbox"/>
+1859-try-trait</li>
+<li><input disabled="" type="checkbox"/>
+1860-manually-drop</li>
+<li><input disabled="" type="checkbox"/>
+1861-extern-types</li>
+<li><input disabled="" type="checkbox"/>
+1866-more-readable-assert-eq</li>
+<li><input disabled="" type="checkbox"/>
+1868-portability-lint</li>
+<li><input disabled="" type="checkbox"/>
+1869-eprintln</li>
+<li><input disabled="" type="checkbox"/>
+1884-unstable-sort</li>
+<li><input disabled="" type="checkbox"/>
+1892-uninitialized-uninhabited</li>
+<li><input disabled="" type="checkbox"/>
+1909-unsized-rvalues</li>
+<li><input disabled="" type="checkbox"/>
+1925-optional-match-vert</li>
+<li><input disabled="" type="checkbox"/>
+1937-ques-in-main</li>
+<li><input disabled="" type="checkbox"/>
+1940-must-use-functions</li>
+<li><input disabled="" type="checkbox"/>
+1946-intra-rustdoc-links</li>
+<li><input disabled="" type="checkbox"/>
+1951-expand-impl-trait</li>
+<li><input disabled="" type="checkbox"/>
+1961-clamp</li>
+<li><input disabled="" type="checkbox"/>
+1966-unsafe-pointer-reform</li>
+<li><input disabled="" type="checkbox"/>
+1969-cargo-prepublish</li>
+<li><input disabled="" type="checkbox"/>
+1974-global-allocators</li>
+<li><input disabled="" type="checkbox"/>
+1977-public-private-dependencies</li>
+<li><input disabled="" type="checkbox"/>
+1983-nursery-deprecation</li>
+<li><input disabled="" type="checkbox"/>
+1985-tiered-browser-support</li>
+<li><input disabled="" type="checkbox"/>
+1990-external-doc-attribute</li>
+<li><input disabled="" type="checkbox"/>
+2000-const-generics</li>
+<li><input disabled="" type="checkbox"/>
+2005-match-ergonomics</li>
+<li><input disabled="" type="checkbox"/>
+2008-non-exhaustive</li>
+<li><input disabled="" type="checkbox"/>
+2011-generic-assert</li>
+<li><input disabled="" type="checkbox"/>
+2025-nested-method-calls</li>
+<li><input disabled="" type="checkbox"/>
+2027-object_safe_for_dispatch</li>
+<li><input disabled="" type="checkbox"/>
+2033-experimental-coroutines</li>
+<li><input disabled="" type="checkbox"/>
+2043-is-aligned-intrinsic</li>
+<li><input disabled="" type="checkbox"/>
+2044-license-rfcs</li>
+<li><input disabled="" type="checkbox"/>
+2045-target-feature</li>
+<li><input disabled="" type="checkbox"/>
+2046-label-break-value</li>
+<li><input disabled="" type="checkbox"/>
+2052-epochs</li>
+<li><input disabled="" type="checkbox"/>
+2056-allow-trivial-where-clause-constraints</li>
+<li><input disabled="" type="checkbox"/>
+2057-refcell-replace</li>
+<li><input disabled="" type="checkbox"/>
+2070-panic-implementation</li>
+<li><input disabled="" type="checkbox"/>
+2071-impl-trait-existential-types</li>
+<li><input disabled="" type="checkbox"/>
+2071-impl-trait-type-alias</li>
+<li><input disabled="" type="checkbox"/>
+2086-allow-if-let-irrefutables</li>
+<li><input disabled="" type="checkbox"/>
+2089-implied-bounds</li>
+<li><input disabled="" type="checkbox"/>
+2091-inline-semantic</li>
+<li><input disabled="" type="checkbox"/>
+2093-infer-outlives</li>
+<li><input disabled="" type="checkbox"/>
+2094-nll</li>
+<li><input disabled="" type="checkbox"/>
+2102-unnamed-fields</li>
+<li><input disabled="" type="checkbox"/>
+2103-tool-attributes</li>
+<li><input disabled="" type="checkbox"/>
+2113-dyn-trait-syntax</li>
+<li><input disabled="" type="checkbox"/>
+2115-argument-lifetimes</li>
+<li><input disabled="" type="checkbox"/>
+2116-alloc-me-maybe</li>
+<li><input disabled="" type="checkbox"/>
+2124-option-filter</li>
+<li><input disabled="" type="checkbox"/>
+2126-path-clarity</li>
+<li><input disabled="" type="checkbox"/>
+2128-use-nested-groups</li>
+<li><input disabled="" type="checkbox"/>
+2132-copy-closures</li>
+<li><input disabled="" type="checkbox"/>
+2133-all-the-clones</li>
+<li><input disabled="" type="checkbox"/>
+2136-build-systems</li>
+<li><input disabled="" type="checkbox"/>
+2137-variadic</li>
+<li><input disabled="" type="checkbox"/>
+2141-alternative-registries</li>
+<li><input disabled="" type="checkbox"/>
+2145-type-privacy</li>
+<li><input disabled="" type="checkbox"/>
+2151-raw-identifiers</li>
+<li><input disabled="" type="checkbox"/>
+2166-impl-only-use</li>
+<li><input disabled="" type="checkbox"/>
+2169-euclidean-modulo</li>
+<li><input disabled="" type="checkbox"/>
+2175-if-while-or-patterns</li>
+<li><input disabled="" type="checkbox"/>
+2195-really-tagged-unions</li>
+<li><input disabled="" type="checkbox"/>
+2196-metabuild</li>
+<li><input disabled="" type="checkbox"/>
+2203-const-repeat-expr</li>
+<li><input disabled="" type="checkbox"/>
+2226-fmt-debug-hex</li>
+<li><input disabled="" type="checkbox"/>
+2229-capture-disjoint-fields</li>
+<li><input disabled="" type="checkbox"/>
+2230-bury-description</li>
+<li><input disabled="" type="checkbox"/>
+2235-libc-struct-traits</li>
+<li><input disabled="" type="checkbox"/>
+2250-finalize-impl-dyn-syntax</li>
+<li><input disabled="" type="checkbox"/>
+2282-profile-dependencies</li>
+<li><input disabled="" type="checkbox"/>
+2289-associated-type-bounds</li>
+<li><input disabled="" type="checkbox"/>
+2294-if-let-guard</li>
+<li><input disabled="" type="checkbox"/>
+2295-os-str-pattern</li>
+<li><input disabled="" type="checkbox"/>
+2296-option-replace</li>
+<li><input disabled="" type="checkbox"/>
+2298-macro-at-most-once-rep</li>
+<li><input disabled="" type="checkbox"/>
+2300-self-in-typedefs</li>
+<li><input disabled="" type="checkbox"/>
+2302-tuple-struct-self-ctor</li>
+<li><input disabled="" type="checkbox"/>
+2306-convert-id</li>
+<li><input disabled="" type="checkbox"/>
+2307-concrete-nonzero-types</li>
+<li><input disabled="" type="checkbox"/>
+2314-roadmap-2018</li>
+<li><input disabled="" type="checkbox"/>
+2318-custom-test-frameworks</li>
+<li><input disabled="" type="checkbox"/>
+2325-stable-simd</li>
+<li><input disabled="" type="checkbox"/>
+2333-prior-art</li>
+<li><input disabled="" type="checkbox"/>
+2338-type-alias-enum-variants</li>
+<li><input disabled="" type="checkbox"/>
+2341-const-locals</li>
+<li><input disabled="" type="checkbox"/>
+2342-const-control-flow</li>
+<li><input disabled="" type="checkbox"/>
+2344-const-looping</li>
+<li><input disabled="" type="checkbox"/>
+2345-const-panic</li>
+<li><input disabled="" type="checkbox"/>
+2349-pin</li>
+<li><input disabled="" type="checkbox"/>
+2351-is-sorted</li>
+<li><input disabled="" type="checkbox"/>
+2359-subslice-pattern-syntax</li>
+<li><input disabled="" type="checkbox"/>
+2360-bench-black-box</li>
+<li><input disabled="" type="checkbox"/>
+2361-dbg-macro</li>
+<li><input disabled="" type="checkbox"/>
+2363-arbitrary-enum-discriminant</li>
+<li><input disabled="" type="checkbox"/>
+2383-lint-reasons</li>
+<li><input disabled="" type="checkbox"/>
+2386-used</li>
+<li><input disabled="" type="checkbox"/>
+2388-try-expr</li>
+<li><input disabled="" type="checkbox"/>
+2394-async_await</li>
+<li><input disabled="" type="checkbox"/>
+2397-do-not-recommend</li>
+<li><input disabled="" type="checkbox"/>
+2412-optimize-attr</li>
+<li><input disabled="" type="checkbox"/>
+2420-unreserve-proc</li>
+<li><input disabled="" type="checkbox"/>
+2421-unreservations-2018</li>
+<li><input disabled="" type="checkbox"/>
+2436-style-guide</li>
+<li><input disabled="" type="checkbox"/>
+2437-rustfmt-stability</li>
+<li><input disabled="" type="checkbox"/>
+2438-deny-integer-literal-overflow-lint</li>
+<li><input disabled="" type="checkbox"/>
+2451-re-rebalancing-coherence</li>
+<li><input disabled="" type="checkbox"/>
+2457-non-ascii-idents</li>
+<li><input disabled="" type="checkbox"/>
+2471-lint-test-inner-function</li>
+<li><input disabled="" type="checkbox"/>
+2476-clippy-uno</li>
+<li><input disabled="" type="checkbox"/>
+2480-liballoc</li>
+<li><input disabled="" type="checkbox"/>
+2495-min-rust-version</li>
+<li><input disabled="" type="checkbox"/>
+2497-if-let-chains</li>
+<li><input disabled="" type="checkbox"/>
+2500-needle</li>
+<li><input disabled="" type="checkbox"/>
+2504-fix-error</li>
+<li><input disabled="" type="checkbox"/>
+2514-union-initialization-and-drop</li>
+<li><input disabled="" type="checkbox"/>
+2515-type_alias_impl_trait</li>
+<li><input disabled="" type="checkbox"/>
+2521-c_void-reunification</li>
+<li><input disabled="" type="checkbox"/>
+2523-cfg-path-version</li>
+<li><input disabled="" type="checkbox"/>
+2526-const-wildcard</li>
+<li><input disabled="" type="checkbox"/>
+2532-associated-type-defaults</li>
+<li><input disabled="" type="checkbox"/>
+2535-or-patterns</li>
+<li><input disabled="" type="checkbox"/>
+2539-cfg_attr-multiple-attrs</li>
+<li><input disabled="" type="checkbox"/>
+2561-future-possibilities</li>
+<li><input disabled="" type="checkbox"/>
+2565-formal-function-parameter-attributes</li>
+<li><input disabled="" type="checkbox"/>
+2570-linked-list-cursors</li>
+<li><input disabled="" type="checkbox"/>
+2574-simd-ffi</li>
+<li><input disabled="" type="checkbox"/>
+2582-raw-reference-mir-operator</li>
+<li><input disabled="" type="checkbox"/>
+2591-exhaustive-integer-pattern-matching</li>
+<li><input disabled="" type="checkbox"/>
+2592-futures</li>
+<li><input disabled="" type="checkbox"/>
+2603-symbol-name-mangling-v2</li>
+<li><input disabled="" type="checkbox"/>
+2627-raw-dylib-kind</li>
+<li><input disabled="" type="checkbox"/>
+2645-transparent-unions</li>
+<li><input disabled="" type="checkbox"/>
+2657-roadmap-2019</li>
+<li><input disabled="" type="checkbox"/>
+2678-named-custom-cargo-profiles</li>
+<li><input disabled="" type="checkbox"/>
+2689-compiler-team-contributors</li>
+<li><input disabled="" type="checkbox"/>
+2696-debug-map-key-value</li>
+<li><input disabled="" type="checkbox"/>
+2707-dotdot-patterns</li>
+<li><input disabled="" type="checkbox"/>
+2797-project-ffi-unwind</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="cmd-line-app.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="bindgen.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="cmd-line-app.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="bindgen.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

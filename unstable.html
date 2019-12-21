@@ -1,0 +1,916 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>The Rust Unstable Book - </title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="rust-lang.html"><strong aria-hidden="true">1.</strong> Rust 程序设计语言</a></li><li class="expanded "><a href="rust-by-example.html"><strong aria-hidden="true">2.</strong> Rust By Example</a></li><li class="expanded "><a href="rustlings.html"><strong aria-hidden="true">3.</strong> Rustlings</a></li><li class="expanded "><a href="rust-std.html"><strong aria-hidden="true">4.</strong> Rust 标准库</a></li><li class="expanded "><a href="edition-guide.html"><strong aria-hidden="true">5.</strong> The Edition Guide</a></li><li class="expanded "><a href="rustc.html"><strong aria-hidden="true">6.</strong> The Rustc Book</a></li><li class="expanded "><a href="cargo.html"><strong aria-hidden="true">7.</strong> The Cargo Book</a></li><li class="expanded "><a href="rustdoc.html"><strong aria-hidden="true">8.</strong> The Rustdoc Book</a></li><li class="expanded "><a href="compiler-error.html"><strong aria-hidden="true">9.</strong> Rust Compiler Error Index</a></li><li class="expanded "><a href="reference.html"><strong aria-hidden="true">10.</strong> The Rust Reference</a></li><li class="expanded "><a href="rustonomicon.html"><strong aria-hidden="true">11.</strong> The Rustonomicon</a></li><li class="expanded "><a href="unstable.html" class="active"><strong aria-hidden="true">12.</strong> The Rust Unstable Book</a></li><li class="expanded "><a href="rustc-contribution.html"><strong aria-hidden="true">13.</strong> The rustc Contribution Guide</a></li><li class="expanded "><a href="embedded.html"><strong aria-hidden="true">14.</strong> The Embedded Rust Book</a></li><li class="expanded "><a href="webassembly.html"><strong aria-hidden="true">15.</strong> Rust and WebAssembly</a></li><li class="expanded "><a href="cmd-line-app.html"><strong aria-hidden="true">16.</strong> Command Line Applications in Rust</a></li><li class="expanded "><a href="rfc.html"><strong aria-hidden="true">17.</strong> The Rust RFC Book</a></li><li class="expanded "><a href="bindgen.html"><strong aria-hidden="true">18.</strong> The bindgen User Guide</a></li><li class="expanded "><a href="async.html"><strong aria-hidden="true">19.</strong> Asynchronous Programming in Rust</a></li><li class="expanded "><a href="market-handbook.html"><strong aria-hidden="true">20.</strong> Rust Marketing Handbook</a></li><li class="expanded "><a href="mdbook.html"><strong aria-hidden="true">21.</strong> mdbook</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title"></h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#the-rust-unstable-book" id="the-rust-unstable-book">The Rust Unstable Book</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+The Unstable Book</li>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>Compiler flags</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.1. emit_stack_sizes</li>
+<li><input disabled="" type="checkbox"/>
+1.2. profile</li>
+<li><input disabled="" type="checkbox"/>
+1.3. report_time</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="2">
+<li>Language features</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.1. aarch64_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.2. abi_amdgpu_kernel</li>
+<li><input disabled="" type="checkbox"/>
+2.3. abi_efiapi</li>
+<li><input disabled="" type="checkbox"/>
+2.4. abi_msp430_interrupt</li>
+<li><input disabled="" type="checkbox"/>
+2.5. abi_ptx</li>
+<li><input disabled="" type="checkbox"/>
+2.6. abi_thiscall</li>
+<li><input disabled="" type="checkbox"/>
+2.7. abi_unadjusted</li>
+<li><input disabled="" type="checkbox"/>
+2.8. abi_vectorcall</li>
+<li><input disabled="" type="checkbox"/>
+2.9. abi_x86_interrupt</li>
+<li><input disabled="" type="checkbox"/>
+2.10. adx_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.11. alloc_error_handler</li>
+<li><input disabled="" type="checkbox"/>
+2.12. allocator_internals</li>
+<li><input disabled="" type="checkbox"/>
+2.13. allow_fail</li>
+<li><input disabled="" type="checkbox"/>
+2.14. allow_internal_unsafe</li>
+<li><input disabled="" type="checkbox"/>
+2.15. allow_internal_unstable</li>
+<li><input disabled="" type="checkbox"/>
+2.16. arbitrary_enum_discriminant</li>
+<li><input disabled="" type="checkbox"/>
+2.17. arbitrary_self_types</li>
+<li><input disabled="" type="checkbox"/>
+2.18. arm_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.19. associated_type_bounds</li>
+<li><input disabled="" type="checkbox"/>
+2.20. associated_type_defaults</li>
+<li><input disabled="" type="checkbox"/>
+2.21. async_closure</li>
+<li><input disabled="" type="checkbox"/>
+2.22. avx512_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.23. box_patterns</li>
+<li><input disabled="" type="checkbox"/>
+2.24. box_syntax</li>
+<li><input disabled="" type="checkbox"/>
+2.25. c_variadic</li>
+<li><input disabled="" type="checkbox"/>
+2.26. cfg_target_has_atomic</li>
+<li><input disabled="" type="checkbox"/>
+2.27. cfg_target_thread_local</li>
+<li><input disabled="" type="checkbox"/>
+2.28. cmpxchg16b_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.29. compiler_builtins</li>
+<li><input disabled="" type="checkbox"/>
+2.30. const_compare_raw_pointers</li>
+<li><input disabled="" type="checkbox"/>
+2.31. const_extern_fn</li>
+<li><input disabled="" type="checkbox"/>
+2.32. const_fn</li>
+<li><input disabled="" type="checkbox"/>
+2.33. const_fn_union</li>
+<li><input disabled="" type="checkbox"/>
+2.34. const_generics</li>
+<li><input disabled="" type="checkbox"/>
+2.35. const_in_array_repeat_expressions</li>
+<li><input disabled="" type="checkbox"/>
+2.36. const_panic</li>
+<li><input disabled="" type="checkbox"/>
+2.37. const_raw_ptr_deref</li>
+<li><input disabled="" type="checkbox"/>
+2.38. const_raw_ptr_to_usize_cast</li>
+<li><input disabled="" type="checkbox"/>
+2.39. const_transmute</li>
+<li><input disabled="" type="checkbox"/>
+2.40. crate_visibility_modifier</li>
+<li><input disabled="" type="checkbox"/>
+2.41. custom_attribute</li>
+<li><input disabled="" type="checkbox"/>
+2.42. custom_inner_attributes</li>
+<li><input disabled="" type="checkbox"/>
+2.43. custom_test_frameworks</li>
+<li><input disabled="" type="checkbox"/>
+2.44. decl_macro</li>
+<li><input disabled="" type="checkbox"/>
+2.45. default_type_parameter_fallback</li>
+<li><input disabled="" type="checkbox"/>
+2.46. doc_alias</li>
+<li><input disabled="" type="checkbox"/>
+2.47. doc_cfg</li>
+<li><input disabled="" type="checkbox"/>
+2.48. doc_keyword</li>
+<li><input disabled="" type="checkbox"/>
+2.49. doc_masked</li>
+<li><input disabled="" type="checkbox"/>
+2.50. doc_spotlight</li>
+<li><input disabled="" type="checkbox"/>
+2.51. dropck_eyepatch</li>
+<li><input disabled="" type="checkbox"/>
+2.52. exclusive_range_pattern</li>
+<li><input disabled="" type="checkbox"/>
+2.53. exhaustive_patterns</li>
+<li><input disabled="" type="checkbox"/>
+2.54. extern_types</li>
+<li><input disabled="" type="checkbox"/>
+2.55. external_doc</li>
+<li><input disabled="" type="checkbox"/>
+2.56. f16c_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.57. ffi_returns_twice</li>
+<li><input disabled="" type="checkbox"/>
+2.58. fundamental</li>
+<li><input disabled="" type="checkbox"/>
+2.59. generators</li>
+<li><input disabled="" type="checkbox"/>
+2.60. generic_associated_types</li>
+<li><input disabled="" type="checkbox"/>
+2.61. hexagon_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.62. impl_trait_in_bindings</li>
+<li><input disabled="" type="checkbox"/>
+2.63. in_band_lifetimes</li>
+<li><input disabled="" type="checkbox"/>
+2.64. infer_static_outlives_requirements</li>
+<li><input disabled="" type="checkbox"/>
+2.65. intrinsics</li>
+<li><input disabled="" type="checkbox"/>
+2.66. label_break_value</li>
+<li><input disabled="" type="checkbox"/>
+2.67. lang_items</li>
+<li><input disabled="" type="checkbox"/>
+2.68. let_chains</li>
+<li><input disabled="" type="checkbox"/>
+2.69. link_args</li>
+<li><input disabled="" type="checkbox"/>
+2.70. link_cfg</li>
+<li><input disabled="" type="checkbox"/>
+2.71. link_llvm_intrinsics</li>
+<li><input disabled="" type="checkbox"/>
+2.72. linkage</li>
+<li><input disabled="" type="checkbox"/>
+2.73. lint_reasons</li>
+<li><input disabled="" type="checkbox"/>
+2.74. main</li>
+<li><input disabled="" type="checkbox"/>
+2.75. marker_trait_attr</li>
+<li><input disabled="" type="checkbox"/>
+2.76. member_constraints</li>
+<li><input disabled="" type="checkbox"/>
+2.77. mips_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.78. mmx_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.79. movbe_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.80. naked_functions</li>
+<li><input disabled="" type="checkbox"/>
+2.81. needs_panic_runtime</li>
+<li><input disabled="" type="checkbox"/>
+2.82. never_type</li>
+<li><input disabled="" type="checkbox"/>
+2.83. nll</li>
+<li><input disabled="" type="checkbox"/>
+2.84. no_core</li>
+<li><input disabled="" type="checkbox"/>
+2.85. no_debug</li>
+<li><input disabled="" type="checkbox"/>
+2.86. non_ascii_idents</li>
+<li><input disabled="" type="checkbox"/>
+2.87. object_safe_for_dispatch</li>
+<li><input disabled="" type="checkbox"/>
+2.88. omit_gdb_pretty_printer_section</li>
+<li><input disabled="" type="checkbox"/>
+2.89. on_unimplemented</li>
+<li><input disabled="" type="checkbox"/>
+2.90. optimize_attribute</li>
+<li><input disabled="" type="checkbox"/>
+2.91. optin_builtin_traits</li>
+<li><input disabled="" type="checkbox"/>
+2.92. or_patterns</li>
+<li><input disabled="" type="checkbox"/>
+2.93. overlapping_marker_traits</li>
+<li><input disabled="" type="checkbox"/>
+2.94. panic_runtime</li>
+<li><input disabled="" type="checkbox"/>
+2.95. platform_intrinsics</li>
+<li><input disabled="" type="checkbox"/>
+2.96. plugin</li>
+<li><input disabled="" type="checkbox"/>
+2.97. plugin_registrar</li>
+<li><input disabled="" type="checkbox"/>
+2.98. powerpc_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.99. precise_pointer_size_matching</li>
+<li><input disabled="" type="checkbox"/>
+2.100. prelude_import</li>
+<li><input disabled="" type="checkbox"/>
+2.101. proc_macro_hygiene</li>
+<li><input disabled="" type="checkbox"/>
+2.102. profiler_runtime</li>
+<li><input disabled="" type="checkbox"/>
+2.103. raw_dylib</li>
+<li><input disabled="" type="checkbox"/>
+2.104. re_rebalance_coherence</li>
+<li><input disabled="" type="checkbox"/>
+2.105. repr_simd</li>
+<li><input disabled="" type="checkbox"/>
+2.106. repr128</li>
+<li><input disabled="" type="checkbox"/>
+2.107. rtm_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.108. rustc_attrs</li>
+<li><input disabled="" type="checkbox"/>
+2.109. rustc_const_unstable</li>
+<li><input disabled="" type="checkbox"/>
+2.110. rustc_private</li>
+<li><input disabled="" type="checkbox"/>
+2.111. sanitizer_runtime</li>
+<li><input disabled="" type="checkbox"/>
+2.112. simd_ffi</li>
+<li><input disabled="" type="checkbox"/>
+2.113. slice_patterns</li>
+<li><input disabled="" type="checkbox"/>
+2.114. specialization</li>
+<li><input disabled="" type="checkbox"/>
+2.115. sse4a_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.116. staged_api</li>
+<li><input disabled="" type="checkbox"/>
+2.117. start</li>
+<li><input disabled="" type="checkbox"/>
+2.118. static_nobundle</li>
+<li><input disabled="" type="checkbox"/>
+2.119. stmt_expr_attributes</li>
+<li><input disabled="" type="checkbox"/>
+2.120. structural_match</li>
+<li><input disabled="" type="checkbox"/>
+2.121. tbm_target_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.122. test_2018_feature</li>
+<li><input disabled="" type="checkbox"/>
+2.123. thread_local</li>
+<li><input disabled="" type="checkbox"/>
+2.124. track_caller</li>
+<li><input disabled="" type="checkbox"/>
+2.125. trait_alias</li>
+<li><input disabled="" type="checkbox"/>
+2.126. transparent_enums</li>
+<li><input disabled="" type="checkbox"/>
+2.127. transparent_unions</li>
+<li><input disabled="" type="checkbox"/>
+2.128. trivial_bounds</li>
+<li><input disabled="" type="checkbox"/>
+2.129. try_blocks</li>
+<li><input disabled="" type="checkbox"/>
+2.130. type_alias_impl_trait</li>
+<li><input disabled="" type="checkbox"/>
+2.131. type_ascription</li>
+<li><input disabled="" type="checkbox"/>
+2.132. unboxed_closures</li>
+<li><input disabled="" type="checkbox"/>
+2.133. unsized_locals</li>
+<li><input disabled="" type="checkbox"/>
+2.134. unsized_tuple_coercion</li>
+<li><input disabled="" type="checkbox"/>
+2.135. untagged_unions</li>
+<li><input disabled="" type="checkbox"/>
+2.136. unwind_attributes</li>
+<li><input disabled="" type="checkbox"/>
+2.137. wasm_target_feature</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="3">
+<li>Library Features</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.1. alloc_error_hook</li>
+<li><input disabled="" type="checkbox"/>
+3.2. alloc_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.3. alloc_layout_extra</li>
+<li><input disabled="" type="checkbox"/>
+3.4. alloc_prelude</li>
+<li><input disabled="" type="checkbox"/>
+3.5. allocator_api</li>
+<li><input disabled="" type="checkbox"/>
+3.6. array_error_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.7. array_value_iter</li>
+<li><input disabled="" type="checkbox"/>
+3.8. asm</li>
+<li><input disabled="" type="checkbox"/>
+3.9. atomic_min_max</li>
+<li><input disabled="" type="checkbox"/>
+3.10. backtrace</li>
+<li><input disabled="" type="checkbox"/>
+3.11. binary_heap_drain_sorted</li>
+<li><input disabled="" type="checkbox"/>
+3.12. binary_heap_into_iter_sorted</li>
+<li><input disabled="" type="checkbox"/>
+3.13. bool_to_option</li>
+<li><input disabled="" type="checkbox"/>
+3.14. bound_cloned</li>
+<li><input disabled="" type="checkbox"/>
+3.15. box_into_pin</li>
+<li><input disabled="" type="checkbox"/>
+3.16. box_into_raw_non_null</li>
+<li><input disabled="" type="checkbox"/>
+3.17. boxed_slice_try_from</li>
+<li><input disabled="" type="checkbox"/>
+3.18. bufreader_seek_relative</li>
+<li><input disabled="" type="checkbox"/>
+3.19. c_void_variant</li>
+<li><input disabled="" type="checkbox"/>
+3.20. cell_update</li>
+<li><input disabled="" type="checkbox"/>
+3.21. char_error_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.22. clamp</li>
+<li><input disabled="" type="checkbox"/>
+3.23. cmp_min_max_by</li>
+<li><input disabled="" type="checkbox"/>
+3.24. coerce_unsized</li>
+<li><input disabled="" type="checkbox"/>
+3.25. compiler_builtins_lib</li>
+<li><input disabled="" type="checkbox"/>
+3.26. concat_idents</li>
+<li><input disabled="" type="checkbox"/>
+3.27. const_cstr_unchecked</li>
+<li><input disabled="" type="checkbox"/>
+3.28. const_generic_impls_guard</li>
+<li><input disabled="" type="checkbox"/>
+3.29. const_int_conversion</li>
+<li><input disabled="" type="checkbox"/>
+3.30. const_int_sign</li>
+<li><input disabled="" type="checkbox"/>
+3.31. const_ptr_offset_from</li>
+<li><input disabled="" type="checkbox"/>
+3.32. const_saturating_int_methods</li>
+<li><input disabled="" type="checkbox"/>
+3.33. const_type_id</li>
+<li><input disabled="" type="checkbox"/>
+3.34. const_type_name</li>
+<li><input disabled="" type="checkbox"/>
+3.35. container_error_extra</li>
+<li><input disabled="" type="checkbox"/>
+3.36. core_intrinsics</li>
+<li><input disabled="" type="checkbox"/>
+3.37. core_panic</li>
+<li><input disabled="" type="checkbox"/>
+3.38. core_panic_info</li>
+<li><input disabled="" type="checkbox"/>
+3.39. core_private_bignum</li>
+<li><input disabled="" type="checkbox"/>
+3.40. core_private_diy_float</li>
+<li><input disabled="" type="checkbox"/>
+3.41. cow_is_borrowed</li>
+<li><input disabled="" type="checkbox"/>
+3.42. deadline_api</li>
+<li><input disabled="" type="checkbox"/>
+3.43. debug_map_key_value</li>
+<li><input disabled="" type="checkbox"/>
+3.44. dec2flt</li>
+<li><input disabled="" type="checkbox"/>
+3.45. derive_clone_copy</li>
+<li><input disabled="" type="checkbox"/>
+3.46. derive_eq</li>
+<li><input disabled="" type="checkbox"/>
+3.47. dispatch_from_dyn</li>
+<li><input disabled="" type="checkbox"/>
+3.48. div_duration</li>
+<li><input disabled="" type="checkbox"/>
+3.49. drain_filter</li>
+<li><input disabled="" type="checkbox"/>
+3.50. duration_constants</li>
+<li><input disabled="" type="checkbox"/>
+3.51. entry_insert</li>
+<li><input disabled="" type="checkbox"/>
+3.52. error_iter</li>
+<li><input disabled="" type="checkbox"/>
+3.53. error_type_id</li>
+<li><input disabled="" type="checkbox"/>
+3.54. exact_size_is_empty</li>
+<li><input disabled="" type="checkbox"/>
+3.55. extra_log_consts</li>
+<li><input disabled="" type="checkbox"/>
+3.56. fd</li>
+<li><input disabled="" type="checkbox"/>
+3.57. fd_read</li>
+<li><input disabled="" type="checkbox"/>
+3.58. fixed_size_array</li>
+<li><input disabled="" type="checkbox"/>
+3.59. flt2dec</li>
+<li><input disabled="" type="checkbox"/>
+3.60. fmt_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.61. fn_traits</li>
+<li><input disabled="" type="checkbox"/>
+3.62. foo</li>
+<li><input disabled="" type="checkbox"/>
+3.63. forget_unsized</li>
+<li><input disabled="" type="checkbox"/>
+3.64. format_args_nl</li>
+<li><input disabled="" type="checkbox"/>
+3.65. gen_future</li>
+<li><input disabled="" type="checkbox"/>
+3.66. generator_trait</li>
+<li><input disabled="" type="checkbox"/>
+3.67. get_mut_unchecked</li>
+<li><input disabled="" type="checkbox"/>
+3.68. global_asm</li>
+<li><input disabled="" type="checkbox"/>
+3.69. hash_raw_entry</li>
+<li><input disabled="" type="checkbox"/>
+3.70. hash_set_entry</li>
+<li><input disabled="" type="checkbox"/>
+3.71. hashmap_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.72. inner_deref</li>
+<li><input disabled="" type="checkbox"/>
+3.73. int_error_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.74. int_error_matching</li>
+<li><input disabled="" type="checkbox"/>
+3.75. integer_atomics</li>
+<li><input disabled="" type="checkbox"/>
+3.76. internal_uninit_const</li>
+<li><input disabled="" type="checkbox"/>
+3.77. io_slice_advance</li>
+<li><input disabled="" type="checkbox"/>
+3.78. ip</li>
+<li><input disabled="" type="checkbox"/>
+3.79. is_sorted</li>
+<li><input disabled="" type="checkbox"/>
+3.80. iter_is_partitioned</li>
+<li><input disabled="" type="checkbox"/>
+3.81. iter_once_with</li>
+<li><input disabled="" type="checkbox"/>
+3.82. iter_order_by</li>
+<li><input disabled="" type="checkbox"/>
+3.83. iter_partition_in_place</li>
+<li><input disabled="" type="checkbox"/>
+3.84. liballoc_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.85. libstd_io_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.86. libstd_sys_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.87. libstd_thread_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.88. linked_list_extras</li>
+<li><input disabled="" type="checkbox"/>
+3.89. log_syntax</li>
+<li><input disabled="" type="checkbox"/>
+3.90. manually_drop_take</li>
+<li><input disabled="" type="checkbox"/>
+3.91. map_entry_replace</li>
+<li><input disabled="" type="checkbox"/>
+3.92. matches_macro</li>
+<li><input disabled="" type="checkbox"/>
+3.93. maybe_uninit_extra</li>
+<li><input disabled="" type="checkbox"/>
+3.94. maybe_uninit_ref</li>
+<li><input disabled="" type="checkbox"/>
+3.95. maybe_uninit_slice</li>
+<li><input disabled="" type="checkbox"/>
+3.96. new_uninit</li>
+<li><input disabled="" type="checkbox"/>
+3.97. no_more_cas</li>
+<li><input disabled="" type="checkbox"/>
+3.98. once_is_completed</li>
+<li><input disabled="" type="checkbox"/>
+3.99. once_poison</li>
+<li><input disabled="" type="checkbox"/>
+3.100. option_expect_none</li>
+<li><input disabled="" type="checkbox"/>
+3.101. option_result_contains</li>
+<li><input disabled="" type="checkbox"/>
+3.102. option_unwrap_none</li>
+<li><input disabled="" type="checkbox"/>
+3.103. panic_abort</li>
+<li><input disabled="" type="checkbox"/>
+3.104. panic_info_message</li>
+<li><input disabled="" type="checkbox"/>
+3.105. panic_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.106. panic_unwind</li>
+<li><input disabled="" type="checkbox"/>
+3.107. path_buf_capacity</li>
+<li><input disabled="" type="checkbox"/>
+3.108. pattern</li>
+<li><input disabled="" type="checkbox"/>
+3.109. poll_map</li>
+<li><input disabled="" type="checkbox"/>
+3.110. print_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.111. proc_macro_def_site</li>
+<li><input disabled="" type="checkbox"/>
+3.112. proc_macro_diagnostic</li>
+<li><input disabled="" type="checkbox"/>
+3.113. proc_macro_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.114. proc_macro_mixed_site</li>
+<li><input disabled="" type="checkbox"/>
+3.115. proc_macro_quote</li>
+<li><input disabled="" type="checkbox"/>
+3.116. proc_macro_raw_ident</li>
+<li><input disabled="" type="checkbox"/>
+3.117. proc_macro_span</li>
+<li><input disabled="" type="checkbox"/>
+3.118. process_exitcode_placeholder</li>
+<li><input disabled="" type="checkbox"/>
+3.119. process_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.120. profiler_runtime_lib</li>
+<li><input disabled="" type="checkbox"/>
+3.121. ptr_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.122. ptr_offset_from</li>
+<li><input disabled="" type="checkbox"/>
+3.123. ptr_wrapping_offset_from</li>
+<li><input disabled="" type="checkbox"/>
+3.124. range_is_empty</li>
+<li><input disabled="" type="checkbox"/>
+3.125. raw</li>
+<li><input disabled="" type="checkbox"/>
+3.126. raw_vec_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.127. rc_into_raw_non_null</li>
+<li><input disabled="" type="checkbox"/>
+3.128. read_initializer</li>
+<li><input disabled="" type="checkbox"/>
+3.129. receiver_trait</li>
+<li><input disabled="" type="checkbox"/>
+3.130. renamed_spin_loop</li>
+<li><input disabled="" type="checkbox"/>
+3.131. result_cloned</li>
+<li><input disabled="" type="checkbox"/>
+3.132. result_contains_err</li>
+<li><input disabled="" type="checkbox"/>
+3.133. result_copied</li>
+<li><input disabled="" type="checkbox"/>
+3.134. result_map_or_else</li>
+<li><input disabled="" type="checkbox"/>
+3.135. rt</li>
+<li><input disabled="" type="checkbox"/>
+3.136. sanitizer_runtime_lib</li>
+<li><input disabled="" type="checkbox"/>
+3.137. saturating_neg</li>
+<li><input disabled="" type="checkbox"/>
+3.138. seek_convenience</li>
+<li><input disabled="" type="checkbox"/>
+3.139. set_stdio</li>
+<li><input disabled="" type="checkbox"/>
+3.140. sgx_platform</li>
+<li><input disabled="" type="checkbox"/>
+3.141. shrink_to</li>
+<li><input disabled="" type="checkbox"/>
+3.142. slice_concat_ext</li>
+<li><input disabled="" type="checkbox"/>
+3.143. slice_concat_trait</li>
+<li><input disabled="" type="checkbox"/>
+3.144. slice_from_raw_parts</li>
+<li><input disabled="" type="checkbox"/>
+3.145. slice_index_methods</li>
+<li><input disabled="" type="checkbox"/>
+3.146. slice_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.147. slice_iter_mut_as_slice</li>
+<li><input disabled="" type="checkbox"/>
+3.148. slice_partition_at_index</li>
+<li><input disabled="" type="checkbox"/>
+3.149. slice_partition_dedup</li>
+<li><input disabled="" type="checkbox"/>
+3.150. slice_ptr_range</li>
+<li><input disabled="" type="checkbox"/>
+3.151. sort_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.152. std_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.153. stdsimd</li>
+<li><input disabled="" type="checkbox"/>
+3.154. step_trait</li>
+<li><input disabled="" type="checkbox"/>
+3.155. str_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.156. termination_trait_lib</li>
+<li><input disabled="" type="checkbox"/>
+3.157. test</li>
+<li><input disabled="" type="checkbox"/>
+3.158. thread_local_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.159. thread_spawn_unchecked</li>
+<li><input disabled="" type="checkbox"/>
+3.160. tidy_test_never_used_anywhere_else</li>
+<li><input disabled="" type="checkbox"/>
+3.161. toowned_clone_into</li>
+<li><input disabled="" type="checkbox"/>
+3.162. trace_macros</li>
+<li><input disabled="" type="checkbox"/>
+3.163. trusted_len</li>
+<li><input disabled="" type="checkbox"/>
+3.164. try_reserve</li>
+<li><input disabled="" type="checkbox"/>
+3.165. try_trait</li>
+<li><input disabled="" type="checkbox"/>
+3.166. unicode_internals</li>
+<li><input disabled="" type="checkbox"/>
+3.167. unicode_version</li>
+<li><input disabled="" type="checkbox"/>
+3.168. unsize</li>
+<li><input disabled="" type="checkbox"/>
+3.169. update_panic_count</li>
+<li><input disabled="" type="checkbox"/>
+3.170. vec_drain_as_slice</li>
+<li><input disabled="" type="checkbox"/>
+3.171. vec_into_raw_parts</li>
+<li><input disabled="" type="checkbox"/>
+3.172. vec_leak</li>
+<li><input disabled="" type="checkbox"/>
+3.173. vec_remove_item</li>
+<li><input disabled="" type="checkbox"/>
+3.174. vec_resize_default</li>
+<li><input disabled="" type="checkbox"/>
+3.175. wait_timeout_until</li>
+<li><input disabled="" type="checkbox"/>
+3.176. wait_until</li>
+<li><input disabled="" type="checkbox"/>
+3.177. wasi_ext</li>
+<li><input disabled="" type="checkbox"/>
+3.178. weak_counts</li>
+<li><input disabled="" type="checkbox"/>
+3.179. weak_into_raw</li>
+<li><input disabled="" type="checkbox"/>
+3.180. windows_by_handle</li>
+<li><input disabled="" type="checkbox"/>
+3.181. windows_c</li>
+<li><input disabled="" type="checkbox"/>
+3.182. windows_file_type_ext</li>
+<li><input disabled="" type="checkbox"/>
+3.183. windows_handle</li>
+<li><input disabled="" type="checkbox"/>
+3.184. windows_net</li>
+<li><input disabled="" type="checkbox"/>
+3.185. windows_stdio</li>
+<li><input disabled="" type="checkbox"/>
+3.186. with_options</li>
+<li><input disabled="" type="checkbox"/>
+3.187. wrapping_int_impl</li>
+<li><input disabled="" type="checkbox"/>
+3.188. wrapping_next_power_of_two</li>
+</ul>
+</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="rustonomicon.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="rustc-contribution.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="rustonomicon.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="rustc-contribution.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
