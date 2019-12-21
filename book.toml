@@ -3,4 +3,5 @@ authors = ["NiaoGe"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Learn Rust Roadmap"
+[output.html]
+theme = "src/theme"
