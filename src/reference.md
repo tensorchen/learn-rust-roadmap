@@ -1,0 +1,110 @@
+# The Rust Reference
+
+- [ ] Introduction
+- [ ] 1. Notation
+- [ ] 2. Lexical structure
+  - [ ] 2.1. Input format
+  - [ ] 2.2. Keywords
+  - [ ] 2.3. Identifiers
+  - [ ] 2.4. Comments
+  - [ ] 2.5. Whitespace
+  - [ ] 2.6. Tokens
+  - [ ] 2.7. Paths
+- [ ] 3. Macros
+  - [ ] 3.1. Macros By Example
+  - [ ] 3.2. Procedural Macros
+- [ ] 4. Crates and source files
+- [ ] 5. Conditional compilation
+- [ ] 6. Items
+  - [ ] 6.1. Modules
+  - [ ] 6.2. Extern crates
+  - [ ] 6.3. Use declarations
+  - [ ] 6.4. Functions
+  - [ ] 6.5. Type aliases
+  - [ ] 6.6. Structs
+  - [ ] 6.7. Enumerations
+  - [ ] 6.8. Unions
+  - [ ] 6.9. Constant items
+  - [ ] 6.10. Static items
+  - [ ] 6.11. Traits
+  - [ ] 6.12. Implementations
+  - [ ] 6.13. External blocks
+  - [ ] 6.14. Type and lifetime parameters
+  - [ ] 6.15. Associated Items
+  - [ ] 6.16. Visibility and Privacy
+- [ ] 7. Attributes
+  - [ ] 7.1. Testing
+  - [ ] 7.2. Derive
+  - [ ] 7.3. Diagnostics
+  - [ ] 7.4. Code generation
+  - [ ] 7.5. Limits
+  - [ ] 7.6. Type System
+- [ ] 8. Statements and expressions
+  - [ ] 8.1. Statements
+  - [ ] 8.2. Expressions
+    - [ ] 8.2.1. Literal expressions
+    - [ ] 8.2.2. Path expressions
+    - [ ] 8.2.3. Block expressions
+    - [ ] 8.2.4. Operator expressions
+    - [ ] 8.2.5. Grouped expressions
+    - [ ] 8.2.6. Array and index expressions
+    - [ ] 8.2.7. Tuple and index expressions
+    - [ ] 8.2.8. Struct expressions
+    - [ ] 8.2.9. Enum variant expressions
+    - [ ] 8.2.10. Call expressions
+    - [ ] 8.2.11. Method call expressions
+    - [ ] 8.2.12. Field access expressions
+    - [ ] 8.2.13. Closure expressions
+    - [ ] 8.2.14. Loop expressions
+    - [ ] 8.2.15. Range expressions
+    - [ ] 8.2.16. If and if let expressions
+    - [ ] 8.2.17. Match expressions
+    - [ ] 8.2.18. Return expressions
+    - [ ] 8.2.19. Await expressions
+- [ ] 9. Patterns
+- [ ] 10. Type system
+  - [ ] 10.1. Types
+    - [ ] 10.1.1. Boolean type
+    - [ ] 10.1.2. Numeric types
+    - [ ] 10.1.3. Textual types
+    - [ ] 10.1.4. Never type
+    - [ ] 10.1.5. Tuple types
+    - [ ] 10.1.6. Array types
+    - [ ] 10.1.7. Slice types
+    - [ ] 10.1.8. Struct types
+    - [ ] 10.1.9. Enumerated types
+    - [ ] 10.1.10. Union types
+    - [ ] 10.1.11. Function item types
+    - [ ] 10.1.12. Closure types
+    - [ ] 10.1.13. Pointer types
+    - [ ] 10.1.14. Function pointer types
+    - [ ] 10.1.15. Trait object types
+    - [ ] 10.1.16. Impl trait type
+    - [ ] 10.1.17. Type parameters
+    - [ ] 10.1.18. Inferred type
+  - [ ] 10.2. Dynamically Sized Types
+  - [ ] 10.3. Type layout
+  - [ ] 10.4. Interior mutability
+  - [ ] 10.5. Subtyping and Variance
+  - [ ] 10.6. Trait and lifetime bounds
+  - [ ] 10.7. Type coercions
+  - [ ] 10.8. Destructors
+  - [ ] 10.9. Lifetime elision
+- [ ] 11. Special types and traits
+- [ ] 12. Memory model
+  - [ ] 12.1. Memory allocation and lifetime
+  - [ ] 12.2. Memory ownership
+  - [ ] 12.3. Variables
+- [ ] 13. Linkage
+- [ ] 14. Unsafety
+  - [ ] 14.1. Unsafe functions
+  - [ ] 14.2. Unsafe blocks
+  - [ ] 14.3. Behavior considered undefined
+  - [ ] 14.4. Behavior not considered unsafe
+- [ ] 15. Constant Evaluation
+- [ ] 16. Application Binary Interface
+- [ ] 17. The Rust runtime
+- [ ] 18. Appendices
+  - [ ] 18.1. Macro Follow-Set Ambiguity Formal Specification
+  - [ ] 18.2. Influences
+  - [ ] 18.3. Glossary

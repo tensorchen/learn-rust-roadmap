@@ -1,0 +1,109 @@
+# The rustc Contribution Guide
+
+- [ ] About this guide
+- [ ] 1. Part 1: Building, debugging, and contributing to Rustc
+  - [ ] 1.1. About the compiler team
+  - [ ] 1.2. How to Build and Run the Compiler
+    - [ ] 1.2.1. Suggested Workflows
+    - [ ] 1.2.2. Bootstrapping
+    - [ ] 1.2.3. Distribution artifacts
+    - [ ] 1.2.4. Documenting Compiler
+    - [ ] 1.2.5. ctags
+  - [ ] 1.3. The compiler testing framework
+    - [ ] 1.3.1. Running tests
+    - [ ] 1.3.2. Adding new tests
+    - [ ] 1.3.3. Using compiletest + commands to control test execution
+  - [ ] 1.4. Walkthrough: a typical contribution
+  - [ ] 1.5. Bug Fix Procedure
+  - [ ] 1.6. Implementing new features
+  - [ ] 1.7. Stability attributes
+  - [ ] 1.8. Stabilizing Features
+  - [ ] 1.9. Debugging the Compiler
+  - [ ] 1.10. Profiling the compiler
+    - [ ] 1.10.1. with the linux perf tool
+  - [ ] 1.11. Coding conventions
+  - [ ] 1.12. crates.io Dependencies
+  - [ ] 1.13. Emitting Errors and other Diagnostics
+    - [ ] 1.13.1. LintStore
+    - [ ] 1.13.2. Diagnostic Codes
+  - [ ] 1.14. ICE-breaker teams
+    - [ ] 1.14.1. LLVM ICE-breakers
+  - [ ] 2. Part 2: How rustc works
+  - [ ] 2.1. High-level overview of the compiler source
+  - [ ] 2.2. The Rustc Driver and Interface
+    - [ ] 2.2.1. Rustdoc
+  - [ ] 2.3. Queries: demand-driven compilation
+    - [ ] 2.3.1. The Query Evaluation Model in Detail
+    - [ ] 2.3.2. Incremental compilation
+    - [ ] 2.3.3. Incremental compilation In Detail
+    - [ ] 2.3.4. Debugging and Testing
+    - [ ] 2.3.5. Profiling Queries
+    - [ ] 2.3.6. Salsa
+  - [ ] 2.4. Lexing and Parsing
+  - [ ] 2.5. #[test] Implementation
+  - [ ] 2.6. Macro expansion
+  - [ ] 2.7. Name resolution
+  - [ ] 2.8. The HIR (High-level IR)
+    - [ ] 2.8.1. Lowering AST to HIR
+    - [ ] 2.8.2. Debugging
+  - [ ] 2.9. Closure expansion
+  - [ ] 2.10. The ty module: representing types
+  - [ ] 2.11. Generic arguments
+  - [ ] 2.12. Type inference
+  - [ ] 2.13. Trait solving (old-style)
+    - [ ] 2.13.1. Higher-ranked trait bounds
+    - [ ] 2.13.2. Caching subtleties
+    - [ ] 2.13.3. Specialization
+  - [ ] 2.14. Trait solving (new-style)
+    - [ ] 2.14.1. Lowering to logic
+      - [ ] 2.14.1.1. Goals and clauses
+      - [ ] 2.14.1.2. Equality and associated types
+      - [ ] 2.14.1.3. Implied bounds
+      - [ ] 2.14.1.4. Region constraints
+      - [ ] 2.14.1.5. The lowering module in rustc
+      - [ ] 2.14.1.6. Lowering rules
+      - [ ] 2.14.1.7. Well-formedness checking
+    - [ ] 2.14.2. Canonical queries
+      - [ ] 2.14.2.1. Canonicalization
+    - [ ] 2.14.3. The SLG solver
+    - [ ] 2.14.4. An Overview of Chalk
+    - [ ] 2.14.5. Bibliography
+  - [ ] 2.15. Type checking
+    - [ ] 2.15.1. Method Lookup
+    - [ ] 2.15.2. Variance
+    - [ ] 2.15.3. Opaque Types
+  - [ ] 2.16. The MIR (Mid-level IR)
+    - [ ] 2.16.1. MIR construction
+    - [ ] 2.16.2. MIR visitor and traversal
+    - [ ] 2.16.3. MIR passes: getting the MIR for a function
+    - [ ] 2.16.4. MIR optimizations
+    - [ ] 2.16.5. Debugging
+  - [ ] 2.17. The borrow checker
+    - [ ] 2.17.1. Tracking moves and initialization
+      - [ ] 2.17.1.1. Move paths
+    - [ ] 2.17.2. MIR type checker
+    - [ ] 2.17.3. Region inference
+      - [ ] 2.17.3.1. Constraint propagation
+      - [ ] 2.17.3.2. Lifetime parameters
+      - [ ] 2.17.3.3. Member constraints
+      - [ ] 2.17.3.4. Placeholders and universes
+      - [ ] 2.17.3.5. Closure constraints
+      - [ ] 2.17.3.6. Error reporting
+    - [ ] 2.17.4. Two-phase-borrows
+  - [ ] 2.18. Constant evaluation
+    - [ ] 2.18.1. miri const evaluator
+  - [ ] 2.19. Parameter Environments
+  - [ ] 2.20. Code Generation
+    - [ ] 2.20.1. Updating LLVM
+    - [ ] 2.20.2. Debugging LLVM
+    - [ ] 2.20.3. Backend Agnostic Codegen
+  - [ ] 2.21. Profile-guided Optimization
+  - [ ] 2.22. Sanitizers Support
+  - [ ] 2.23. Debugging Support in Rust Compiler
+- [ ] Appendix A: Stupid Stats
+- [ ] Appendix B: Background material
+- [ ] Appendix C: Glossary
+- [ ] Appendix D: Code Index
+- [ ] Appendix E: Compiler Lecture Series
+- [ ] Appendix F: Bibliography
+- [ ] Appendix Z: HumorRust

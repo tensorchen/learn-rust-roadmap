@@ -1,0 +1,67 @@
+# The Cargo Book
+
+- [ ] Introduction
+- [ ] 1. Getting Started
+  - [ ] 1.1. Installation
+  - [ ] 1.2. First Steps with Cargo
+- [ ] 2. Cargo Guide
+  - [ ] 2.1. Why Cargo Exists
+  - [ ] 2.2. Creating a New Package
+  - [ ] 2.3. Working on an Existing Package
+  - [ ] 2.4. Dependencies
+  - [ ] 2.5. Package Layout
+  - [ ] 2.6. Cargo.toml vs Cargo.lock
+  - [ ] 2.7. Tests
+  - [ ] 2.8. Continuous Integration
+  - [ ] 2.9. Cargo Home
+  - [ ] 2.10. Build Cache
+- [ ] 3. Cargo Reference
+  - [ ] 3.1. Specifying Dependencies
+  - [ ] 3.2. The Manifest Format
+  - [ ] 3.3. Configuration
+  - [ ] 3.4. Environment Variables
+  - [ ] 3.5. Build Scripts
+  - [ ] 3.6. Publishing on crates.io
+  - [ ] 3.7. Package ID Specifications
+  - [ ] 3.8. Source Replacement
+  - [ ] 3.9. External Tools
+  - [ ] 3.10. Registries
+  - [ ] 3.11. Unstable Features
+- [ ] 4. Cargo Commands
+  - [ ] 4.1. Build Commands
+    - [ ] 4.1.1. bench
+    - [ ] 4.1.2. build
+    - [ ] 4.1.3. check
+    - [ ] 4.1.4. clean
+    - [ ] 4.1.5. doc
+    - [ ] 4.1.6. fetch
+    - [ ] 4.1.7. fix
+    - [ ] 4.1.8. run
+    - [ ] 4.1.9. rustc
+    - [ ] 4.1.10. rustdoc
+    - [ ] 4.1.11. test
+  - [ ] 4.2. Manifest Commands
+    - [ ] 4.2.1. generate-lockfile
+    - [ ] 4.2.2. locate-project
+    - [ ] 4.2.3. metadata
+    - [ ] 4.2.4. pkgid
+    - [ ] 4.2.5. update
+    - [ ] 4.2.6. vendor
+    - [ ] 4.2.7. verify-project
+  - [ ] 4.3. Package Commands
+    - [ ] 4.3.1. init
+    - [ ] 4.3.2. install
+    - [ ] 4.3.3. new
+    - [ ] 4.3.4. search
+    - [ ] 4.3.5. uninstall
+  - [ ] 4.4. Publishing Commands
+    - [ ] 4.4.1. login
+    - [ ] 4.4.2. owner
+    - [ ] 4.4.3. package
+    - [ ] 4.4.4. publish
+    - [ ] 4.4.5. yank
+  - [ ] 4.5. General Commands
+    - [ ] 4.5.1. help
+    - [ ] 4.5.2. version
+- [ ] 5. FAQ
+- [ ] 6. Appendix: Glossary

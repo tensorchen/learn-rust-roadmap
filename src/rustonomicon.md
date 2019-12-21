@@ -1,0 +1,59 @@
+# The Rustonomicon
+
+- [ ] Introduction
+- [ ] 1. Meet Safe and Unsafe
+  - [ ] 1.1. How Safe and Unsafe Interact
+  - [ ] 1.2. What Unsafe Can Do
+  - [ ] 1.3. Working with Unsafe
+- [ ] 2. Data Layout
+  - [ ] 2.1. repr(Rust)
+  - [ ] 2.2. Exotically Sized Types
+  - [ ] 2.3. Other reprs
+- [ ] 3. Ownership
+  - [ ] 3.1. References
+  - [ ] 3.2. Aliasing
+  - [ ] 3.3. Lifetimes
+  - [ ] 3.4. Limits of Lifetimes
+  - [ ] 3.5. Lifetime Elision
+  - [ ] 3.6. Unbounded Lifetimes
+  - [ ] 3.7. Higher-Rank Trait Bounds
+  - [ ] 3.8. Subtyping and Variance
+  - [ ] 3.9. Drop Check
+  - [ ] 3.10. PhantomData
+  - [ ] 3.11. Splitting Borrows
+- [ ] 4. Type Conversions
+  - [ ] 4.1. Coercions
+  - [ ] 4.2. The Dot Operator
+  - [ ] 4.3. Casts
+  - [ ] 4.4. Transmutes
+- [ ] 5. Uninitialized Memory
+  - [ ] 5.1. Checked
+  - [ ] 5.2. Drop Flags
+  - [ ] 5.3. Unchecked
+- [ ] 6. Ownership Based Resource Management
+  - [ ] 6.1. Constructors
+  - [ ] 6.2. Destructors
+  - [ ] 6.3. Leaking
+- [ ] 7. Unwinding
+  - [ ] 7.1. Exception Safety
+  - [ ] 7.2. Poisoning
+- [ ] 8. Concurrency
+  - [ ] 8.1. Races
+  - [ ] 8.2. Send and Sync
+  - [ ] 8.3. Atomics
+- [ ] 9. Implementing Vec
+  - [ ] 9.1. Layout
+  - [ ] 9.2. Allocating
+  - [ ] 9.3. Push and Pop
+  - [ ] 9.4. Deallocating
+  - [ ] 9.5. Deref
+  - [ ] 9.6. Insert and Remove
+  - [ ] 9.7. IntoIter
+  - [ ] 9.8. RawVec
+  - [ ] 9.9. Drain
+  - [ ] 9.10. Handling Zero-Sized Types
+  - [ ] 9.11. Final Code
+- [ ] 10. Implementing Arc and Mutex
+- [ ] 11. FFI
+- [ ] 12. Beneath std
+  - [ ] 12.1. #[panic_handler]
