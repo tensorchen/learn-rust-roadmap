@@ -19,10 +19,10 @@
     - [x] 3.3.1. index.hbs
     - [x] 👍3.3.2. Syntax highlighting
     - [x] 👍3.3.3. Editor
-  - [ ] 3.4. MathJax Support
-  - [ ] 3.5. mdBook specific features
-- [ ] 4. Continuous Integration
-- [ ] 5. For Developers
-  - [ ] 5.1. Preprocessors
-  - [ ] 5.2. Alternative Backends
-- [ ] Contributors
+  - [x] 3.4. MathJax Support
+  - [x] 3.5. mdBook specific features
+- [x] 👍👍4. Continuous Integration
+- [x] 5. For Developers
+  - [x] 💀5.1. Preprocessors
+  - [x] 💀5.2. Alternative Backends
+- [x] Contributors
