@@ -1,11 +1,11 @@
 # The Rustdoc Book
 
-- [ ] 1. What is rustdoc?
-- [ ] 2. How to write documentation
-- [ ] 3. Command-line arguments
-- [ ] 4. The #[doc] attribute
-- [ ] 5. Documentation tests
-- [ ] 6. Lints
-- [ ] 7. Passes
-- [ ] 8. Advanced Features
-- [ ] 9. Unstable features
+- [x] 1. What is rustdoc?
+- [x] 👍👍👍2. How to write documentation
+- [x] 3. Command-line arguments
+- [x] 4. The #[doc] attribute
+- [x] 👍👍5. Documentation tests
+- [x] 6. Lints
+- [x] 7. Passes
+- [x] 8. Advanced Features
+- [x] 9. Unstable features
