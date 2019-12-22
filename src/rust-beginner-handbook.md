@@ -2,8 +2,6 @@
 
 你好，`Rustacean`。当你读到这里时你已经成为一名在Rust社区广泛使用称呼Rust开发者，爱好者的称呼`Rustacean`。下面开始Rust学习之旅。
 
-[TOC]
-
 ## 概述
 
 Rust是一种使每个人都可以构建可靠、高效软件的编程语言。
@@ -153,5 +151,7 @@ Rust正式发布1.0版本，这是Rust的第一个里程碑版本Rust 2015。
 ### 测试
 
 **单元测试** <https://doc.rust-lang.org/book/ch11-01-writing-tests.html>
+
 **集成测试** <https://doc.rust-lang.org/book/ch11-03-test-organization.html#integration-tests>
+
 **Benchmark** <https://doc.rust-lang.org/unstable-book/library-features/test.html>
