@@ -2,6 +2,8 @@
 
 你好，`Rustacean`。当你读到这里时你已经成为一名在Rust社区广泛使用称呼Rust开发者，爱好者的称呼`Rustacean`。下面开始Rust学习之旅。
 
+[TOC]
+
 ## 概述
 
 Rust是一种使每个人都可以构建可靠、高效软件的编程语言。
@@ -38,6 +40,8 @@ Rust正式发布1.0版本，这是Rust的第一个里程碑版本Rust 2015。
 - [Rust异步编程](https://rust-lang.github.io/async-book/index.html) ([中文译本](https://github.com/chinanf-boy/async-book-zh))
 
 如下为提取后书籍重点章节（使用markdown多选框语法），推荐你阅读每个章节后调整`[ ]`为`[x]`，即将空格替换为x，记录自己的学习进度。
+
+### Rust程序设计语言
 
 如下《Rust程序设计语言》相较于原生章节，删除了各种高级特性，删除了示例程序，删除了crate发布到crate.io等相关内容。**此外请不要忽略附录章节**。
 
@@ -112,6 +116,8 @@ Rust正式发布1.0版本，这是Rust的第一个里程碑版本Rust 2015。
   - [ ] 21.5. E - 版本
   - [ ] 21.7. G - Rust 是如何开发的与 “Nightly Rust”
 
+### Rust异步编程
+
 《Rust异步编程》（__注：本书籍官方尚未完整编辑完成__）对于新人来说，需要学习的章节非常少，但都是非常重要的，建议必读。
 
 - [ ] 1. Getting Started
@@ -121,4 +127,31 @@ Rust正式发布1.0版本，这是Rust的第一个里程碑版本Rust 2015。
 
 ## Rust文档篇
 
+新人加入一个开发团队时，要干五件事。前面四件事是了解技术架构、了解开发流程、补强基础知识、从微小的改善入手（比如关掉几个 issue）。这些都是常识，但是第五件事，很多新人都没意识到，你应该要去做，而且完全有能力做，那就是 **你要写文档** 。
+
+- 1.可以熟悉项目；
+- 2.可以提高表达能力；
+- 3.可以提高技术能力，因为只有理解了代码才能表达出来，文档越清晰，就代表思路越清晰；
+- 4.可以提高个人影响力，文档写得越好，看的人就越多。久而久之，你就会成为项目的代言人，别人有问题就会来找你。
+
+文档编写
+
+- [Rustdoc](https://doc.rust-lang.org/rustdoc/index.html)
+
+书籍编写（注：本手册同样使用mdbook编写完成）
+
+- [mdBook](http://rust-lang.github.io/mdBook/index.html)
+
 ## Rust工程篇
+
+本篇主要指引你了解Rust的工具链生态，工程组织，单元测试，集成测试，Benchmark等工程相关内容。
+
+### 工程组织
+
+<https://doc.rust-lang.org/cargo/guide/project-layout.html>
+
+### 测试
+
+**单元测试** <https://doc.rust-lang.org/book/ch11-01-writing-tests.html>
+**集成测试** <https://doc.rust-lang.org/book/ch11-03-test-organization.html#integration-tests>
+**Benchmark** <https://doc.rust-lang.org/unstable-book/library-features/test.html>
