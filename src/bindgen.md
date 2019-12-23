@@ -1,5 +1,9 @@
 # The bindgen User Guide
 
+[`bindgen`](https://rust-lang.github.io/rust-bindgen/introduction.html) 自动生成调用C/C++库Rust文件。
+
+## 学习进度记录
+
 - [ ] 1. Introduction
 - [ ] 2. Requirements
 - [ ] 3. Library Usage with build.rs

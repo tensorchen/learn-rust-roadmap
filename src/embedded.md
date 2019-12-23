@@ -1,5 +1,7 @@
 # The Embedded Rust Book
 
+<https://rust-embedded.github.io/book/>
+
 - [ ] 1. Introduction
   - [ ] 1.1. Hardware
   - [ ] 1.2. no_std

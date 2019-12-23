@@ -1,5 +1,7 @@
 # The Cargo Book
 
+<https://doc.rust-lang.org/cargo/index.html>
+
 - [ ] Introduction
 - [ ] 1. Getting Started
   - [ ] 1.1. Installation

@@ -1,5 +1,7 @@
 # The Edition Guide
 
+<https://doc.rust-lang.org/edition-guide/index.html>
+
 - [ ] Introduction
 - [ ] 1. What are editions?
   - [ ] 1.1. Creating a new project

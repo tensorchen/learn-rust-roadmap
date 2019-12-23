@@ -1,5 +1,7 @@
 # Command Line Applications in Rust
 
+<https://rust-cli.github.io/book/index.html>
+
 - [ ] Getting started
 - [ ] 1. A command line app in 15 minutes
   - [ ] 1.1. Project setup

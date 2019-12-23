@@ -1,5 +1,18 @@
 # Asynchronous Programming in Rust
 
+- 文档：<https://rust-lang.github.io/async-book/index.html>
+
+目前Rust生态中主流的异步运行时有两个，分别是Tokio和async-std。
+
+Tokio是Rust生态中主流的异步运行时，正在向使用新的async-await语法迁移。
+
+Async-std是新出现(2019年9月26日发布1.0版本)的异步运行时实现，通过模仿标准库(std)实现相应的异步API来降低开发者的学习成本。
+
+- 开源项目：tokio <https://tokio.rs/>
+- 开源项目：async-std <https://async.rs/>
+
+## 学习进度记录
+
 - [ ] 1. Getting Started
   - [ ] 1.1. Why Async?
   - [ ] 1.2. The State of Asynchronous Rust

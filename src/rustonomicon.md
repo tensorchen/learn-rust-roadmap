@@ -1,5 +1,7 @@
 # The Rustonomicon
 
+<https://doc.rust-lang.org/nomicon/index.html>
+
 - [ ] Introduction
 - [ ] 1. Meet Safe and Unsafe
   - [ ] 1.1. How Safe and Unsafe Interact

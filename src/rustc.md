@@ -1,5 +1,7 @@
 # The Rustc Book
 
+<https://doc.rust-lang.org/rustc/index.html>
+
 - [ ] 1. What is rustc?
 - [ ] 2. Command-line arguments
 - [ ] 3. Lints

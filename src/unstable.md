@@ -1,5 +1,7 @@
 # The Rust Unstable Book
 
+<https://doc.rust-lang.org/unstable-book/index.html>
+
 - [ ] The Unstable Book
 - [ ] 1. Compiler flags
   - [ ] 1.1. emit_stack_sizes

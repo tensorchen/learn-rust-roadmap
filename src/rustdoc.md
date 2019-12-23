@@ -1,5 +1,7 @@
 # The Rustdoc Book
 
+<https://doc.rust-lang.org/rustdoc/index.html>
+
 - [ ] 1. What is rustdoc?
 - [ ] 2. How to write documentation
 - [ ] 3. Command-line arguments

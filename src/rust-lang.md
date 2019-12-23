@@ -1,5 +1,7 @@
 # Rust 程序设计语言
 
+<https://doc.rust-lang.org/book/>
+
 - [ ] Rust 程序设计语言
 - [ ] 前言
 - [ ] 介绍

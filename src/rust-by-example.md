@@ -1,5 +1,7 @@
 # Rust By Example
 
+<https://doc.rust-lang.org/stable/rust-by-example/>
+
 - [ ] Introduction
 - [ ] 1. Hello World
   - [ ] 1.1. Comments

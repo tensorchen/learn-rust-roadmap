@@ -1,5 +1,7 @@
 # The Rust Reference
 
+<https://doc.rust-lang.org/reference/index.html>
+
 - [ ] Introduction
 - [ ] 1. Notation
 - [ ] 2. Lexical structure

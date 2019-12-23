@@ -1,5 +1,7 @@
 # The Rust RFC Book
 
+<https://rust-lang.github.io/rfcs/>
+
 - [ ] Introduction
 - [ ] 0001-private-fields
 - [ ] 0002-rfc-process

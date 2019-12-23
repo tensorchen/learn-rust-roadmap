@@ -1,5 +1,7 @@
 # The rustc Contribution Guide
 
+本书暂无网页版本，需要使用`rustup doc`本地查看
+
 - [ ] About this guide
 - [ ] 1. Part 1: Building, debugging, and contributing to Rustc
   - [ ] 1.1. About the compiler team

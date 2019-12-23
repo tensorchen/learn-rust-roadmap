@@ -1,5 +1,6 @@
 # Summary
 
+- [The Learn Rust Roadmap](rust-roadmap.md)
 - [Rust新人学习手册](rust-beginner-handbook.md)
 - [Rust生态学习手册](rust-ecosystem-handbook.md)
   - [Rust程序设计语言](rust-lang.md)

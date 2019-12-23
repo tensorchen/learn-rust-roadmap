@@ -1,5 +1,7 @@
 # Rust and WebAssembly
 
+<https://rustwasm.github.io/docs/book/>
+
 - [ ] 1. Introduction
 - [ ] 2. Why Rust and WebAssembly?
 - [ ] 3. Background And Concepts
