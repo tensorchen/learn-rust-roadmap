@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div id="sidebar-scrollbox" class="sidebar-scrollbox">
-                <ol class="chapter"><li class="expanded "><a href="rust-lang.html"><strong aria-hidden="true">1.</strong> Rust 程序设计语言</a></li><li class="expanded "><a href="rust-by-example.html"><strong aria-hidden="true">2.</strong> Rust By Example</a></li><li class="expanded "><a href="rustlings.html"><strong aria-hidden="true">3.</strong> Rustlings</a></li><li class="expanded "><a href="rust-std.html"><strong aria-hidden="true">4.</strong> Rust 标准库</a></li><li class="expanded "><a href="edition-guide.html"><strong aria-hidden="true">5.</strong> The Edition Guide</a></li><li class="expanded "><a href="rustc.html"><strong aria-hidden="true">6.</strong> The Rustc Book</a></li><li class="expanded "><a href="cargo.html"><strong aria-hidden="true">7.</strong> The Cargo Book</a></li><li class="expanded "><a href="rustdoc.html"><strong aria-hidden="true">8.</strong> The Rustdoc Book</a></li><li class="expanded "><a href="compiler-error.html"><strong aria-hidden="true">9.</strong> Rust Compiler Error Index</a></li><li class="expanded "><a href="reference.html"><strong aria-hidden="true">10.</strong> The Rust Reference</a></li><li class="expanded "><a href="rustonomicon.html"><strong aria-hidden="true">11.</strong> The Rustonomicon</a></li><li class="expanded "><a href="unstable.html"><strong aria-hidden="true">12.</strong> The Rust Unstable Book</a></li><li class="expanded "><a href="rustc-contribution.html"><strong aria-hidden="true">13.</strong> The rustc Contribution Guide</a></li><li class="expanded "><a href="embedded.html"><strong aria-hidden="true">14.</strong> The Embedded Rust Book</a></li><li class="expanded "><a href="webassembly.html"><strong aria-hidden="true">15.</strong> Rust and WebAssembly</a></li><li class="expanded "><a href="cmd-line-app.html"><strong aria-hidden="true">16.</strong> Command Line Applications in Rust</a></li><li class="expanded "><a href="rfc.html"><strong aria-hidden="true">17.</strong> The Rust RFC Book</a></li><li class="expanded "><a href="bindgen.html"><strong aria-hidden="true">18.</strong> The bindgen User Guide</a></li><li class="expanded "><a href="async.html"><strong aria-hidden="true">19.</strong> Asynchronous Programming in Rust</a></li><li class="expanded "><a href="market-handbook.html"><strong aria-hidden="true">20.</strong> Rust Marketing Handbook</a></li><li class="expanded "><a href="mdbook.html"><strong aria-hidden="true">21.</strong> mdbook</a></li></ol>
+                <ol class="chapter"><li class="expanded "><a href="rust-beginner-handbook.html"><strong aria-hidden="true">1.</strong> Rust新人学习手册</a></li><li class="expanded "><a href="rust-ecosystem-handbook.html"><strong aria-hidden="true">2.</strong> Rust生态学习手册</a></li><li><ol class="section"><li class="expanded "><a href="rust-lang.html"><strong aria-hidden="true">2.1.</strong> Rust程序设计语言</a></li><li class="expanded "><a href="async.html"><strong aria-hidden="true">2.2.</strong> Rust异步编程</a></li><li class="expanded "><a href="rust-by-example.html"><strong aria-hidden="true">2.3.</strong> Rust示例</a></li><li class="expanded "><a href="rustlings.html"><strong aria-hidden="true">2.4.</strong> Rustlings</a></li><li class="expanded "><a href="rust-std.html"><strong aria-hidden="true">2.5.</strong> Rust标准库</a></li><li class="expanded "><a href="edition-guide.html"><strong aria-hidden="true">2.6.</strong> Rust版本</a></li><li class="expanded "><a href="rustc.html"><strong aria-hidden="true">2.7.</strong> Rustc编译工具</a></li><li class="expanded "><a href="cargo.html"><strong aria-hidden="true">2.8.</strong> Cargo包管理工具</a></li><li class="expanded "><a href="rustdoc.html"><strong aria-hidden="true">2.9.</strong> Rustdoc文档工具</a></li><li class="expanded "><a href="mdbook.html"><strong aria-hidden="true">2.10.</strong> 使用mdbook编写书籍文档</a></li><li class="expanded "><a href="compiler-error.html"><strong aria-hidden="true">2.11.</strong> Rust编译错误索引</a></li><li class="expanded "><a href="reference.html"><strong aria-hidden="true">2.12.</strong> Rust参考手册</a></li><li class="expanded "><a href="rustonomicon.html"><strong aria-hidden="true">2.13.</strong> Rust黑魔法</a></li><li class="expanded "><a href="unstable.html"><strong aria-hidden="true">2.14.</strong> Rust未稳定特性</a></li><li class="expanded "><a href="rustc-contribution.html"><strong aria-hidden="true">2.15.</strong> Rustc贡献手册</a></li><li class="expanded "><a href="embedded.html"><strong aria-hidden="true">2.16.</strong> Rust开发嵌入式</a></li><li class="expanded "><a href="webassembly.html"><strong aria-hidden="true">2.17.</strong> Rust开发WebAssembly</a></li><li class="expanded "><a href="cmd-line-app.html"><strong aria-hidden="true">2.18.</strong> Rust开发命令行工具</a></li><li class="expanded "><a href="rfc.html"><strong aria-hidden="true">2.19.</strong> Rust RFC Book</a></li><li class="expanded "><a href="bindgen.html"><strong aria-hidden="true">2.20.</strong> Rust FFI</a></li><li class="expanded "><a href="market-handbook.html"><strong aria-hidden="true">2.21.</strong> Rust市场营销手册</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -150,7 +150,298 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#rust-程序设计语言" id="rust-程序设计语言">Rust 程序设计语言</a></h1>
+                        <h1><a class="header" href="#rust新人学习手册" id="rust新人学习手册">Rust新人学习手册</a></h1>
+<p>你好，<code>Rustacean</code>。当你读到这里时你已经成为一名在Rust社区广泛使用称呼Rust开发者，爱好者的称呼<code>Rustacean</code>。下面开始Rust学习之旅。</p>
+<h2><a class="header" href="#概述" id="概述">概述</a></h2>
+<p>Rust是一种使每个人都可以构建可靠、高效软件的编程语言。</p>
+<p>Rust是一种系统级编程语言，注重高性能、可靠性和生产力，支持结构化编程、函数式编程、面向对象编程等多种编程范式。</p>
+<p>Rust是编译型语言，没有运行时(Runtime)和垃圾回收(Garbage Collector)。Rust使用所有权机制来实现自动内存管理，并以此来保证内存安全。Rust是开源项目，目前托管在Github上，Rust和所有其他官方项目都采用Apache许可证2.0和MIT许可证双重许可。</p>
+<p><strong>2019年11月7日</strong>
+Rust发布了1.39.0版本，async-await语法稳定(stable)。</p>
+<p>async-await是基于Future的异步编程方法，async-await语法稳定对Rust异步生态系统的发展影响巨大。</p>
+<p><strong>2019年4月23日</strong>
+Rust核心团队(The Rust Core Team)发布2019年Rust路线图，主题：成熟(Maturity)。</p>
+<p>简而言之，2019年将是Rust项目复兴和成熟的一年。重点主要放在加强基础、偿还技术和组织债务上。</p>
+<p><strong>2018年12月6日</strong>
+Rust发布了1.31.0版本，交付Rust的第二个里程碑版本Rust 2018。</p>
+<p>Rust以软件包为单位设置Rust版本，Rust 2018的软件包可以和Rust 2015的软件包无缝协同工作。Rust 2018引入了一些新特性，比如非词法生命周期(non-lexical lifetimes)，const fn，以及简化的模块系统等。</p>
+<p><strong>2015年5月15日</strong>
+Rust正式发布1.0版本，这是Rust的第一个里程碑版本Rust 2015。</p>
+<p>这意味着Rust的语法和标准库已经稳定，以后发布的新版本可以前向兼容。也代表Rust可以开始应用于生产环境。</p>
+<h2><a class="header" href="#rust语法篇" id="rust语法篇">Rust语法篇</a></h2>
+<p>本篇内容主要提供Rust基础必要语法学习指引。涉及如下两本书籍。</p>
+<ul>
+<li><a href="https://doc.rust-lang.org/book/">Rust程序设计语言</a> (<a href="https://kaisery.github.io/trpl-zh-cn/">中文译本</a>)</li>
+<li><a href="https://rust-lang.github.io/async-book/index.html">Rust异步编程</a> (<a href="https://github.com/chinanf-boy/async-book-zh">中文译本</a>)</li>
+</ul>
+<p>如下为提取后书籍重点章节（使用markdown多选框语法），推荐你阅读每个章节后调整<code>[ ]</code>为<code>[x]</code>，即将空格替换为x，记录自己的学习进度。</p>
+<h3><a class="header" href="#rust程序设计语言" id="rust程序设计语言">Rust程序设计语言</a></h3>
+<p>如下《Rust程序设计语言》相较于原生章节，删除了各种高级特性，删除了示例程序，删除了crate发布到crate.io等相关内容。<strong>此外请不要忽略附录章节</strong>。</p>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Rust 程序设计语言</li>
+<li><input disabled="" type="checkbox"/>
+前言</li>
+<li><input disabled="" type="checkbox"/>
+介绍</li>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>入门指南</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.1 安装</li>
+<li><input disabled="" type="checkbox"/>
+1.2 Hello, World!</li>
+<li><input disabled="" type="checkbox"/>
+1.3 Hello, Cargo!</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="3">
+<li>常见编程概念</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.1 变量与可变性</li>
+<li><input disabled="" type="checkbox"/>
+3.2 数据类型</li>
+<li><input disabled="" type="checkbox"/>
+3.3 函数如何工作</li>
+<li><input disabled="" type="checkbox"/>
+3.4 注释</li>
+<li><input disabled="" type="checkbox"/>
+3.5 控制流</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="4">
+<li>认识所有权</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+👍4.1 什么是所有权</li>
+<li><input disabled="" type="checkbox"/>
+4.2 引用与借用</li>
+<li><input disabled="" type="checkbox"/>
+4.3 Slices</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="5">
+<li>使用结构体组织相关联数据</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+5.1 定义并实例化结构体</li>
+<li><input disabled="" type="checkbox"/>
+5.3 方法语法</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="6">
+<li>枚举与模式匹配</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+6.1 定义枚举</li>
+<li><input disabled="" type="checkbox"/>
+6.2 match 控制流运算符</li>
+<li><input disabled="" type="checkbox"/>
+6.3 if let 简洁控制流</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="7">
+<li>使用包, Crate和模块管理不断增长的项目</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+7.1 包和Crate</li>
+<li><input disabled="" type="checkbox"/>
+7.2 定义模块来控制作用域与私有性</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="7">
+<li>使用包、Crate 和模块管理不断增长的项目</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+7.1. 包和 crate</li>
+<li><input disabled="" type="checkbox"/>
+7.2. 定义模块来控制作用域与私有性</li>
+<li><input disabled="" type="checkbox"/>
+7.3. 路径用于引用模块树中的项</li>
+<li><input disabled="" type="checkbox"/>
+7.4. 使用 use 关键字将名称引入作用域</li>
+<li><input disabled="" type="checkbox"/>
+7.5. 将模块分割进不同文件</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="8">
+<li>常见集合</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+8.1. vector</li>
+<li><input disabled="" type="checkbox"/>
+8.2. 字符串</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="9">
+<li>错误处理</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+9.1. panic! 与不可恢复的错误</li>
+<li><input disabled="" type="checkbox"/>
+9.2. Result 与可恢复的错误</li>
+<li><input disabled="" type="checkbox"/>
+9.3. panic! 还是不 panic!</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="10">
+<li>泛型、trait 与生命周期</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+10.1. 泛型数据类型</li>
+<li><input disabled="" type="checkbox"/>
+10.2. trait：定义共享的行为</li>
+<li><input disabled="" type="checkbox"/>
+10.3. 生命周期与引用有效性</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="13">
+<li>Rust 中的函数式语言功能：迭代器与闭包</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+13.1. 闭包：可以捕获其环境的匿名函数</li>
+<li><input disabled="" type="checkbox"/>
+13.2. 使用迭代器处理元素序列</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="15">
+<li>智能指针</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+15.1. Box 指向堆上数据，并且可确定大小</li>
+<li><input disabled="" type="checkbox"/>
+15.2. 通过 Deref trait 将智能指针当作常规引用处理</li>
+<li><input disabled="" type="checkbox"/>
+15.3. Drop Trait 运行清理代码</li>
+<li><input disabled="" type="checkbox"/>
+15.4. Rc 引用计数智能指针</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="16">
+<li>无畏并发</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+16.1. 线程</li>
+<li><input disabled="" type="checkbox"/>
+16.2. 消息传递</li>
+<li><input disabled="" type="checkbox"/>
+16.3. 共享状态</li>
+<li><input disabled="" type="checkbox"/>
+16.4. 可扩展的并发：Sync 与 Send</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="17">
+<li>Rust 的面向对象编程特性</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+17.1. 面向对象语言的特点</li>
+<li><input disabled="" type="checkbox"/>
+17.2. 为使用不同类型的值而设计的 trait 对象</li>
+<li><input disabled="" type="checkbox"/>
+17.3. 面向对象设计模式的实现</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="19">
+<li>高级特征</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+19.5. 宏</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="21">
+<li>附录</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+21.1. A - 关键字</li>
+<li><input disabled="" type="checkbox"/>
+21.2. B - 运算符与符号</li>
+<li><input disabled="" type="checkbox"/>
+21.3. C - 可派生的 trait</li>
+<li><input disabled="" type="checkbox"/>
+21.4. D - 实用开发工具</li>
+<li><input disabled="" type="checkbox"/>
+21.5. E - 版本</li>
+<li><input disabled="" type="checkbox"/>
+21.7. G - Rust 是如何开发的与 “Nightly Rust”</li>
+</ul>
+</li>
+</ul>
+<h3><a class="header" href="#rust异步编程" id="rust异步编程">Rust异步编程</a></h3>
+<p>《Rust异步编程》（<strong>注：本书籍官方尚未完整编辑完成</strong>）对于新人来说，需要学习的章节非常少，但都是非常重要的，建议必读。</p>
+<ul>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>Getting Started</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.1. Why Async?</li>
+<li><input disabled="" type="checkbox"/>
+1.2. The State of Asynchronous Rust</li>
+<li><input disabled="" type="checkbox"/>
+1.3. async/.await Primer</li>
+</ul>
+</li>
+</ul>
+<h2><a class="header" href="#rust文档篇" id="rust文档篇">Rust文档篇</a></h2>
+<p>新人加入一个开发团队时，要干五件事。前面四件事是了解技术架构、了解开发流程、补强基础知识、从微小的改善入手（比如关掉几个 issue）。这些都是常识，但是第五件事，很多新人都没意识到，你应该要去做，而且完全有能力做，那就是 <strong>你要写文档</strong> 。</p>
+<ul>
+<li>1.可以熟悉项目；</li>
+<li>2.可以提高表达能力；</li>
+<li>3.可以提高技术能力，因为只有理解了代码才能表达出来，文档越清晰，就代表思路越清晰；</li>
+<li>4.可以提高个人影响力，文档写得越好，看的人就越多。久而久之，你就会成为项目的代言人，别人有问题就会来找你。</li>
+</ul>
+<p>文档编写</p>
+<ul>
+<li><a href="https://doc.rust-lang.org/rustdoc/index.html">Rustdoc</a></li>
+</ul>
+<p>书籍编写（注：本手册同样使用mdbook编写完成）</p>
+<ul>
+<li><a href="http://rust-lang.github.io/mdBook/index.html">mdBook</a></li>
+</ul>
+<h2><a class="header" href="#rust工程篇" id="rust工程篇">Rust工程篇</a></h2>
+<p>本篇主要指引你了解Rust的工具链生态，工程组织，单元测试，集成测试，Benchmark等工程相关内容。</p>
+<h3><a class="header" href="#工程组织" id="工程组织">工程组织</a></h3>
+<p><a href="https://doc.rust-lang.org/cargo/guide/project-layout.html">https://doc.rust-lang.org/cargo/guide/project-layout.html</a></p>
+<h3><a class="header" href="#测试" id="测试">测试</a></h3>
+<p><strong>单元测试</strong> <a href="https://doc.rust-lang.org/book/ch11-01-writing-tests.html">https://doc.rust-lang.org/book/ch11-01-writing-tests.html</a></p>
+<p><strong>集成测试</strong> <a href="https://doc.rust-lang.org/book/ch11-03-test-organization.html#integration-tests">https://doc.rust-lang.org/book/ch11-03-test-organization.html#integration-tests</a></p>
+<p><strong>Benchmark</strong> <a href="https://doc.rust-lang.org/unstable-book/library-features/test.html">https://doc.rust-lang.org/unstable-book/library-features/test.html</a></p>
+<h1><a class="header" href="#rust生态学习手册" id="rust生态学习手册">Rust生态学习手册</a></h1>
+<h1><a class="header" href="#rust-程序设计语言" id="rust-程序设计语言">Rust 程序设计语言</a></h1>
 <ul>
 <li><input disabled="" type="checkbox"/>
 Rust 程序设计语言</li>
@@ -472,6 +763,121 @@ Rust 程序设计语言</li>
 21.6. F - 本书译本</li>
 <li><input disabled="" type="checkbox"/>
 21.7. G - Rust 是如何开发的与 “Nightly Rust”</li>
+</ul>
+</li>
+</ul>
+<h1><a class="header" href="#asynchronous-programming-in-rust" id="asynchronous-programming-in-rust">Asynchronous Programming in Rust</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>Getting Started</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+1.1. Why Async?</li>
+<li><input disabled="" type="checkbox"/>
+1.2. The State of Asynchronous Rust</li>
+<li><input disabled="" type="checkbox"/>
+1.3. async/.await Primer</li>
+<li><input disabled="" type="checkbox"/>
+1.4. Applied: HTTP Server</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="2">
+<li>Under the Hood: Executing Futures and Tasks</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.1. The Future Trait</li>
+<li><input disabled="" type="checkbox"/>
+2.2. Task Wakeups with Waker</li>
+<li><input disabled="" type="checkbox"/>
+2.3. Applied: Build an Executor</li>
+<li><input disabled="" type="checkbox"/>
+2.4. Executors and System IO</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="3">
+<li>async/await</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="4">
+<li>Pinning</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="5">
+<li>Streams</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+5.1. Iteration and Concurrency</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="6">
+<li>Executing Multiple Futures at a Time</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+6.1. join!</li>
+<li><input disabled="" type="checkbox"/>
+6.2. select!</li>
+<li><input disabled="" type="checkbox"/>
+6.3. TODO: Spawning</li>
+<li><input disabled="" type="checkbox"/>
+6.4. TODO: Cancellation and Timeouts</li>
+<li><input disabled="" type="checkbox"/>
+6.5. TODO: FuturesUnordered</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="7">
+<li>Workarounds to Know and Love</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+7.1. Return Type Errors</li>
+<li><input disabled="" type="checkbox"/>
+7.2. ? in async Blocks</li>
+<li><input disabled="" type="checkbox"/>
+7.3. Send Approximation</li>
+<li><input disabled="" type="checkbox"/>
+7.4. Recursion</li>
+<li><input disabled="" type="checkbox"/>
+7.5. async in Traits</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="8">
+<li>TODO: I/O</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+8.1. TODO: AsyncRead and AsyncWrite</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="9">
+<li>TODO: Asynchronous Design Patterns: Solutions and Suggestions</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+9.1. TODO: Modeling Servers and the Request/Response Pattern</li>
+<li><input disabled="" type="checkbox"/>
+9.2. TODO: Managing Shared State</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="10">
+<li>TODO: The Ecosystem: Tokio and More</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+10.1. TODO: Lots, lots more?...</li>
 </ul>
 </li>
 </ul>
@@ -1509,29 +1915,123 @@ Introduction</li>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="2">
-<li>Command-line arguments</li>
+<li>How to write documentation</li>
 </ol>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="3">
-<li>The #[doc] attribute</li>
+<li>Command-line arguments</li>
 </ol>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="4">
-<li>Documentation tests</li>
+<li>The #[doc] attribute</li>
 </ol>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="5">
-<li>Passes</li>
+<li>Documentation tests</li>
 </ol>
 </li>
 <li><input disabled="" type="checkbox"/>
 <ol start="6">
+<li>Lints</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="7">
+<li>Passes</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="8">
+<li>Advanced Features</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="9">
 <li>Unstable features</li>
 </ol>
 </li>
+</ul>
+<h1><a class="header" href="#mdbook" id="mdbook">mdbook</a></h1>
+<p>mdBook 是一个利用Markdown写书的工具，类似Gitbook，但是使用Rust实现。
+mdBook 在Rust领域使用非常广泛，绝大多数Rust相关书籍均使用mdBook。例如<code>The Book</code></p>
+<ul>
+<li>书籍：<a href="https://rust-lang.github.io/mdBook/">https://rust-lang.github.io/mdBook/</a></li>
+<li>文档：<a href="https://docs.rs/mdbook/*/mdbook/">https://docs.rs/mdbook/*/mdbook/</a></li>
+<li>源码：<a href="https://github.com/rust-lang/mdBook">https://github.com/rust-lang/mdBook</a></li>
+</ul>
+<h2><a class="header" href="#学习进度记录" id="学习进度记录">学习进度记录</a></h2>
+<ul>
+<li><input disabled="" type="checkbox"/>
+<ol>
+<li>mdBook</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="2">
+<li>Command Line Tool</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+2.1. init</li>
+<li><input disabled="" type="checkbox"/>
+2.2. build</li>
+<li><input disabled="" type="checkbox"/>
+2.3. watch</li>
+<li><input disabled="" type="checkbox"/>
+2.4. serve</li>
+<li><input disabled="" type="checkbox"/>
+2.5. test</li>
+<li><input disabled="" type="checkbox"/>
+2.6. clean</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="3">
+<li>Format</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.1. SUMMARY.md</li>
+<li><input disabled="" type="checkbox"/>
+3.2. Configuration</li>
+<li><input disabled="" type="checkbox"/>
+3.3. Theme
+<ul>
+<li><input disabled="" type="checkbox"/>
+3.3.1. index.hbs</li>
+<li><input disabled="" type="checkbox"/>
+3.3.2. Syntax highlighting</li>
+<li><input disabled="" type="checkbox"/>
+3.3.3. Editor</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+3.4. MathJax Support</li>
+<li><input disabled="" type="checkbox"/>
+3.5. mdBook specific features</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="4">
+<li>Continuous Integration</li>
+</ol>
+</li>
+<li><input disabled="" type="checkbox"/>
+<ol start="5">
+<li>For Developers</li>
+</ol>
+<ul>
+<li><input disabled="" type="checkbox"/>
+5.1. Preprocessors</li>
+<li><input disabled="" type="checkbox"/>
+5.2. Alternative Backends</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+Contributors</li>
 </ul>
 <h1><a class="header" href="#rust-compiler-error-index" id="rust-compiler-error-index">Rust Compiler Error Index</a></h1>
 <h1><a class="header" href="#the-rust-reference" id="the-rust-reference">The Rust Reference</a></h1>
@@ -4193,201 +4693,7 @@ Introduction</li>
 </ol>
 </li>
 </ul>
-<h1><a class="header" href="#asynchronous-programming-in-rust" id="asynchronous-programming-in-rust">Asynchronous Programming in Rust</a></h1>
-<ul>
-<li><input disabled="" type="checkbox"/>
-<ol>
-<li>Getting Started</li>
-</ol>
-<ul>
-<li><input disabled="" type="checkbox"/>
-1.1. Why Async?</li>
-<li><input disabled="" type="checkbox"/>
-1.2. The State of Asynchronous Rust</li>
-<li><input disabled="" type="checkbox"/>
-1.3. async/.await Primer</li>
-<li><input disabled="" type="checkbox"/>
-1.4. Applied: HTTP Server</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"/>
-<ol start="2">
-<li>Under the Hood: Executing Futures and Tasks</li>
-</ol>
-<ul>
-<li><input disabled="" type="checkbox"/>
-2.1. The Future Trait</li>
-<li><input disabled="" type="checkbox"/>
-2.2. Task Wakeups with Waker</li>
-<li><input disabled="" type="checkbox"/>
-2.3. Applied: Build an Executor</li>
-<li><input disabled="" type="checkbox"/>
-2.4. Executors and System IO</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"/>
-<ol start="3">
-<li>async/await</li>
-</ol>
-</li>
-<li><input disabled="" type="checkbox"/>
-<ol start="4">
-<li>Pinning</li>
-</ol>
-</li>
-<li><input disabled="" type="checkbox"/>
-<ol start="5">
-<li>Streams</li>
-</ol>
-<ul>
-<li><input disabled="" type="checkbox"/>
-5.1. Iteration and Concurrency</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"/>
-<ol start="6">
-<li>Executing Multiple Futures at a Time</li>
-</ol>
-<ul>
-<li><input disabled="" type="checkbox"/>
-6.1. join!</li>
-<li><input disabled="" type="checkbox"/>
-6.2. select!</li>
-<li><input disabled="" type="checkbox"/>
-6.3. TODO: Spawning</li>
-<li><input disabled="" type="checkbox"/>
-6.4. TODO: Cancellation and Timeouts</li>
-<li><input disabled="" type="checkbox"/>
-6.5. TODO: FuturesUnordered</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"/>
-<ol start="7">
-<li>Workarounds to Know and Love</li>
-</ol>
-<ul>
-<li><input disabled="" type="checkbox"/>
-7.1. Return Type Errors</li>
-<li><input disabled="" type="checkbox"/>
-7.2. ? in async Blocks</li>
-<li><input disabled="" type="checkbox"/>
-7.3. Send Approximation</li>
-<li><input disabled="" type="checkbox"/>
-7.4. Recursion</li>
-<li><input disabled="" type="checkbox"/>
-7.5. async in Traits</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"/>
-<ol start="8">
-<li>TODO: I/O</li>
-</ol>
-<ul>
-<li><input disabled="" type="checkbox"/>
-8.1. TODO: AsyncRead and AsyncWrite</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"/>
-<ol start="9">
-<li>TODO: Asynchronous Design Patterns: Solutions and Suggestions</li>
-</ol>
-<ul>
-<li><input disabled="" type="checkbox"/>
-9.1. TODO: Modeling Servers and the Request/Response Pattern</li>
-<li><input disabled="" type="checkbox"/>
-9.2. TODO: Managing Shared State</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"/>
-<ol start="10">
-<li>TODO: The Ecosystem: Tokio and More</li>
-</ol>
-<ul>
-<li><input disabled="" type="checkbox"/>
-10.1. TODO: Lots, lots more?...</li>
-</ul>
-</li>
-</ul>
 <h1><a class="header" href="#rust-marketing-handbook" id="rust-marketing-handbook">Rust Marketing Handbook</a></h1>
-<h1><a class="header" href="#mdbook" id="mdbook">mdbook</a></h1>
-<p>mdBook 是一个利用Markdown写书的工具，类似Gitbook，但是使用Rust实现。
-mdBook 在Rust领域使用非常广泛，绝大多数Rust相关书籍均使用mdBook。例如<code>The Book</code></p>
-<ul>
-<li>书籍：<a href="https://rust-lang.github.io/mdBook/">https://rust-lang.github.io/mdBook/</a></li>
-<li>文档：<a href="https://docs.rs/mdbook/*/mdbook/">https://docs.rs/mdbook/*/mdbook/</a></li>
-<li>源码：<a href="https://github.com/rust-lang/mdBook">https://github.com/rust-lang/mdBook</a></li>
-</ul>
-<h2><a class="header" href="#学习进度记录" id="学习进度记录">学习进度记录</a></h2>
-<ul>
-<li><input disabled="" type="checkbox"/>
-<ol>
-<li>mdBook</li>
-</ol>
-</li>
-<li><input disabled="" type="checkbox"/>
-<ol start="2">
-<li>Command Line Tool</li>
-</ol>
-<ul>
-<li><input disabled="" type="checkbox"/>
-2.1. init</li>
-<li><input disabled="" type="checkbox"/>
-2.2. build</li>
-<li><input disabled="" type="checkbox"/>
-2.3. watch</li>
-<li><input disabled="" type="checkbox"/>
-2.4. serve</li>
-<li><input disabled="" type="checkbox"/>
-2.5. test</li>
-<li><input disabled="" type="checkbox"/>
-2.6. clean</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"/>
-<ol start="3">
-<li>Format</li>
-</ol>
-<ul>
-<li><input disabled="" type="checkbox"/>
-3.1. SUMMARY.md</li>
-<li><input disabled="" type="checkbox"/>
-3.2. Configuration</li>
-<li><input disabled="" type="checkbox"/>
-3.3. Theme
-<ul>
-<li><input disabled="" type="checkbox"/>
-3.3.1. index.hbs</li>
-<li><input disabled="" type="checkbox"/>
-3.3.2. Syntax highlighting</li>
-<li><input disabled="" type="checkbox"/>
-3.3.3. Editor</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"/>
-3.4. MathJax Support</li>
-<li><input disabled="" type="checkbox"/>
-3.5. mdBook specific features</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"/>
-<ol start="4">
-<li>Continuous Integration</li>
-</ol>
-</li>
-<li><input disabled="" type="checkbox"/>
-<ol start="5">
-<li>For Developers</li>
-</ol>
-<ul>
-<li><input disabled="" type="checkbox"/>
-5.1. Preprocessors</li>
-<li><input disabled="" type="checkbox"/>
-5.2. Alternative Backends</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"/>
-Contributors</li>
-</ul>
 
                     </main>
 
