@@ -1,6 +1,6 @@
 # The Learn Rust Roadmap
 
-[![Build Status](https://travis-ci.org/tensorchen/learn-rust-roadmap.svg?branch=master)](https://travis-ci.org/tensorchen/learn-rust-roadmap)
+![github pages](https://github.com/tensorchen/learn-rust-roadmap/workflows/github%20pages/badge.svg)
 
 学习Rust程序设计语言路线图
 
