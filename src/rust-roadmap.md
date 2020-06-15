@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/tensorchen/learn-rust-roadmap.svg?branch=master)](https://travis-ci.org/tensorchen/learn-rust-roadmap)
 
-学习Rust程序设计语言路线图
+学习Rust程序设计语言路线图。
 
 ## 介绍
 
